@@ -1,0 +1,35 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+.v-btn__content{
+color: #fff;
+text-decoration: none;
+}
+
+.v-btn:before{
+    background-color: #fff!important;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    transition: all .3s;
+}
+
+main{
+    background-color: #f9f9f9;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.theme--light.v-icon{
+    color: #14B1AB!important;
+    font-size: 20px;
+}

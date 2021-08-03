@@ -1,0 +1,26 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  },
+  "Headingline": {
+    "description": "Auto imported from components/headingline.vue"
+  },
+  "MoolikeLogo": {
+    "description": "Auto imported from components/moolikeLogo.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/sidebar.vue"
+  },
+  "TopMaterialNew": {
+    "description": "Auto imported from components/topMaterialNew.vue"
+  },
+  "TopMaterialRank": {
+    "description": "Auto imported from components/topMaterialRank.vue"
+  }
+}
