@@ -22,7 +22,7 @@ export const actions = {
   getTags2:firestoreAction((context,tag)=>{
     return moviesRef.where('tag2','==',tag).get()
   }),
-  getTags3:firestoreAction((context,tag)=>{-eu
+  getTags3:firestoreAction((context,tag)=>{
     return moviesRef.where('tag3','==',tag).get()
   }),
   getWord:firestoreAction((context)=>{
@@ -36,6 +36,10 @@ export const actions = {
   downloadMov:firestoreAction((context,mv_id)=>{
   const imageURL = `mov/${mv_id}`
   console.log(imageURL+"でダウンロードします")
+  return firebase.storage().ref().child(imageURL).getDownloadURL()
+  }),
+  getThumb:firestoreAction((context,mv_id)=>{
+  const imageURL = `thumb/${mv_id}.jpg`
   return firebase.storage().ref().child(imageURL).getDownloadURL()
   }),
   getCategory:firestoreAction((context,category)=>{

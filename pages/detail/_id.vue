@@ -6,8 +6,8 @@
         <!-- パンクず -->
         <div class="p-pankuzu">
           <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-          <NuxtLink to="/newmaterial" class="p-pankuzu_inactive">素材一覧</NuxtLink><span> > </span>
-          <NuxtLink to="/newmaterial" class="p-pankuzu_inactive">{{name}}</NuxtLink>
+          <NuxtLink to="/newmaterial/" class="p-pankuzu_inactive">素材一覧</NuxtLink><span> > </span>
+          <NuxtLink to="/newmaterial/" class="p-pankuzu_inactive">{{name}}</NuxtLink>
         </div>
         <!-- パンクず -->
         <div class="p-material_detail">

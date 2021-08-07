@@ -6,10 +6,9 @@
         <p class="p-mainvisual__desc">商用利用可能のフリー動画素材サイトです！<br>シンプルで使いやすさを追求した幅広い動画素材を取り揃えています</p>
         <div class="p-mainvisual_inner">
           <form @submit.prevent="searchSubmit">
-          <v-autocomplete v-model="model" chips :search-input.sync="search"
-            clearable hide-details hide-selected label="動画をキーワードで探す" solo
-            class="p-search">
-          </v-autocomplete>
+            <v-autocomplete v-model="model" chips :search-input.sync="search" clearable hide-details hide-selected
+              label="動画をキーワードで探す" solo class="p-search">
+            </v-autocomplete>
           </form>
         </div>
       </div>
@@ -100,10 +99,10 @@
     data() {
       return {
         items: [{
-            src: 'http://www.moolike-stock.com/wp-content/themes/moolike_wp/img/mv.jpg',
+            src: 'http://pei.heavy.jp/wp-content/themes/moolike_wp/img/mv.jpg',
           },
           {
-            src: 'http://www.moolike-stock.com/wp-content/themes/moolike_wp/img/mv3.jpg',
+            src: 'http://pei.heavy.jp/wp-content/themes/moolike_wp/img/mv3.jpg',
           },
         ],
         tags: [{
@@ -136,15 +135,15 @@
             answer: '基本必要ありません。お気軽にダウンロードをしてください'
           },
         ],
-        search:null,
-        model:null
+        search: null,
+        model: null
       }
     },
-    methods:{
-      searchSubmit(){
+    methods: {
+      searchSubmit() {
         const a = document.createElement("a");
         document.body.appendChild(a);
-        a.href = "/search/"+this.search;
+        a.href = "/search/" + this.search;
         a.click();
         a.remove();
       },
@@ -153,13 +152,30 @@
 
 </script>
 <style>
-  @media screen and (max-width:750px) {
-main{
-  width: 100%;
-  overflow: hidden;
-}
+  @media screen and (max-width:350px) {
+    .p-material_item {
+      max-width: 170px !important;
+      min-width: 150px;
+    }
+  }
 
-    .p-header_ttl{
+  @media screen and (max-width:750px) {
+    main {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .p-material_item {
+      max-width: 180px !important;
+    }
+
+    .p-material_ttl {
+      width: 130px;
+      overflow: hidden;
+      height: 20px;
+    }
+
+    .p-header_ttl {
       width: 150px;
       margin-right: 2rem;
     }
@@ -173,61 +189,65 @@ main{
       justify-content: center;
     }
 
-    .p-material{
+    .p-material {
       justify-content: center;
     }
 
-    .p-material_item{
-      margin: .5rem!important;
+    .p-material_item {
+      margin: .5rem !important;
     }
 
-    .p-nav,.p-search_header{
+    .p-nav,
+    .p-search_header {
       display: none;
     }
 
-    .p-ham{
+    .p-ham {
       display: block;
     }
 
-    .p-search{
-      width: 140vw!important;
-    }
-    .p-mainvisual__desc{
-      font-size: 1rem!important;
+    .p-search {
+      width: 140vw !important;
     }
 
-      .p-search_header{
-    width: 150px!important;
-  }
+    .p-mainvisual__desc {
+      font-size: 1rem !important;
+    }
 
-  .p-footer_btns{
-    font-size: .5rem;
-  }
+    .p-search_header {
+      width: 150px !important;
+    }
 
-.p-material_detail{
-  display: block;
-    display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+    .p-footer_btns {
+      font-size: .5rem;
+    }
 
-.p-material_detail__youtube{
-  width: 100%;
-}
-.p-material_detail__dl{
-  margin-bottom: 2rem;
-}
-.p-material_detail__dl__item{
-  padding: .7rem .4rem;
-  text-align: center;
-  font-size: .5rem;
-  width: 48%;
+    .p-material_detail {
+      display: block;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-}
+    .p-material_detail__youtube {
+      width: 100%;
+    }
 
-.p-material_detail__desc{
-  width: 100%;
-}
+    .p-material_detail__dl {
+      margin-bottom: 2rem;
+    }
+
+    .p-material_detail__dl__item {
+      padding: .7rem .4rem;
+      text-align: center;
+      font-size: .5rem;
+      width: 48%;
+
+    }
+
+    .p-material_detail__desc {
+      width: 100%;
+    }
 
 
   }

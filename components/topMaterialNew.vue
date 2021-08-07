@@ -1,12 +1,12 @@
 <template>
   <div class="p-material">
-    <v-lazy v-model="isActive" :options="{threshold: .3}" transition="fade-transition" v-for="movie of limitCount"
+    <v-lazy v-model="isActive" :options="{threshold: .3}" transition="fade-transition" v-for="(movie) of limitCount"
       :key="movie.id<6">
       <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
         <NuxtLink :to="`/detail/${movie.id}`" class="p-link">
         <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000"> new</span>
-        <img :src="`http://www.moolike-stock.com/wp-content/themes/moolike_wp/thumb/${movie.mv_id}.jpg`"
+        <img :src="`http://pei.heavy.jp/wp-content/themes/moolike_wp/thumb/${movie.mv_id}.jpg`"
           class="p-material_thumb">
         </NuxtLink>
         </div>
@@ -57,6 +57,7 @@
         page: 1,
         today: '',
         week: 7 * 24 * 60 * 60 * 1000,
+        movieHref:[]
       }
     },
     created: function () {
@@ -78,7 +79,7 @@
             link.href = `/dl/mp4/${url}.mp4`
             link.click()
         },
-              download(mv_id, id, count) {
+        download(mv_id, id, count) {
         let mvcount = count + 1;
         let mvarr = [id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
@@ -100,12 +101,17 @@
           xhr.open('GET', url);
           xhr.send();
         });
+      },
+      getThumb(mv_id){
+         this.$store.dispatch('movies/getThumb', mv_id).then(url=>{
+           return url
+         });
       }
     },
     computed: {
       movies() {
         // return this.$store.state.movies.movies
-        return this.$store.getters['movies/orderdMovies']
+       return this.$store.getters['movies/orderdMovies']
       },
       limitCount(){
         return this.movies.slice(0,3)
