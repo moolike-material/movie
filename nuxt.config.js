@@ -2,6 +2,9 @@ import colors from 'vuetify/es5/util/colors'
 const webpack = require('webpack');
 
 export default {
+  generate: {
+    fallback: true
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 

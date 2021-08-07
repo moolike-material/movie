@@ -6,7 +6,7 @@
         <div class="p-material_inner p-material_inner--mv">
         <NuxtLink :to="`/detail/${movie.id}`" class="p-link">
         <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000"> new</span>
-        <img :src="`http://pei.heavy.jp/wp-content/themes/moolike_wp/thumb/${movie.mv_id}.jpg`"
+        <img :src="`/thumb/${movie.mv_id}.jpg`"
           class="p-material_thumb">
         </NuxtLink>
         </div>

@@ -99,10 +99,10 @@
     data() {
       return {
         items: [{
-            src: 'http://pei.heavy.jp/wp-content/themes/moolike_wp/img/mv.jpg',
+            src: '/mv.jpg',
           },
           {
-            src: 'http://pei.heavy.jp/wp-content/themes/moolike_wp/img/mv3.jpg',
+            src: '/mv3.jpg',
           },
         ],
         tags: [{
