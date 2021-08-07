@@ -193,14 +193,14 @@ export async function setContext (app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"FIREBASE_PROJECT_ID":"moolike-8fc66"}
+      env: {"FIREBASE_PROJECT_ID":"moolike-8fc66","FIREBASE_API_KEY":"AIzaSyDPrbQj6xsAgz4w8mst-CXLEBkv6rIHP9Q","FIREBASE_AUTHDOMAIN":"moolike-8fc66.firebaseapp.com","FIREBASE_STORAGE_BUCKET":"moolike-8fc66.appspot.com","FIREBASE_MESSAGE":"02900178834","FIREBASE_APP_ID":":502900178834:web:058c576d2b2a962a1ccb4b","FIREBASE_MEASUREMEN_ID":"G-VY5NNX8QT3"}
     }
     // Only set once
 
@@ -279,7 +279,7 @@ export async function setContext (app, context) {
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
-  app.context.isHMR = false
+  app.context.isHMR = Boolean(context.isHMR)
   app.context.params = app.context.route.params || {}
   app.context.query = app.context.route.query || {}
 }
@@ -297,6 +297,9 @@ export function middlewareSeries (promises, appContext) {
 export function promisify (fn, context) {
   let promise
   if (fn.length === 2) {
+      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
+        'Please switch to promises or async/await syntax')
+
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {

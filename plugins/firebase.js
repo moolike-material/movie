@@ -2,12 +2,12 @@ import firebase  from 'firebase'
 
 const config ={
     projectId: process.env.FIREBASE_PROJECT_ID,  
-    apiKey: "AIzaSyDPrbQj6xsAgz4w8mst-CXLEBkv6rIHP9Q",
-    authDomain: "moolike-8fc66.firebaseapp.com",
-    storageBucket: "moolike-8fc66.appspot.com",
-    messagingSenderId: "502900178834",
-    appId: "1:502900178834:web:058c576d2b2a962a1ccb4b",
-    measurementId: "G-VY5NNX8QT3"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTHDOMAIN,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGE,
+    appId: process.env.FIREBASE_APP_ID,
+    measurementId: process.env.FIREBASE_MEASUREMEN_ID
 }
 
 if(!firebase.apps.length){
