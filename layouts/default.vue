@@ -202,4 +202,7 @@
     }
   }
 
+.p-nav .sidebar{
+  display: none;
+}
 </style>
