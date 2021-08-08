@@ -2,7 +2,7 @@
   <div>
     <!-- ヘッダー -->
     <header class="p-header">
-      <v-container>
+      <v-container class="p-header_container">
         <div class="p-header_inner">
           <NuxtLink to="/">
             <h1 class="p-header_ttl">
@@ -26,7 +26,7 @@
               <!-- <li class="p-nav_item"><NuxtLink to="/howto" href="#" class="p-nav_link">使用方法</NuxtLink></li> -->
               <li class="p-nav_item">
                 <NuxtLink to="/contact">
-                  <v-icon large class="mail_icon_color">
+                  <v-icon large class="mail_icon_color" style="font-size:25px!important">
                     mdi-email
                   </v-icon>
                 </NuxtLink>
@@ -106,20 +106,32 @@
 </script>
 
 <style>
-
+  .p-header_container{
+    padding:7px 10px 5px!important
+  }
 
   .bg-white {
     background: #fff;
   }
 
   .main {
-    padding-top: 4.5rem !important;
+    padding-top: 3.7rem !important;
   }
 
   .p-search_header {
     width: 350px !important;
-    border: 1px solid #333;
+    border: 2px solid #ccc;
+    border-radius: 20px;
   }
+
+.p-search_header .v-input__control{
+  height: 30px!important;
+  min-height: 37px!important;
+}
+
+.v-label{
+  font-size:.8rem ;
+}
 
   .menu-btn {
     display: none;
