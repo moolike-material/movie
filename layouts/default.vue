@@ -14,7 +14,7 @@
               label="動画をキーワードで探す" solo class="p-search_header">
             </v-autocomplete>
           </form>
-          <div :class="{'is-active': isActive}">
+          <div :class="{'is-active': isActive}" style="width:40%">
           <nav class="p-nav" id="nav">
             <ul class="p-nav_list">
               <li class="p-nav_item">
@@ -106,6 +106,8 @@
 </script>
 
 <style>
+
+
   .bg-white {
     background: #fff;
   }
@@ -124,6 +126,10 @@
   }
 
   @media screen and (max-width:750px) {
+
+    .hamburger-menu{
+      display: block;
+    }
     .menu-btn {
       position: fixed;
       top: 10px;
@@ -187,6 +193,10 @@
       font-size: 2rem;
     }
 
+    .is-active{
+      width: auto;
+    }
+
     .is-active .p-nav{
       left: 0;
       font-size: 2rem;
@@ -202,7 +212,8 @@
     }
   }
 
-.p-nav .sidebar{
+.p-nav .sidebar,
+.hamburger-menu{
   display: none;
 }
 </style>
