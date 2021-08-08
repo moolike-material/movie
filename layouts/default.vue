@@ -204,7 +204,7 @@
 
     .p-nav .sidebar{
       margin-top: 2rem;
-      display: block;
+      display: block!important;
     }
 
     .p-nav_list{
