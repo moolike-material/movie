@@ -4,7 +4,7 @@
       v-for="(movie,index) of limitCount" :key="movie.id<6">
       <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
-          <NuxtLink :to="`/detail/${movie.id}`">
+          <NuxtLink :to="`/detail/${movie.mv_id}`">
             <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new
             </span>
             <img :src="`/thumb/${movie.mv_id}.jpg`"
@@ -41,7 +41,7 @@
           </NuxtLink>
         </div>
         <div class="p-material_inner">
-          <NuxtLink :to="`detail/${movie.id}`">
+          <NuxtLink :to="`/detail/${movie.mv_id}`">
             <div class="p-material_innerWrap">
               <h3 class="p-material_ttl">{{movie.name}}</h3>
             </div>

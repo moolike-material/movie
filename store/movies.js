@@ -45,6 +45,9 @@ export const actions = {
   getCategory:firestoreAction((context,category)=>{
     return moviesRef.where('category','==',category).get()
   }),
+  getDetail:firestoreAction((context,mv_id)=>{
+    return moviesRef.where('mv_id','==',mv_id).get()
+  }),
   add: firestoreAction((context,data) => {
       moviesRef.add({
         name: data[0],

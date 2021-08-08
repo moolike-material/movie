@@ -12,7 +12,7 @@
           </form>
         </div>
       </div>
-      <v-carousel hide-delimiters cycle="20" height="350px" :show-arrows="false">
+      <v-carousel hide-delimiters cycle height="350px" :show-arrows="false">
         <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
       </v-carousel>
     </div>

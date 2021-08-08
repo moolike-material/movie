@@ -134,7 +134,8 @@
       let self = this
       this.setQuery()
       this.$store.dispatch('movies/init');
-      this.$store.dispatch('movies/get', this.query).then(function (doc) {
+      this.$store.dispatch('movies/getDetail', this.query).then(querySnapshot => {
+        querySnapshot.forEach(doc => {
         let data = doc.data();
         self.name = data.name
         self.desc = data.desc
@@ -147,6 +148,7 @@
         self.tag3 = data.tag3
         self.id = data.id
         self.count = data.dl_count
+        })
       })
     },
     methods: {
@@ -155,22 +157,6 @@
       },
       setQuery() {
         this.query = this.$route.params.id || ''
-      },
-      update() {
-        //ムービーデータの作成
-        this.movie_data.push(this.name);
-        this.movie_data.push(this.desc);
-        this.movie_data.push(this.yt_id);
-        this.movie_data.push(this.mv_id);
-        this.movie_data.push(this.length);
-        this.movie_data.push(this.category);
-        this.movie_data.push(this.tag1);
-        this.movie_data.push(this.tag2);
-        this.movie_data.push(this.tag3);
-        this.movie_data.push(this.query);
-
-        this.$store.dispatch('movies/update', this.movie_data)
-        console.log('更新しました')
       },
       downloadMp4() {
         let mvcount = this.count + 1;

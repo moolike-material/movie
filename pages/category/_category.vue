@@ -16,7 +16,7 @@
             v-for="(movie) in getMovies" :key="movie.id">
             <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
               <div class="p-material_inner p-material_inner--mv">
-              <NuxtLink :to="`/detail/${movie.id}`">
+              <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
                       v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
                 <img :src="`/thumb/${movie.mv_id}.jpg`"
@@ -24,9 +24,9 @@
               </NuxtLink>
                 </div>
               <div class="p-material_inner">
-                <NuxtLink :to="`/detail/${movie.id}`">
+                <NuxtLink :to="`/detail/${movie.mv_id}`">
                   <div class="p-material_innerWrap">
-                    <h3 class="p-material_ttl">{{movie.name}}</h3>
+                    <h3 class="p-material_ttl">{{movie.name}}{{movie.if}}</h3>
                   </div>
                 </NuxtLink>
                 <div class="p-material_iconWrap">
@@ -116,6 +116,8 @@
       this.$store.dispatch('movies/init');
       this.$store.dispatch('movies/getCategory', this.query).then(querySnapshot => {
         querySnapshot.forEach(doc => {
+          console.log('あああああ')
+          console.log(doc.data())
           self.movie_serach.push(doc.data());
         });
       })
@@ -174,7 +176,7 @@
     },
     watch: {
       search() {
-        this.current_page = 1
+        this.page = 1
       }
     }
   }
