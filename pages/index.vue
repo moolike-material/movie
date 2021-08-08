@@ -160,6 +160,10 @@
   }
 
   @media screen and (max-width:750px) {
+    .p-mainvisual_inner{
+      width: 85%;
+    }
+
     .p-content_main{
       width: 96%;
     }
@@ -170,11 +174,11 @@
     }
 
     .p-material_item {
-      max-width: 165px !important;
+      max-width: 160px !important;
     }
 
     .p-material_ttl {
-      width: 120px;
+      width: 115px;
       overflow: hidden;
       height: 20px;
     }
@@ -214,7 +218,8 @@
     }
 
     .p-mainvisual__desc {
-      font-size: 1rem !important;
+      font-size: .9rem !important;
+      padding: 4rem .5rem 0;
     }
 
     .p-search_header {
