@@ -128,7 +128,7 @@
   @media screen and (max-width:750px) {
 
     .hamburger-menu{
-      display: block;
+      display: block!important;
     }
     .menu-btn {
       position: fixed;
