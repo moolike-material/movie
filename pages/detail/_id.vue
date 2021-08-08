@@ -20,7 +20,7 @@
             <div class="p-material_detail__dl">
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mp4" @click="downloadMp4()">
                 MP4形式でダウンロード</div>
-              <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadByUrlMov()">
+              <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
           </div>
@@ -146,7 +146,7 @@
         self.tag1 = data.tag1
         self.tag2 = data.tag2
         self.tag3 = data.tag3
-        self.id = data.id
+        self.id = doc.id
         self.count = data.dl_count
         })
       })
@@ -160,7 +160,7 @@
       },
       downloadMp4() {
         let mvcount = this.count + 1;
-        let mvarr = [this.mv_id, mvcount]
+        let mvarr = [this.id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
         let mp4 = this.mv_id + '.mp4';
         this.$store.dispatch('movies/download', mp4).then(url => {
@@ -183,17 +183,18 @@
       },
       downloadMov() {
         let mvcount = this.count + 1;
-        let mvarr = [this.mv_id, mvcount]
+        let mvarr = [this.id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
-        let mov = this.mv_id + '.mov';
-        this.$store.dispatch('movies/downloadMov', mov).then(url => {
-          const xhr = new XMLHttpRequest();
+        let movlef = this.mv_id + '.mov';
+        console.log(movlef)
+        this.$store.dispatch('movies/downloadMov',movlef).then(url => {
+          let xhr = new XMLHttpRequest();
           xhr.responseType = 'blob';
           xhr.onload = event => {
             // blobがファイルのデータです
-            const blob = xhr.response;
+            let blob = xhr.response;
             // aタグをつくります※この辺は自由にアプリに合わせてください
-            const aDL = document.createElement('a');
+            let aDL = document.createElement('a');
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
             aDL.download = `${this.mv_id}.mov`;
@@ -204,15 +205,6 @@
           xhr.send();
         });
       },
-      downloadByUrlMov() {
-        let mvcount = this.count + 1;
-        let mvarr = [this.mv_id, mvcount]
-        this.$store.dispatch('movies/dlcount', mvarr)
-        const link = document.createElement('a')
-        link.download = `${this.mv_id}.mov`
-        link.href = `/dl/mov/${this.mv_id}.mov`
-        link.click()
-      }
     },
     computed: {
       movies() {

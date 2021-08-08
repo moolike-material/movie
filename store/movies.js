@@ -34,9 +34,9 @@ export const actions = {
   return firebase.storage().ref().child(imageURL).getDownloadURL()
   }),
   downloadMov:firestoreAction((context,mv_id)=>{
-  const imageURL = `mov/${mv_id}`
-  console.log(imageURL+"でダウンロードします")
-  return firebase.storage().ref().child(imageURL).getDownloadURL()
+  const imageMov = `mov/${mv_id}`
+  console.log(imageMov+"でダウンロードします")
+  return firebase.storage().ref().child(imageMov).getDownloadURL()
   }),
   getThumb:firestoreAction((context,mv_id)=>{
   const imageURL = `thumb/${mv_id}.jpg`
@@ -81,6 +81,11 @@ export const actions = {
   }),
   dlcount:firestoreAction((context, movie_array)=>{
     moviesRef.doc(movie_array[0]).update({
+      dl_count:movie_array[1]
+    })
+  }),
+  dlcountMvId:firestoreAction((context, movie_array)=>{
+    moviesRef.where('mv_id','==',movie_array[0]).update({
       dl_count:movie_array[1]
     })
   })
