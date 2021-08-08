@@ -192,10 +192,14 @@
       font-size: 1.2rem;
     }
 
+    .p-material_tag_icon{
+      font-size: 16px!important;
+    }
+
     .p-material_ttl {
       width: 110px;
       overflow: hidden;
-      height: 20px;
+      height: 14px;
       font-size: .5rem;
     }
 
@@ -218,7 +222,7 @@
     }
 
     .p-material_item {
-      margin: 0rem !important;
+      margin: 1rem 0rem 0rem !important;
     }
 
     .p-search_header {
