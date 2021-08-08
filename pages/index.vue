@@ -160,17 +160,21 @@
   }
 
   @media screen and (max-width:750px) {
+    .p-content_main{
+      width: 96%;
+    }
+
     main {
       width: 100%;
       overflow: hidden;
     }
 
     .p-material_item {
-      max-width: 180px !important;
+      max-width: 165px !important;
     }
 
     .p-material_ttl {
-      width: 130px;
+      width: 120px;
       overflow: hidden;
       height: 20px;
     }
@@ -186,7 +190,7 @@
 
     .p-content_inner {
       width: 100vw !important;
-      justify-content: center;
+      display: block;
     }
 
     .p-material {
@@ -197,7 +201,6 @@
       margin: .5rem !important;
     }
 
-    .p-nav,
     .p-search_header {
       display: none;
     }
@@ -249,6 +252,10 @@
       width: 100%;
     }
 
+    .p-form__message {
+    width: 333px;
+    padding: .5rem;
+}
 
   }
 

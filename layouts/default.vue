@@ -14,7 +14,8 @@
               label="動画をキーワードで探す" solo class="p-search_header">
             </v-autocomplete>
           </form>
-          <nav class="p-nav">
+          <div :class="{'is-active': isActive}">
+          <nav class="p-nav" id="nav">
             <ul class="p-nav_list">
               <li class="p-nav_item">
                 <NuxtLink to="/newmaterial" class="p-nav_link">新着素材</NuxtLink>
@@ -31,7 +32,14 @@
                 </NuxtLink>
               </li>
             </ul>
+             <sidebar />
           </nav>
+          </div>
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check" style="display:none!important">
+            <label for="menu-btn-check" class="menu-btn" @click="togglemenu"><span></span></label>
+           
+          </div>
         </div>
       </v-container>
     </header>
@@ -77,6 +85,7 @@
           link: '/contact'
         },
       ],
+      isActive:false,
     }),
     methods: {
       searchSubmit() {
@@ -86,6 +95,10 @@
         a.click();
         a.remove();
       },
+      togglemenu() {
+        console.log('トグルの実行')
+        this.isActive = !this.isActive
+      }
     }
 
   }
@@ -104,6 +117,89 @@
   .p-search_header {
     width: 350px !important;
     border: 1px solid #333;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  @media screen and (max-width:750px) {
+    .menu-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+    }
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #FFCC33;
+      position: absolute;
+      transition: all .3s;
+    }
+
+    .menu-btn span:before {
+      bottom: 8px;
+    }
+
+    .menu-btn span:after {
+      top: 8px;
+    }
+
+    #menu-btn-check:checked~.menu-btn span {
+      background-color: rgba(255, 255, 255, 0);
+      /*メニューオープン時は真ん中の線を透明にする*/
+    }
+
+    #menu-btn-check:checked~.menu-btn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+
+    #menu-btn-check:checked~.menu-btn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+
+    .p-nav {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      z-index: 80;
+      background-color: #fff;
+      transition: all 0.5s;
+      padding: 5rem 2rem;
+      font-size: 2rem;
+    }
+
+    .is-active .p-nav{
+      left: 0;
+      font-size: 2rem;
+    }
+
+    .p-nav .sidebar{
+      margin-top: 2rem;
+      display: block;
+    }
+
+    .p-nav_list{
+      display: block;
+    }
   }
 
 </style>

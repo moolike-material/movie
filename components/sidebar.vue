@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sidebar">
     <div>
       <h3 class="p-sidebar_ttl">カテゴリから探す</h3>
       <ul class="p-sidebar_category" v-for="category in categories" :key="category.id">
