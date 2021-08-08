@@ -167,7 +167,7 @@
 
   @media screen and (max-width:750px) {
     .p-mainvisual_inner{
-      width: 85%;
+      width: 85%!important;
     }
 
     .p-content_main{
@@ -183,10 +183,20 @@
       max-width: 160px !important;
     }
 
+    .p-material_new{
+      font-size: .5rem;
+      padding: .08rem .3rem
+    }
+
+    .p-content_subTtl{
+      font-size: 1.2rem;
+    }
+
     .p-material_ttl {
-      width: 115px;
+      width: 110px;
       overflow: hidden;
       height: 20px;
+      font-size: .5rem;
     }
 
     .p-header_ttl {
@@ -204,11 +214,11 @@
     }
 
     .p-material {
-      justify-content: center;
+      justify-content: space-around;
     }
 
     .p-material_item {
-      margin: .5rem !important;
+      margin: 0rem !important;
     }
 
     .p-search_header {
