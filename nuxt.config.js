@@ -10,8 +10,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - moolike-nuxt',
-    title: 'moolike-nuxt',
+    titleTemplate: '',
+    title: 'moolike ||無料動画素材サイト',
     htmlAttrs: {
       lang: 'en'
     },
