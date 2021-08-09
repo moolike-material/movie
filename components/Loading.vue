@@ -1,6 +1,6 @@
 <template>
   <div v-if="loading" class="loading">
-      <img src="/Preloader_1.gif" alt="">
+      <img src="/Preloader_1.gif" alt="" class="loading-gif">
     <div class="loading__loader">Loading...</div>
   </div>
 </template>
@@ -44,5 +44,11 @@ export default Vue.extend({
     transform: translate(-50%, -50%);
     font-size: 18px;
   }
+}
+
+.loading-gif{
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
 </style>
