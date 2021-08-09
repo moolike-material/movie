@@ -18,7 +18,7 @@
               <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
                       v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
-                <img :src="`/thumb/${movie.mv_id}.jpg`"
+                <img :src="`/thumb/${movie.mv_id}.webp`"
                   class="p-material_thumb">
                 <div class="p-rank_color" v-if="index == 0">
                   <div class="p-rank_icon p-rank_icon--1">
@@ -140,7 +140,6 @@
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
             aDL.download = `${mv_id}.mp4`;
-            console.log(aDL);
             aDL.click();
           }
           xhr.open('GET', url);

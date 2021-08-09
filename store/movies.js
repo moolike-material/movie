@@ -30,12 +30,10 @@ export const actions = {
   }),
   download:firestoreAction((context,mv_id)=>{
   const imageURL = `mp4/${mv_id}`
-  console.log(imageURL+"でダウンロードします")
   return firebase.storage().ref().child(imageURL).getDownloadURL()
   }),
   downloadMov:firestoreAction((context,mv_id)=>{
   const imageMov = `mov/${mv_id}`
-  console.log(imageMov+"でダウンロードします")
   return firebase.storage().ref().child(imageMov).getDownloadURL()
   }),
   getThumb:firestoreAction((context,mv_id)=>{

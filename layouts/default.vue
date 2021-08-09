@@ -96,7 +96,6 @@
         a.remove();
       },
       togglemenu() {
-        console.log('トグルの実行')
         this.isActive = !this.isActive
       }
     }

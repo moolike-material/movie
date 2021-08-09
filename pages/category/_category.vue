@@ -18,7 +18,7 @@
               <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
                       v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
-                <img :src="`/thumb/${movie.mv_id}.jpg`"
+                <img :src="`/thumb/${movie.mv_id}.webp`"
                   class="p-material_thumb">
               </NuxtLink>
                 </div>
@@ -115,8 +115,6 @@
       this.$store.dispatch('movies/init');
       this.$store.dispatch('movies/getCategory', this.query).then(querySnapshot => {
         querySnapshot.forEach(doc => {
-          console.log('あああああ')
-          console.log(doc.data())
           self.movie_serach.push(doc.data());
         });
       })
@@ -149,7 +147,6 @@
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
             aDL.download = `${mv_id}.mp4`;
-            console.log(aDL);
             aDL.click();
           }
           xhr.open('GET', url);
