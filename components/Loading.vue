@@ -47,8 +47,11 @@ export default Vue.extend({
 }
 
 .loading-gif{
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 </style>
