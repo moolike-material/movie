@@ -6,6 +6,7 @@ export default {
     fallback: true
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  mode:'universal',
   ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
