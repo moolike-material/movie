@@ -12,8 +12,7 @@
         <!-- パンクず -->
         <h1 class="p-content_subTtl">ワード検索: {{searchttl}}</h1>
         <div class="p-material">
-          <v-lazy v-model="isActive" :options="{threshold: .3}" transition="fade-transition"
-            v-for="(movie) in movie_serach" :key="movie.id">
+          <div v-for="(movie) in movie_serach" :key="movie.id">
             <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150" v-if="movie.desc.includes(searchttl)">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
@@ -37,7 +36,7 @@
                 </div>
               </div>
             </v-card>
-          </v-lazy>
+          </div>
         </div>
       </div>
       <!-- サイドバー -->

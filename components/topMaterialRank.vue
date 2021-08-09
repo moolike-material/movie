@@ -1,7 +1,6 @@
 <template>
   <div class="p-material">
-    <v-lazy v-model="isActive" :options="{threshold: .3}" transition="fade-transition"
-      v-for="(movie,index) of limitCount" :key="movie.id<6">
+    <div v-for="(movie,index) of limitCount" :key="movie.id<6">
       <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
           <NuxtLink :to="`/detail/${movie.mv_id}`">
@@ -54,7 +53,7 @@
           </div>
         </div>
       </v-card>
-    </v-lazy>
+    </div>
   </div>
 </template>
 <script>
