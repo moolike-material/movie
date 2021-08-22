@@ -6,9 +6,7 @@
         <p class="p-mainvisual__desc">商用利用可能のフリー動画素材サイトです！<br>シンプルで使いやすさを追求した幅広い動画素材を取り揃えています</p>
         <div class="p-mainvisual_inner">
           <form @submit.prevent="searchSubmit">
-            <v-autocomplete v-model="model" chips :search-input.sync="search" clearable hide-details hide-selected
-              label="動画をキーワードで探す" solo class="p-search">
-            </v-autocomplete>
+            <v-autocomplete :search-input.sync="search" hide-details label="動画をキーワードで探す" solo class="p-search"></v-autocomplete>
           </form>
         </div>
       </div>

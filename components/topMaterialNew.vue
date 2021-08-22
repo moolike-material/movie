@@ -1,6 +1,6 @@
 <template>
   <transition-group appear tag="div" class="p-material">
-    <div v-for="movie in limitCount" :key="movie.id">
+    <div v-for="movie in limitCount" :key="movie.mv_id">
       <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
         <NuxtLink :to="`/detail/${movie.mv_id}`" class="p-link">

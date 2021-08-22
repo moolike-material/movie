@@ -10,9 +10,7 @@
             </h1>
           </NuxtLink>
           <form @submit.prevent="searchSubmit">
-            <v-autocomplete v-model="model" chips :search-input.sync="search" clearable hide-details hide-selected
-              label="動画をキーワードで探す" solo class="p-search_header">
-            </v-autocomplete>
+            <v-autocomplete :search-input.sync="search" label="動画をキーワードで探す" solo class="p-search_header"></v-autocomplete>
           </form>
           <div :class="{'is-active': isActive}" style="width:40%">
           <nav class="p-nav" id="nav">
@@ -23,7 +21,6 @@
               <li class="p-nav_item">
                 <NuxtLink to="/ranking" href="#" class="p-nav_link">ランキング</NuxtLink>
               </li>
-              <!-- <li class="p-nav_item"><NuxtLink to="/howto" href="#" class="p-nav_link">使用方法</NuxtLink></li> -->
               <li class="p-nav_item">
                 <NuxtLink to="/contact">
                   <v-icon large class="mail_icon_color" style="font-size:25px!important">
@@ -53,7 +50,7 @@
     <v-footer color="primary lighten-1" padless class="p-footer-bg p-footer" height="150px">
       <v-row justify="center" no-gutters class="p-footer_btns mb-6">
         <v-col class="v-input__slot p-footer_btns" width="100%">
-          <v-btn v-for="link in links" :key="link" color="white" text rounded class="my-2 p-footer_btns mb-6">
+          <v-btn v-for="(link,index) in links" :key="index" color="white" text rounded class="my-2 p-footer_btns mb-6">
             <NuxtLink class="p-footer_btns" :to="`${link.link}`">{{ link.name }}</NuxtLink>
           </v-btn>
         </v-col>
@@ -86,7 +83,8 @@
         },
       ],
       isActive:false,
-      search:'' 
+      search:'',
+      model:null
     }),
     methods: {
       searchSubmit() {
