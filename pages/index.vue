@@ -119,6 +119,10 @@
             tag: 'カウントダウン',
             param: 'countdown'
           },
+          {
+            tag:'結婚式',
+            param:'wedding'
+          }
         ],
         faqs: [{
             question: 'ダウンロード形式は何がありますか？',
@@ -356,8 +360,10 @@
     padding: 1rem;
   }
 
-  .p-tag:not(:first-child) {
-    margin-left: 1rem;
+  .p-content_section_tag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .p-tag {
