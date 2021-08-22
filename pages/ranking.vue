@@ -11,7 +11,7 @@
         </div>
         <!-- パンクず -->
         <h1 class="p-content_subTtl">人気ランキング</h1>
-        <div class="p-material">
+        <transition-group appear tag="div" class="p-material">
           <div v-for="(movie,index) in movies" :key="movie.id">
             <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
               <div class="p-material_inner p-material_inner--mv">
@@ -80,7 +80,7 @@
               </div>
             </v-card>
           </div>
-        </div>
+        </transition-group>
       </div>
               <!-- サイドバー -->
         <aside class="p-sideber">

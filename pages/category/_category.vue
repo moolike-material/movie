@@ -11,7 +11,7 @@
         </div>
         <!-- パンクず -->
         <h1 class="p-content_subTtl">カテゴリ検索: {{categoryttl}}</h1>
-        <div class="p-material">
+        <transition-group appear tag="div" class="p-material">
           <div v-for="movie in getMovies" :key="movie.name">
             <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
               <div class="p-material_inner p-material_inner--mv">
@@ -37,7 +37,7 @@
               </div>
             </v-card>
           </div>
-        </div>
+        </transition-group>
         <div class="text-center">
           <v-pagination v-model="current_page" :length="getPageCount" class="p-page" circle></v-pagination>
         </div>

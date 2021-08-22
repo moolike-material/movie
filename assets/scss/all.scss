@@ -6,6 +6,27 @@
   padding: 0 12px 0 25px!important;
 }
 
+.v-enter-active,
+.v-enter-active,
+.v-leave-active,
+.v-move {
+  transition-property: transform, opacity;
+  transition-duration: .3s;
+}
+.v-enter-active {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.v-enter-to,
+.v-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 /* #region header */
 .p-header {
   width: 100%;
