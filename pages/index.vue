@@ -172,6 +172,9 @@
       height: auto!important;
       transform: translateY(0)!important;
     }
+    .p-search_header{
+          width: 230px!important;
+    }
   }
 
   @media screen and (max-width:750px) {
