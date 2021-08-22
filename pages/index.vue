@@ -163,6 +163,13 @@
     }
   }
 
+  @media screen and (min-width:751px) and (max-width:1120px){
+    .p-main_img{
+      height: auto!important;
+      transform: translateY(0)!important;
+    }
+  }
+
   @media screen and (max-width:750px) {
     .p-mainvisual_inner{
       width: 85%!important;
