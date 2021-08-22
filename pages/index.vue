@@ -12,9 +12,9 @@
           </form>
         </div>
       </div>
-      <v-carousel hide-delimiters cycle height="350px" :show-arrows="false">
-        <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
-      </v-carousel>
+      <div class="p-mvWrap">
+        <img src="/mv3.webp" style="transform: translateY(-170px)">
+      </div>
     </div>
     <!-- メインコンテンツ -->
     <div class="p-content">
@@ -355,4 +355,8 @@
     margin-top: 1rem;
   }
 
+.p-mvWrap{
+  height: 350px;
+  overflow: hidden;
+}
 </style>
