@@ -175,7 +175,7 @@
   &_item{
     margin-top: 1.5rem !important;
     position: relative;
-    margin: 1.5rem;
+    margin: 1rem;
 
     &:hover{
       opacity: 0.8;
@@ -198,8 +198,9 @@
   }
 
   &_ttl{
-    font-size: .85rem;
+    font-size: .7rem;
     text-align: left;
+    padding-top: .1rem;
   }
 
   &_new{

@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="p-mvWrap">
-        <img src="/mv3.webp" style="transform: translateY(-170px)">
+        <img src="/mv3.webp" style="transform: translateY(-170px)" class="p-main_img">
       </div>
     </div>
     <!-- メインコンテンツ -->
@@ -135,7 +135,7 @@
             answer: '基本必要ありません。お気軽にダウンロードをしてください'
           },
         ],
-        search: null,
+        search: '',
         model: null
       }
     },
@@ -225,8 +225,17 @@
       margin: 1rem 0rem 0rem !important;
     }
 
+    .p-main_img{
+      width: 225%!important;
+      transform: translateY(0)!important;
+    }
+
     .p-search_header {
       display: none;
+    }
+
+    .v-input__slot {
+    padding: 0 12px 0 10px !important;
     }
 
     .p-ham {

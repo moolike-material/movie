@@ -12,8 +12,8 @@
         <!-- パンクず -->
         <h1 class="p-content_subTtl">新着素材</h1>
         <div class="p-material">
-          <div v-for="(movie) in getMovies" :key="movie.id">
-            <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
+          <div v-for="movie in getMovies" :key="movie.id">
+            <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
@@ -76,7 +76,7 @@
         update_array: [],
         current_page: 1,
         input: '',
-        parPage: 15,
+        parPage: 12,
       }
     },
     created: function () {

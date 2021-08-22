@@ -48,7 +48,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/dotenv',
-    '@nuxtjs/google-gtag'
+    '@nuxtjs/google-gtag',
   ],
   'google-gtag': {
     id: 'G-892LX3R4VJ',

@@ -86,6 +86,7 @@
         },
       ],
       isActive:false,
+      search:'' 
     }),
     methods: {
       searchSubmit() {

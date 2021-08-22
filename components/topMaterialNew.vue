@@ -1,7 +1,7 @@
 <template>
   <div class="p-material">
-    <div v-for="(movie) of limitCount" :key="movie.id<6">
-      <v-card class="p-material_item mx-auto my-12" max-width="250" min-width="150">
+    <div v-for="movie in limitCount" :key="movie.id">
+      <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
         <NuxtLink :to="`/detail/${movie.mv_id}`" class="p-link">
         <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000"> new</span>
@@ -20,18 +20,6 @@
             <v-icon class="p-material_tag_icon" @click="download(movie.mv_id,movie.id,movie.dl_count)">
               mdi-download</v-icon>
             <!-- /ダウンロードリンク -->
-            <!-- カテゴリアイコン -->
-            <!-- <div class="p-material_tagWrap">
-              <v-chip class="ma-2 p-material_tag" color="indigo" text-color="white" v-if="movie.category == 'youtube'">
-                <v-icon class="p-material_tag_icon">mdi-movie-edit</v-icon>
-                {{movie.category}}
-              </v-chip>
-              <v-chip class="ma-2 p-material_tag" color="indigo" text-color="white" v-if="movie.category == 'wedding'">
-                <v-icon class="p-material_tag_icon">mdi-human-male-female</v-icon>
-                {{movie.category}}
-              </v-chip>
-            </div> -->
-            <!-- /カテゴリアイコン -->
           </div>
         </div>
       </v-card>

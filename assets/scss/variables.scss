@@ -18,10 +18,15 @@ text-decoration: none;
     color: #333;
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     transition: all .3s;
+    box-sizing: border-box!important;
 }
 
 main{
     background-color: #f9f9f9;
+}
+
+.v-main__wrap{
+  background-color: #f9f9f9;
 }
 
 img{
@@ -117,3 +122,9 @@ img{
     }
   }
 /* #endregion */
+
+
+.p-content{
+  max-width: 900px;
+  margin: 0 auto;
+}
