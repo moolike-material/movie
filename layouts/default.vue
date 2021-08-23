@@ -22,7 +22,7 @@
                 <NuxtLink to="/ranking/" href="#" class="p-nav_link" @click="togglemenu">ランキング</NuxtLink>
               </li>
               <li class="p-nav_item">
-                <NuxtLink to="/howtow/" href="#" class="p-nav_link" @click="togglemenu">moolikeについて</NuxtLink>
+                <NuxtLink to="/about/" href="#" class="p-nav_link" @click="togglemenu">moolikeについて</NuxtLink>
               </li>
               <li class="p-nav_item">
                 <NuxtLink to="/contact/">
