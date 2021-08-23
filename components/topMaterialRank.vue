@@ -3,7 +3,7 @@
     <div v-for="(movie,index) in limitCount" :key="movie.mv_id">
       <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
-          <NuxtLink :to="`/detail/${movie.mv_id}`">
+          <NuxtLink :to="`/detail/${movie.mv_id}/`">
             <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new
             </span>
             <img :src="`/thumb/${movie.mv_id}.webp`"

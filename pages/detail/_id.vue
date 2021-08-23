@@ -34,7 +34,7 @@
             </div>
             <div class="p-material_detail__desc_tags">
               <v-chip class="ma-2" color="pink p-category" label text-color="white">
-                <NuxtLink :to="`/category/${category}`">
+                <NuxtLink :to="`/category/${category}/`">
                   <v-icon left>
                     mdi-folder-multiple-outline
                   </v-icon>
@@ -44,7 +44,7 @@
             </div>
             <div class="p-material_detail__desc_tags">
               <v-chip class="ma-2" color="pink p-tag" label text-color="white">
-                <NuxtLink :to="`/tags/${tag1}`">
+                <NuxtLink :to="`/tags/${tag1}/`">
                   <v-icon left>
                     mdi-label
                   </v-icon>
@@ -52,7 +52,7 @@
                 </NuxtLink>
               </v-chip>
               <v-chip class="ma-2" color="pink p-tag" label text-color="white">
-                <NuxtLink :to="`/tags/${tag2}`">
+                <NuxtLink :to="`/tags/${tag2}/`">
                   <v-icon left>
                     mdi-label
                   </v-icon>
@@ -60,7 +60,7 @@
                 </NuxtLink>
               </v-chip>
               <v-chip class="ma-2" color="pink p-tag" label text-color="white">
-                <NuxtLink :to="`/tags/${tag3}`">
+                <NuxtLink :to="`/tags/${tag3}/`">
                   <v-icon left>
                     mdi-label
                   </v-icon>

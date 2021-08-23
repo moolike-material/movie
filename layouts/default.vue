@@ -16,13 +16,16 @@
           <nav class="p-nav" id="nav">
             <ul class="p-nav_list">
               <li class="p-nav_item">
-                <NuxtLink to="/newmaterial" class="p-nav_link">新着素材</NuxtLink>
+                <NuxtLink to="/newmaterial/" class="p-nav_link" @click="togglemenu">新着素材</NuxtLink>
               </li>
               <li class="p-nav_item">
-                <NuxtLink to="/ranking" href="#" class="p-nav_link">ランキング</NuxtLink>
+                <NuxtLink to="/ranking/" href="#" class="p-nav_link" @click="togglemenu">ランキング</NuxtLink>
               </li>
               <li class="p-nav_item">
-                <NuxtLink to="/contact">
+                <NuxtLink to="/howtow/" href="#" class="p-nav_link" @click="togglemenu">moolikeについて</NuxtLink>
+              </li>
+              <li class="p-nav_item">
+                <NuxtLink to="/contact/">
                   <v-icon large class="mail_icon_color" style="font-size:25px!important">
                     mdi-email
                   </v-icon>

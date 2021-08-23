@@ -7,7 +7,7 @@
         <!-- パンクず -->
         <div class="p-pankuzu">
           <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-          <NuxtLink :to="`/category/${query}`" class="p-pankuzu_inactive">{{categoryttl}}</NuxtLink>
+          <NuxtLink :to="`/category/${query}/`" class="p-pankuzu_inactive">{{categoryttl}}</NuxtLink>
         </div>
         <!-- パンクず -->
         <h1 class="p-content_subTtl">カテゴリ検索: {{categoryttl}}</h1>
