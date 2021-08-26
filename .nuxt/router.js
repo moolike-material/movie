@@ -4,9 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _90d0bf78 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
 const _32ad7397 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _1684b8a7 = () => interopDefault(import('../pages/guideline.vue' /* webpackChunkName: "pages/guideline" */))
-const _765712e5 = () => interopDefault(import('../pages/howtow.vue' /* webpackChunkName: "pages/howtow" */))
 const _7cee555e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _1236e984 = () => interopDefault(import('../pages/newmaterial.vue' /* webpackChunkName: "pages/newmaterial" */))
 const _ec4d0202 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
@@ -32,6 +32,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/about",
+    component: _90d0bf78,
+    name: "about"
+  }, {
     path: "/contact",
     component: _32ad7397,
     name: "contact"
@@ -39,10 +43,6 @@ export const routerOptions = {
     path: "/guideline",
     component: _1684b8a7,
     name: "guideline"
-  }, {
-    path: "/howtow",
-    component: _765712e5,
-    name: "howtow"
   }, {
     path: "/inspire",
     component: _7cee555e,

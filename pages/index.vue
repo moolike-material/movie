@@ -10,9 +10,6 @@
           </form>
         </div>
       </div>
-      <div class="p-mvWrap">
-        <img src="/mv3.webp" style="transform: translateY(-170px)" class="p-main_img">
-      </div>
     </div>
     <!-- メインコンテンツ -->
     <div class="p-content">
@@ -160,11 +157,22 @@
 
 </script>
 <style>
+  .p-mainvisual {
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    height: 350px;
+    background: url(/mv2.webp)no-repeat center -120px;
+    background-size:100%;
+    background-attachment: fixed;
+  }
   @media screen and (max-width:350px) {
     .p-material_item {
       max-width: 170px !important;
       min-width: 150px;
     }
+
+
   }
 
   @media screen and (min-width:751px) and (max-width:1120px){
@@ -175,9 +183,23 @@
     .p-search_header{
           width: 230px!important;
     }
+
+      .p-mainvisual {
+    height: 350px;
+    background: url(/mv2.webp)no-repeat center -150px;
+    background-size:150%;
+    background-attachment: fixed;
+  }
   }
 
   @media screen and (max-width:750px) {
+          .p-mainvisual {
+    height: 350px;
+    background: url(/mv2.webp)no-repeat center 25px;
+    background-size:200%;
+    background-attachment: fixed;
+  }
+
     .p-mainvisual_inner{
       width: 85%!important;
     }
@@ -310,11 +332,6 @@
     padding-top: 3rem;
   }
 
-  .p-mainvisual {
-    position: relative;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-  }
 
   .p-mainvisual_box {
     position: absolute;
