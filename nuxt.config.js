@@ -1,6 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 const webpack = require('webpack');
-//
+
 export default {
   generate: {
     fallback: true
