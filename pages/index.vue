@@ -6,11 +6,32 @@
         <p class="p-mainvisual__desc">商用利用可能のフリー動画素材サイトです！<br>シンプルで使いやすさを追求した幅広い動画素材を取り揃えています</p>
         <div class="p-mainvisual_inner">
           <form @submit.prevent="searchSubmit">
-            <v-autocomplete :search-input.sync="search" hide-details label="動画をキーワードで探す" solo class="p-search"></v-autocomplete>
+            <v-autocomplete :search-input.sync="search" hide-details label="動画をキーワードで探す" solo class="p-search">
+            </v-autocomplete>
           </form>
         </div>
       </div>
     </div>
+    <!-- メインバナー -->
+    <div class="p-bnr">
+      <NuxtLink to="tags/countdown" class="p-bnr_item">
+        <p class="p-bnr_copy">カウントダウン</p>
+        <img src="tag_countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+      </NuxtLink>
+      <NuxtLink to="tags/background" class="p-bnr_item">
+        <p class="p-bnr_copy">背景</p>
+        <img src="tag_background.webp" alt="おすすめタグ　背景" class="p-bnr_img">
+      </NuxtLink>
+      <NuxtLink to="tags/filter" class="p-bnr_item">
+        <p class="p-bnr_copy">フィルター</p>
+        <img src="tag_filter.webp" alt="おすすめタグ　フィルター" class="p-bnr_img">
+      </NuxtLink>
+      <NuxtLink to="tags/handfree" class="p-bnr_item">
+        <p class="p-bnr_copy">手書き風</p>
+        <img src="tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
+      </NuxtLink>
+    </div>
+    <!-- /メインバナー -->
     <!-- メインコンテンツ -->
     <div class="p-content">
       <div class="p-content_inner">
@@ -117,8 +138,8 @@
             param: 'countdown'
           },
           {
-            tag:'結婚式',
-            param:'wedding'
+            tag: '結婚式',
+            param: 'wedding'
           }
         ],
         faqs: [{
@@ -146,13 +167,13 @@
         a.click();
         a.remove();
       },
-    },  
+    },
     mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
-  }
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+        setTimeout(() => this.$nuxt.$loading.finish(), 500)
+      })
+    }
   }
 
 </script>
@@ -163,9 +184,10 @@
     margin-right: calc(-50vw + 50%);
     height: 350px;
     background: url(/mv2.webp)no-repeat center -120px;
-    background-size:100%;
+    background-size: 100%;
     background-attachment: fixed;
   }
+
   @media screen and (max-width:350px) {
     .p-material_item {
       max-width: 170px !important;
@@ -175,59 +197,77 @@
 
   }
 
-  @media screen and (min-width:751px) and (max-width:1120px){
-    .p-main_img{
-      height: auto!important;
-      transform: translateY(0)!important;
-    }
-    .p-search_header{
-          width: 230px!important;
+  @media screen and (min-width:751px) and (max-width:1120px) {
+    .p-main_img {
+      height: auto !important;
+      transform: translateY(0) !important;
     }
 
-      .p-mainvisual {
-    height: 350px;
-    background: url(/mv2.webp)no-repeat center -150px;
-    background-size:150%;
-    background-attachment: fixed;
-  }
+    .p-search_header {
+      width: 230px !important;
+    }
+
+    .p-mainvisual {
+      height: 350px;
+      background: url(/mv2.webp)no-repeat center -150px;
+      background-size: 150%;
+      background-attachment: fixed;
+    }
+
+    .p-header_ttl {
+      margin-right: .5rem;
+    }
+
+    .p-nav_link {
+      font-size: .6rem;
+    }
+
   }
 
   @media screen and (max-width:750px) {
-          .p-mainvisual {
-    height: 350px;
-    background: url(/mv2.webp)no-repeat center 25px;
-    background-size:200%;
-    background-attachment: fixed;
-  }
-
-    .p-mainvisual_inner{
-      width: 85%!important;
+    .p-mainvisual {
+      height: 350px;
+      background: url(/mv2.webp)no-repeat center 25px;
+      background-size: 200%;
+      background-attachment: fixed;
     }
 
-    .p-content_main{
+    .p-nav_link {
+      font-size: .6rem;
+    }
+
+    .p-header_ttl {
+      margin-right: .5rem;
+    }
+
+    .p-mainvisual_inner {
+      width: 85% !important;
+    }
+
+    .p-content_main {
       width: 96%;
     }
 
     main {
       width: 100%;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
 
     .p-material_item {
       max-width: 160px !important;
     }
 
-    .p-material_new{
+    .p-material_new {
       font-size: .5rem;
       padding: .08rem .3rem
     }
 
-    .p-content_subTtl{
+    .p-content_subTtl {
       font-size: 1.2rem;
     }
 
-    .p-material_tag_icon{
-      font-size: 16px!important;
+    .p-material_tag_icon {
+      font-size: 16px !important;
     }
 
     .p-material_ttl {
@@ -247,7 +287,7 @@
     }
 
     .p-content_inner {
-      width: 100vw !important;
+      /* width: 100vw !important; */
       display: block;
     }
 
@@ -259,9 +299,9 @@
       margin: 1rem 0rem 0rem !important;
     }
 
-    .p-main_img{
-      width: 225%!important;
-      transform: translateY(0)!important;
+    .p-main_img {
+      width: 225% !important;
+      transform: translateY(0) !important;
     }
 
     .p-search_header {
@@ -269,7 +309,7 @@
     }
 
     .v-input__slot {
-    padding: 0 12px 0 10px !important;
+      padding: 0 12px 0 10px !important;
     }
 
     .p-ham {
@@ -321,9 +361,9 @@
     }
 
     .p-form__message {
-    width: 333px;
-    padding: .5rem;
-}
+      width: 333px;
+      padding: .5rem;
+    }
 
   }
 
@@ -335,7 +375,7 @@
 
   .p-mainvisual_box {
     position: absolute;
-    background: rgba(5, 3, 22, 0.4);
+    /* background: rgba(5, 3, 22, 0.4)!important; */
     height: 100%;
     width: 100%;
     top: 50%;
@@ -380,7 +420,7 @@
     padding: 1rem;
   }
 
-  .p-content_section_tag{
+  .p-content_section_tag {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -395,8 +435,9 @@
     margin-top: 1rem;
   }
 
-.p-mvWrap{
-  height: 350px;
-  overflow: hidden;
-}
+  .p-mvWrap {
+    height: 350px;
+    overflow: hidden;
+  }
+
 </style>

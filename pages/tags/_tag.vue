@@ -101,6 +101,10 @@
             tag: '結婚式',
             param: 'wedding'
           },
+          {
+            tag: '背景',
+            param: 'background'
+          },
         ],
       }
     },
