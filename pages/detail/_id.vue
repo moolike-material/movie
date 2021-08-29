@@ -71,6 +71,10 @@
           </div>
         </div>
         <div class="p-material_wrap p-material_wrap--detail">
+            <h2 class="p-material_wrap--detail__ttl">人気のタグ特集</h2>
+          <topMaterialRank />
+        </div>
+        <div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-material_wrap--detail__ttl">最近人気の素材</h2>
           <topMaterialRank />
         </div>
@@ -250,5 +254,10 @@
   }
   .p-material_wrap--detaol__ttl{
       margin-top: 8rem;
+  }
+
+  .p-content_main{
+    margin-left:auto ;
+    margin-right:auto ;
   }
 </style>

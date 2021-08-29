@@ -3,90 +3,105 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_90d0bf78"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_32ad7397"
   },
   {
     "name": "guideline",
     "path": "/guideline",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/guideline.vue",
-    "chunkName": "pages/guideline"
+    "chunkName": "pages/guideline",
+    "_name": "_1684b8a7"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/inspire.vue",
-    "chunkName": "pages/inspire"
+    "chunkName": "pages/inspire",
+    "_name": "_7cee555e"
   },
   {
     "name": "newmaterial",
     "path": "/newmaterial",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/newmaterial.vue",
-    "chunkName": "pages/newmaterial"
+    "chunkName": "pages/newmaterial",
+    "_name": "_1236e984"
   },
   {
     "name": "privacy",
     "path": "/privacy",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/privacy.vue",
-    "chunkName": "pages/privacy"
+    "chunkName": "pages/privacy",
+    "_name": "_ec4d0202"
   },
   {
     "name": "ranking",
     "path": "/ranking",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/ranking.vue",
-    "chunkName": "pages/ranking"
+    "chunkName": "pages/ranking",
+    "_name": "_bb35bea6"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/register/index.vue",
-    "chunkName": "pages/register/index"
+    "chunkName": "pages/register/index",
+    "_name": "_73c15f82"
   },
   {
     "name": "register-movie",
     "path": "/register/movie",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/register/movie.vue",
-    "chunkName": "pages/register/movie"
+    "chunkName": "pages/register/movie",
+    "_name": "_3d0a079d"
   },
   {
     "name": "category-category",
     "path": "/category/:category?",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/category/_category.vue",
-    "chunkName": "pages/category/_category"
+    "chunkName": "pages/category/_category",
+    "_name": "_36b838e5"
   },
   {
     "name": "detail-id",
     "path": "/detail/:id?",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/detail/_id.vue",
-    "chunkName": "pages/detail/_id"
+    "chunkName": "pages/detail/_id",
+    "_name": "_0ae74356"
   },
   {
     "name": "register-edit",
     "path": "/register/:edit",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/register/_edit.vue",
-    "chunkName": "pages/register/_edit"
+    "chunkName": "pages/register/_edit",
+    "_name": "_5b236ad6"
   },
   {
     "name": "search-search",
     "path": "/search/:search?",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/search/_search.vue",
-    "chunkName": "pages/search/_search"
+    "chunkName": "pages/search/_search",
+    "_name": "_c4526b8e"
   },
   {
     "name": "tags-tag",
     "path": "/tags/:tag?",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/tags/_tag.vue",
-    "chunkName": "pages/tags/_tag"
+    "chunkName": "pages/tags/_tag",
+    "_name": "_62c26648"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/nagaeippei/Desktop/moolike-nuxt/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_516109ee"
   }
 ]
