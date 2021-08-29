@@ -72,7 +72,24 @@
         </div>
         <div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-material_wrap--detail__ttl">人気のタグ特集</h2>
-          <topMaterialRank />
+              <div class="p-bnr__register">
+                <NuxtLink to="tags/countdown" class="p-bnr_item">
+                  <p class="p-bnr_copy">カウントダウン</p>
+                  <img src="/tag_countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                </NuxtLink>
+                <NuxtLink to="tags/background" class="p-bnr_item">
+                  <p class="p-bnr_copy">背景</p>
+                  <img src="/tag_background.webp" alt="おすすめタグ　背景" class="p-bnr_img">
+                </NuxtLink>
+                <NuxtLink to="tags/filter" class="p-bnr_item">
+                  <p class="p-bnr_copy">フィルター</p>
+                  <img src="/tag_filter.webp" alt="おすすめタグ　フィルター" class="p-bnr_img">
+                </NuxtLink>
+                <NuxtLink to="tags/handfree" class="p-bnr_item">
+                  <p class="p-bnr_copy">手書き風</p>
+                  <img src="/tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
+                </NuxtLink>
+              </div>
         </div>
         <div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-material_wrap--detail__ttl">最近人気の素材</h2>
@@ -260,4 +277,21 @@
     margin-left:auto ;
     margin-right:auto ;
   }
+
+  .p-bnr__register{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+  }
+
+  .p-bnr__register .p-bnr_item{
+    margin: .5rem;
+    width: 45%;
+    height: 130px;
+    min-width: 45%!important;
+  }
+
+  .p-bnr__register .p-bnr_copy{
+  top: 50%;
+}
 </style>
