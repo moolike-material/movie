@@ -23,6 +23,7 @@
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
+            <span style="font-size:0.8rem; margin-bottom:2rem" class="p-attention_id">※mp4データでは背景を透過させるために、グリーンバックで用意しています。</span>
           </div>
           <div class="p-material_detail__desc">
             <h2 class="p-material_detail__ttl">{{name}}</h2>
@@ -293,5 +294,11 @@
 
   .p-bnr__register .p-bnr_copy{
   top: 50%;
+}
+
+.p-attention_id{
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 </style>
