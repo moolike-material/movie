@@ -437,13 +437,20 @@
 /* #endregion */
 
 .p-bnr{
+  max-width: 900px;
   min-width: 350px;
   margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   overflow: scroll;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;    
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.p-bnr::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
 }
 
 .p-bnr_item{
