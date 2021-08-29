@@ -73,19 +73,19 @@
         <div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-material_wrap--detail__ttl">人気のタグ特集</h2>
               <div class="p-bnr__register">
-                <NuxtLink to="tags/countdown" class="p-bnr_item">
+                <NuxtLink to="/tags/countdown" class="p-bnr_item">
                   <p class="p-bnr_copy">カウントダウン</p>
                   <img src="/tag_countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
                 </NuxtLink>
-                <NuxtLink to="tags/background" class="p-bnr_item">
+                <NuxtLink to="/tags/background" class="p-bnr_item">
                   <p class="p-bnr_copy">背景</p>
                   <img src="/tag_background.webp" alt="おすすめタグ　背景" class="p-bnr_img">
                 </NuxtLink>
-                <NuxtLink to="tags/filter" class="p-bnr_item">
+                <NuxtLink to="/tags/filter" class="p-bnr_item">
                   <p class="p-bnr_copy">フィルター</p>
                   <img src="/tag_filter.webp" alt="おすすめタグ　フィルター" class="p-bnr_img">
                 </NuxtLink>
-                <NuxtLink to="tags/handfree" class="p-bnr_item">
+                <NuxtLink to="/tags/handfree" class="p-bnr_item">
                   <p class="p-bnr_copy">手書き風</p>
                   <img src="/tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
                 </NuxtLink>
