@@ -226,7 +226,7 @@
 
   @media screen and (max-width:750px) {
      .p-bnr__register .p-bnr_img{
-       width: 125%;
+       width: 180%;
      }
 
     .text-center{
