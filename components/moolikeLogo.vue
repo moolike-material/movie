@@ -3,7 +3,7 @@
         <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 275.29 38.4" style="enable-background:new 0 0 275.29 38.4;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFCC33;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFCC33;stroke-width:5;stroke-linecap:round;stroke-miterlimit:5;}
 	.st1{fill:#444444;}
 	.st2{fill:#FFCC33;}
 </style>
@@ -18,7 +18,7 @@
 				<path class="st0" d="M1,17.44v-6.49c0-1.86,1.51-3.38,3.38-3.38h21.07c0.93,0,1.78,0.38,2.39,0.99s0.99,1.46,0.99,2.39"/>
 				<path class="st0" d="M34.37,34.93l-2.5,1.14c-0.31,0.14-0.62,0.2-0.93,0.2c-1.12-0.02-2.11-0.93-2.11-2.16V10.95V9.12
 					c0-0.87,0.52-1.65,1.32-1.99l6.78-2.81c1.42-0.59,2.98,0.45,2.98,1.99v24.72c0,0.84-0.49,1.61-1.26,1.96l-1.15,0.52"/>
-				<polyline class="st0" points="26.49,37.22 26.57,37.2 30.94,36.27 31.87,36.07 				"/>
+				<polyline class="st0" points="26.49,37.22 26.57,37.2 30.94,36.27 31.87,36.07"/>
 				<line class="st0" x1="25.45" y1="7.57" x2="30.15" y2="7.13"/>
 			</g>
 		</g>

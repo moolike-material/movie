@@ -2,9 +2,9 @@
 <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 1160.26 117.5" style="enable-background:new 0 0 1160.26 117.5;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#F5BD1D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:15;}
+	.st0-1{fill:none;stroke:#F5BD1D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:15;}
 </style>
-<path class="st0" d="M1150.58,9.67c-9.15,18.64-28.31,31.45-50.46,31.45c-15.11,0-28.84-5.96-38.94-15.67
+<path class="st0-1" d="M1150.58,9.67c-9.15,18.64-28.31,31.45-50.46,31.45c-15.11,0-28.84-5.96-38.94-15.67
 	c-6.49-6.23-16.59-6.23-23.07,0c-10.1,9.71-23.81,15.67-38.92,15.67c-15.11,0-28.84-5.96-38.94-15.67c-6.49-6.23-16.59-6.23-23.07,0
 	c-10.1,9.71-23.81,15.67-38.92,15.67c-15.11,0-28.83-5.96-38.94-15.67c-6.49-6.23-16.59-6.23-23.07,0
 	c-10.1,9.71-23.81,15.67-38.92,15.67c-15.11,0-28.84-5.96-38.94-15.67c-6.49-6.23-16.59-6.23-23.07,0
