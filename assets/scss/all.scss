@@ -511,3 +511,8 @@
   transform: translateX(0%);
   font-size: 1.2rem;
 }
+
+.v-slide-group__next .v-icon,
+.v-slide-group__prev .v-icon{
+  font-size: 2.5rem!important;
+}
