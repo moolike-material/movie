@@ -47,7 +47,7 @@ export default {
     '@nuxtjs/google-gtag',
   ],
   'google-gtag': {
-    id: 'G-892LX3R4VJ',
+    id: 'UA-204449124-1',
     debug: true, // Enable to track in dev mode.
   },
 
