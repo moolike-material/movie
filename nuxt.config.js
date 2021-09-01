@@ -8,14 +8,14 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '',
-    title: '無料動画素材 || moolike',
+    title: 'moolike はシンプルで便利な無料動画素材サイト',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'moolikeは著作権フリーの動画素材サイトです。サプライズやyoutubeなど幅広い用途でご使用いただけます。' },
+      { hid: 'description', name: 'description', content: 'moolikeはシンプルで使いやすさを追求した 商用利用OKのフリー動画素材サイトです。 動画編集、余興、サプライズ、結婚式など幅広い用途でご使用いただける素材を取り揃えています。' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
