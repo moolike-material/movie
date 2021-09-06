@@ -72,7 +72,7 @@ export const actions = {
         mv_id:movie[3],
         length:movie[4],
         category:movie[5],
-        tag1:movie[5],
+        tag1:movie[6],
         tag2:movie[7],
         tag3:movie[8],
     })

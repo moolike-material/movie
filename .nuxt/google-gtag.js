@@ -14,11 +14,11 @@ export default function ({app: {router}}, inject) {
   }
   inject('gtag', gtag)
   gtag('js', new Date())
-  gtag('config','G-892LX3R4VJ',)
+  gtag('config','UA-204449124-1',)
 
   if(!false){
     router.afterEach((to) => {
-      gtag('config', 'G-892LX3R4VJ', {'page_path': to.fullPath})
+      gtag('config', 'UA-204449124-1', {'page_path': to.fullPath})
     })
   }
 
