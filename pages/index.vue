@@ -188,6 +188,10 @@
     background-attachment: fixed;
   }
 
+      .p-material_thumb{
+      height: 112.5px;
+    }
+
   @media screen and (max-width:350px) {
     .p-material_item {
       max-width: 170px !important;
@@ -263,6 +267,10 @@
 
     .p-material_item {
       max-width: 160px !important;
+    }
+
+    .p-material_thumb{
+      height: 90px;
     }
 
     .p-material_new {
