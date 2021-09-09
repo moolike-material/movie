@@ -15,6 +15,7 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_plugin_04f8c1df from 'nuxt_plugin_plugin_04f8c1df' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_plugin_293de66f from 'nuxt_plugin_plugin_293de66f' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_adsbygoogle_227182aa from 'nuxt_plugin_adsbygoogle_227182aa' // Source: ./adsbygoogle.js (mode: 'all')
 import nuxt_plugin_googlegtag_595e0664 from 'nuxt_plugin_googlegtag_595e0664' // Source: ./google-gtag.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -83,7 +84,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"titleTemplate":"","title":"moolike はシンプルで便利な無料動画素材サイト","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"moolikeはシンプルで使いやすさを追求した 商用利用OKのフリー動画素材サイトです。 動画編集、余興、サプライズ、結婚式など幅広い用途でご使用いただける素材を取り揃えています。"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.webp"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-204449124-1","async":true}]},
+    head: {"titleTemplate":"","title":"moolike はシンプルで便利な無料動画素材サイト","htmlAttrs":{"lang":"en"},"meta":[{"name":"robots","content":"noindex,noarchive,nofollow"},{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"moolikeはシンプルで使いやすさを追求した 商用利用OKのフリー動画素材サイトです。 動画編集、余興、サプライズ、結婚式など幅広い用途でご使用いただける素材を取り揃えています。"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.webp"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-204449124-1","async":true},{"hid":"adsbygoogle-script","defer":true,"crossorigin":"anonymous","src":"\u002F\u002Fpagead2.googlesyndication.com\u002Fpagead\u002Fjs\u002Fadsbygoogle.js?client=ca-google"},{"hid":"adsbygoogle","innerHTML":"if (!window.__abg_called){ (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;\n         (window.adsbygoogle = window.adsbygoogle || []).push({\n    google_ad_client: \"ca-google\",\n    enable_page_level_ads: true,\n    overlays: {bottom: false}\n  }); window.__abg_called = true;}"}],"__dangerouslyDisableSanitizersByTagID":{"adsbygoogle":["innerHTML"]}},
 
     store,
     router,
@@ -218,6 +219,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_293de66f === 'function') {
     await nuxt_plugin_plugin_293de66f(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_adsbygoogle_227182aa === 'function') {
+    await nuxt_plugin_adsbygoogle_227182aa(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_googlegtag_595e0664 === 'function') {
