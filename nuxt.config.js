@@ -45,6 +45,12 @@ export default {
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/google-gtag',
+    '@nuxtjs/google-adsense', {
+      id: "ca-pub-9897424319453576",
+      pageLevelAds: true,
+      analyticsUacct: 'UA-204449124-1',
+      analyticsDomainName: 'https://www.moolike-stock.com/'
+    }
   ],
   'google-gtag': {
     id: 'UA-204449124-1',
