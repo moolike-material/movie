@@ -276,7 +276,8 @@
 
   .p-content_main{
     margin-left:auto ;
-    margin-right:auto ;
+    margin-right:auto;
+    width: 90%;
   }
 
   .p-bnr__register{
