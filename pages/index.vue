@@ -257,7 +257,7 @@
     }
 
     .p-content_main {
-      width: 96%;
+      width: 80%;
     }
 
     main {
