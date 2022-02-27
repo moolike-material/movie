@@ -6,7 +6,7 @@
         <!-- パンクず -->
         <div class="p-pankuzu">
           <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-          <NuxtLink to="/newmaterial/" class="p-pankuzu_inactive">素材一覧</NuxtLink><span> > </span>
+          <NuxtLink to="/newmaterial/" class="p-pankuzu">素材一覧</NuxtLink><span> > </span>
           <NuxtLink to="/newmaterial/" class="p-pankuzu_inactive">{{name}}</NuxtLink>
         </div>
         <!-- パンクず -->
@@ -71,8 +71,8 @@
             </div>
           </div>
         </div>
-        <div class="p-material_wrap p-material_wrap--detail">
-            <h2 class="p-material_wrap--detail__ttl">人気のタグ特集</h2>
+        <!--div class="p-material_wrap p-material_wrap--detail">
+            <h2 class="p-content_section__ttl">人気のタグ特集</h2>
               <div class="p-bnr__register">
                 <NuxtLink to="/tags/countdown" class="p-bnr_item">
                   <p class="p-bnr_copy">カウントダウン</p>
@@ -91,9 +91,9 @@
                   <img src="/tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
                 </NuxtLink>
               </div>
-        </div>
+        </div-->
         <div class="p-material_wrap p-material_wrap--detail">
-            <h2 class="p-material_wrap--detail__ttl">最近人気の素材</h2>
+            <h2 class="p-content_section__ttl">最近人気の素材</h2>
           <topMaterialRank />
         </div>
       </div>
@@ -257,6 +257,7 @@
     position: relative;
     width: 100%;
     padding-top: 56.25%;
+    border:2px solid #ccc;
   }
 
   .youtube iframe {

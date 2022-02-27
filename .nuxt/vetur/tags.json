@@ -11,11 +11,17 @@
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
   },
+  "Category": {
+    "description": "Auto imported from components/category.vue"
+  },
   "Headingline": {
     "description": "Auto imported from components/headingline.vue"
   },
   "MoolikeLogo": {
     "description": "Auto imported from components/moolikeLogo.vue"
+  },
+  "MoolikeLogowhite": {
+    "description": "Auto imported from components/moolikeLogowhite.vue"
   },
   "Sidebar": {
     "description": "Auto imported from components/sidebar.vue"

@@ -6,6 +6,7 @@
     <h1 v-else>
       {{ otherError }}
     </h1>
+    <p>お探しのページは見つかりませんでした。</p>
     <NuxtLink to="/">
       トップに戻る
     </NuxtLink>

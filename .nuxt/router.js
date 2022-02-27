@@ -4,21 +4,21 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _90d0bf78 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _32ad7397 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _1684b8a7 = () => interopDefault(import('../pages/guideline.vue' /* webpackChunkName: "pages/guideline" */))
-const _7cee555e = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _1236e984 = () => interopDefault(import('../pages/newmaterial.vue' /* webpackChunkName: "pages/newmaterial" */))
-const _ec4d0202 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
-const _bb35bea6 = () => interopDefault(import('../pages/ranking.vue' /* webpackChunkName: "pages/ranking" */))
-const _73c15f82 = () => interopDefault(import('../pages/register/index.vue' /* webpackChunkName: "pages/register/index" */))
-const _3d0a079d = () => interopDefault(import('../pages/register/movie.vue' /* webpackChunkName: "pages/register/movie" */))
-const _36b838e5 = () => interopDefault(import('../pages/category/_category.vue' /* webpackChunkName: "pages/category/_category" */))
-const _0ae74356 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
-const _5b236ad6 = () => interopDefault(import('../pages/register/_edit.vue' /* webpackChunkName: "pages/register/_edit" */))
-const _c4526b8e = () => interopDefault(import('../pages/search/_search.vue' /* webpackChunkName: "pages/search/_search" */))
-const _62c26648 = () => interopDefault(import('../pages/tags/_tag.vue' /* webpackChunkName: "pages/tags/_tag" */))
-const _516109ee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _63e9078a = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _1042215d = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _3cb5e626 = () => interopDefault(import('../pages/guideline.vue' /* webpackChunkName: "pages/guideline" */))
+const _c1c4f9d2 = () => interopDefault(import('../pages/inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _7b40e604 = () => interopDefault(import('../pages/newmaterial.vue' /* webpackChunkName: "pages/newmaterial" */))
+const _676e2cc5 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
+const _7ff9ce73 = () => interopDefault(import('../pages/ranking.vue' /* webpackChunkName: "pages/ranking" */))
+const _84f2908e = () => interopDefault(import('../pages/register/index.vue' /* webpackChunkName: "pages/register/index" */))
+const _34716f17 = () => interopDefault(import('../pages/register/movie.vue' /* webpackChunkName: "pages/register/movie" */))
+const _56695942 = () => interopDefault(import('../pages/category/_category.vue' /* webpackChunkName: "pages/category/_category" */))
+const _d912da62 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
+const _528ad250 = () => interopDefault(import('../pages/register/_edit.vue' /* webpackChunkName: "pages/register/_edit" */))
+const _d5839c9a = () => interopDefault(import('../pages/search/_search.vue' /* webpackChunkName: "pages/search/_search" */))
+const _2de2ba8e = () => interopDefault(import('../pages/tags/_tag.vue' /* webpackChunkName: "pages/tags/_tag" */))
+const _f8be3b62 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -33,63 +33,63 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _90d0bf78,
+    component: _63e9078a,
     name: "about"
   }, {
     path: "/contact",
-    component: _32ad7397,
+    component: _1042215d,
     name: "contact"
   }, {
     path: "/guideline",
-    component: _1684b8a7,
+    component: _3cb5e626,
     name: "guideline"
   }, {
     path: "/inspire",
-    component: _7cee555e,
+    component: _c1c4f9d2,
     name: "inspire"
   }, {
     path: "/newmaterial",
-    component: _1236e984,
+    component: _7b40e604,
     name: "newmaterial"
   }, {
     path: "/privacy",
-    component: _ec4d0202,
+    component: _676e2cc5,
     name: "privacy"
   }, {
     path: "/ranking",
-    component: _bb35bea6,
+    component: _7ff9ce73,
     name: "ranking"
   }, {
     path: "/register",
-    component: _73c15f82,
+    component: _84f2908e,
     name: "register"
   }, {
     path: "/register/movie",
-    component: _3d0a079d,
+    component: _34716f17,
     name: "register-movie"
   }, {
     path: "/category/:category?",
-    component: _36b838e5,
+    component: _56695942,
     name: "category-category"
   }, {
     path: "/detail/:id?",
-    component: _0ae74356,
+    component: _d912da62,
     name: "detail-id"
   }, {
     path: "/register/:edit",
-    component: _5b236ad6,
+    component: _528ad250,
     name: "register-edit"
   }, {
     path: "/search/:search?",
-    component: _c4526b8e,
+    component: _d5839c9a,
     name: "search-search"
   }, {
     path: "/tags/:tag?",
-    component: _62c26648,
+    component: _2de2ba8e,
     name: "tags-tag"
   }, {
     path: "/",
-    component: _516109ee,
+    component: _f8be3b62,
     name: "index"
   }],
 

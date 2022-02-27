@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_04f8c1df from 'nuxt_plugin_plugin_04f8c1df' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_plugin_293de66f from 'nuxt_plugin_plugin_293de66f' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_adsbygoogle_227182aa from 'nuxt_plugin_adsbygoogle_227182aa' // Source: ./adsbygoogle.js (mode: 'all')
-import nuxt_plugin_googlegtag_595e0664 from 'nuxt_plugin_googlegtag_595e0664' // Source: ./google-gtag.js (mode: 'client')
+import nuxt_plugin_plugin_7fb79a4e from 'nuxt_plugin_plugin_7fb79a4e' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_07eea7b5 from 'nuxt_plugin_plugin_07eea7b5' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_adsbygoogle_f09d19b6 from 'nuxt_plugin_adsbygoogle_f09d19b6' // Source: ./adsbygoogle.js (mode: 'all')
+import nuxt_plugin_googlegtag_1b6f8a44 from 'nuxt_plugin_googlegtag_1b6f8a44' // Source: ./google-gtag.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -213,20 +213,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_04f8c1df === 'function') {
-    await nuxt_plugin_plugin_04f8c1df(app.context, inject)
+  if (typeof nuxt_plugin_plugin_7fb79a4e === 'function') {
+    await nuxt_plugin_plugin_7fb79a4e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_293de66f === 'function') {
-    await nuxt_plugin_plugin_293de66f(app.context, inject)
+  if (typeof nuxt_plugin_plugin_07eea7b5 === 'function') {
+    await nuxt_plugin_plugin_07eea7b5(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_adsbygoogle_227182aa === 'function') {
-    await nuxt_plugin_adsbygoogle_227182aa(app.context, inject)
+  if (typeof nuxt_plugin_adsbygoogle_f09d19b6 === 'function') {
+    await nuxt_plugin_adsbygoogle_f09d19b6(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_googlegtag_595e0664 === 'function') {
-    await nuxt_plugin_googlegtag_595e0664(app.context, inject)
+  if (process.client && typeof nuxt_plugin_googlegtag_1b6f8a44 === 'function') {
+    await nuxt_plugin_googlegtag_1b6f8a44(app.context, inject)
   }
 
   // Lock enablePreview in context

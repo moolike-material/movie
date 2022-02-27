@@ -20,6 +20,31 @@
           </li>
       </ul>
     </div>
+    <div class="p-sidebar_contents">
+        <h3 class="p-sidebar_ttl">その他</h3>
+        <ul class="p-sidebar_category">
+            <li class="p-sidebar_category__item">
+            <NuxtLink to="/newmaterial/">
+            新着素材
+            </NuxtLink>
+            </li>
+            <li class="p-sidebar_category__item">
+            <NuxtLink to="/ranking/">
+            人気素材
+            </NuxtLink>
+            </li>
+            <li class="p-sidebar_category__item">
+            <NuxtLink to="/contact/">
+            お問い合せ
+            </NuxtLink>
+            </li>
+            <li class="p-sidebar_category__item">
+            <NuxtLink to="/about/">
+            moolikeについて
+            </NuxtLink>
+            </li>
+        </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -86,6 +111,7 @@
   margin: .3rem 0;
   position: relative;
     transition: all .3s;
+    cursor:pointer;
 }
 
 .p-sidebar_category__item::after{
@@ -104,6 +130,7 @@
 
 .p-sidebar_category__item:hover{
   background-color: #e9e9e9;
+  color:#1C4D50;
 }
 
 .p-sidebar_category__item:hover::after{

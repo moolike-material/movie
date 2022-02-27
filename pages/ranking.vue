@@ -13,8 +13,8 @@
         <h1 class="p-content_subTtl">人気ランキング</h1>
         
         <transition-group appear tag="div" class="p-material">
-          <div v-for="(movie,index) in movies" :key="movie.mv_id">
-            <v-card class="p-material_item mx-auto my-12" max-width="200" min-width="150">
+          <div v-for="(movie,index) in movies" :key="movie.mv_id" class="p-material_item">
+            <v-card class="mx-auto my-12">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
@@ -63,20 +63,6 @@
                   <v-icon class="p-material_tag_icon" @click="download(movie.mv_id,movie.id,movie.dl_count)">
                     mdi-download</v-icon>
                   <!-- /ダウンロードリンク -->
-                  <!-- カテゴリアイコン -->
-                  <!-- <div class="p-material_tagWrap">
-                    <v-chip class="ma-2 p-material_tag" color="indigo" text-color="white"
-                      v-if="movie.category == 'youtube'">
-                      <v-icon class="p-material_tag_icon">mdi-movie-edit</v-icon>
-                      {{movie.category}}
-                    </v-chip>
-                    <v-chip class="ma-2 p-material_tag" color="indigo" text-color="white"
-                      v-if="movie.category == 'wedding'">
-                      <v-icon class="p-material_tag_icon">mdi-human-male-female</v-icon>
-                      {{movie.category}}
-                    </v-chip>
-                  </div> -->
-                  <!-- /カテゴリアイコン -->
                 </div>
               </div>
             </v-card>
