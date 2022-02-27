@@ -49,7 +49,7 @@
   }
 
 .p-form__message {
-    width: 900px;
+    width: 100%;
     padding: 1rem;
     margin: 5rem auto 2rem;
     background-color: #f2f2f2
@@ -72,7 +72,7 @@
     display: block;
     max-width: 90%;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 0rem;
     font-size: .8rem;
     letter-spacing: 0.09em;
     
@@ -106,7 +106,7 @@
 
 .submit{
     display: block;
-    width: 30%;
+    width: 50%;
     margin: 1rem auto 0;
     text-align: center;
     border: 1px solid #333;

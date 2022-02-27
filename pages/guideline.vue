@@ -80,28 +80,15 @@
                     義務を第三者に譲渡し、または担保に供することはできません。
                 </p>
             </div>
-            <div class="btn">
-                 <NuxtLink to="/" class="btn__link">トップに戻る</NuxtLink>
+             <div class="p-more_btn">
+            　<NuxtLink to="/" class="p-more_btn__link">
+              トップに戻る　
+            </NuxtLink>
             </div>
         </div>
     </div>
 </template>
 
 <style>
-.page-copy{
-    margin-top: 1rem;
-}
-.page__orderlist{
-    margin-top: 3rem;
-    list-style: decimal;
-    padding-left: 1.5rem;
-}
 
-.page__item{
-    margin-top: .8rem;
-    font-size: .8rem;
-    letter-spacing: .08em;
-    padding-bottom: .5rem;
-    border-bottom: 1px dotted #ccc;
-}
 </style>

@@ -264,12 +264,18 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
 .p-rank_icon--1 .p-rank_icon_icon::before{
   color: rgb(204, 153, 0)!important;
+  font-size: 1rem;
+  display: inline-block;
 }
 .p-rank_icon--2 .p-rank_icon_icon::before{
   color: rgb(163, 163, 163)!important;
+  font-size: 1rem;
+  display: inline-block;
 }
 .p-rank_icon--3 .p-rank_icon_icon::before{
   color: rgb(187, 129, 105)!important;
+  font-size: 1rem;
+  display: inline-block;
 }
 
 
@@ -282,6 +288,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 .p-content{
   max-width: 1280px!important;
   margin: 0 auto;
+  padding-bottom: 6rem;
 
   &_inner{
     display: flex;
@@ -299,7 +306,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .p-content_section{
-  padding-top: 8rem;
+  padding-top: 6rem;
 
   &__ttl{
       text-align: center;
@@ -347,12 +354,19 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .p-pankuzu{
-  font-size: 1rem;
+  font-size: .8rem;
   margin-top: 1rem;
   margin-bottom: .5rem;
 
+  & a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
   &_inactive{
-    color: rgb(68, 188, 224);
+    color: $col-green;
+    font-weight: bold;
   }
 }
 
@@ -587,4 +601,48 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
  border-radius: 20px 0px 0px 0px;
  cursor: pointer;
  z-index: 5;
+}
+
+//*******************************************************************
+//#region 個別ページ
+//*******************************************************************
+
+.p-sub_content{
+  padding-bottom: 3rem;
+}
+
+.page{
+
+  &-copy{
+    margin-bottom:3rem;
+  }
+  
+  &__subttl{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+
+  &__desc{
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
+    font-size: 1rem;
+  }
+
+  &__block{
+    margin-bottom: 3rem;
+  }
+
+  &__orderlist{
+    margin-top: 3rem;
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+  
+  &__item{
+    margin-top: .8rem;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    padding-bottom: .5rem;
+    border-bottom: 1px dotted #ccc;
+  }
+
 }
