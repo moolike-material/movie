@@ -260,6 +260,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   color: #fff;
   font-size: 1rem;
   letter-spacing: .08em;
+  display: flex;
 }
 
 .p-rank_icon--1 .p-rank_icon_icon::before{
@@ -380,8 +381,33 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   
   &_box{
     padding: 8rem 0 ;
-    background: url("/bg_1.png") no-repeat;
     background-size: cover;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 80%;
+      min-width: 150px;
+      min-height: 150px;
+      background: url("/image1.png") no-repeat;
+      background-size: contain;
+      bottom: 0;
+      left:0;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 80%;
+      min-width: 150px;
+      min-height: 150px;
+      background: url("/image2.png") no-repeat;
+      background-size: contain;
+      bottom: 0;
+      right:0;
+    }
   }
 
   &__desc{
@@ -586,6 +612,17 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 }
+
+.p-category{
+  margin-left: .5rem;
+}
+
+.p-tag{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+
 
 //*******************************************************************
 //#region トップに戻るボタン
