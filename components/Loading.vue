@@ -20,7 +20,7 @@ export default Vue.extend({
     finish() {  
         setTimeout(() => {
             this.loading = false;
-      }, 2000)
+      }, 1000)
     }
   }
 });
@@ -35,7 +35,7 @@ export default Vue.extend({
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: rgba(0,0,0,0.5);
     z-index:555;
 }
 /*▲▲ ここまで追加する ▲▲*/
