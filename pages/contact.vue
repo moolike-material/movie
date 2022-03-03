@@ -32,22 +32,22 @@
             </div>
             <button class="submit" type="submit" name="button" value="送信する">送信する</button>
         </form-->
-      <form name="contact" method="POST" data-netlify="true" class="form">
+      <form name="contact" method="POST" data-netlify="true" class="form" @submit.prevent>
         <input type="hidden" name="contact" :value="contact" />
         <div v-show="false">
           <label for="bot">スパムでない場合は空欄</label>
           <input id="bot" type="text" name="bot-field" />
         </div>
         <div class="form_item">
-          <label>お名前(ニックネーム可)<span class="form__attention">必須</span>　<input type="text" name="name"
+          <label>お名前(ニックネーム可)<span class="form__attention">必須</span>　<input type="text" v-model="form.name" name="name"
               class="form_1coltext" /></label>
         </div>
         <div class="form_item">
-          <label>メールアドレス<span class="form__attention">必須</span>　 <input type="email" name="email"
+          <label>メールアドレス<span class="form__attention">必須</span>　 <input type="email" v-model="form.email" name="email"
               class="form_1coltext" /></label>
         </div>
         <div class="form_item">
-          <label>お問い合わせ内容<span class="form__attention">必須</span>　 <textarea name="message" class="form__textarea"
+          <label>お問い合わせ内容<span class="form__attention">必須</span>　 <textarea name="message" v-model="form.contact" class="form__textarea"
               cols="30" rows="10"></textarea></label>
         </div>
         <div class="form_item">
@@ -57,6 +57,53 @@
     </div>
   </div>
 </template>
+    <template v-else>
+      <p v-text="'お問い合わせ頂きありがとうございました。'" />
+      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
+    </template>
+  </section>
+</template>
+<script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        content: ''
+      },
+      finished: false
+    }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            ...this.form
+          }),
+          axiosConfig
+        )
+        .then(() => {
+          this.finished = true
+        })
+    }
+  }
+}
+</script>
 <style>
   .p-page__desc {
     margin-top: 1.5rem;
