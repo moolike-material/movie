@@ -33,10 +33,7 @@
             <button class="submit" type="submit" name="button" value="送信する">送信する</button>
         </form-->
       <form name="contact" method="POST" data-netlify="true" class="form">
-        <input type="hidden" name="form-name" :value="contact" />
-        <p class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
+        <input type="hidden" name="contact" :value="contact" />
         <div v-show="false">
           <label for="bot">スパムでない場合は空欄</label>
           <input id="bot" type="text" name="bot-field" />
