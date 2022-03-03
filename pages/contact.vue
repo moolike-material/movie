@@ -47,8 +47,8 @@
               class="form_1coltext" /></label>
         </div>
         <div class="form_item">
-          <label>お問い合わせ内容<span class="form__attention">必須</span>　 <textarea name="message" v-model="form.contact" class="form__textarea"
-              cols="30" rows="10"></textarea></label>
+          <label>お問い合わせ内容<span class="form__attention">必須</span>　 <textarea name="message" v-model="form.contact"
+              class="form__textarea" cols="30" rows="10"></textarea></label>
         </div>
         <div class="form_item">
           <button type="submit" class="submit">送信する</button>
@@ -57,52 +57,59 @@
     </div>
   </div>
 </template>
-    <template v-else>
-      <p v-text="'お問い合わせ頂きありがとうございました。'" />
-      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
-    </template>
-  </section>
+<template v-else>
+<div>
+  <p>お問い合わせ頂きありがとうございました。</p>
+  <div class="p-more_btn">
+    　<NuxtLink to="/" class="p-more_btn__link">
+      トップに戻る　
+    </NuxtLink>
+  </div>
+  </div>
 </template>
 <script>
-import axios from 'axios'
-export default {
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        content: ''
-      },
-      finished: false
-    }
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+  import axios from 'axios'
+  export default {
+    data() {
+      return {
+        form: {
+          name: '',
+          email: '',
+          content: ''
+        },
+        finished: false
       }
-      axios
-        .post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          axiosConfig
-        )
-        .then(() => {
-          this.finished = true
-        })
+    },
+    methods: {
+      encode(data) {
+        return Object.keys(data)
+          .map(
+            (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join('&')
+      },
+      handleSubmit() {
+        const axiosConfig = {
+          header: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }
+        axios
+          .post(
+            '/',
+            this.encode({
+              'form-name': 'contact',
+              ...this.form
+            }),
+            axiosConfig
+          )
+          .then(() => {
+            this.finished = true
+          })
+      }
     }
   }
-}
+
 </script>
 <style>
   .p-page__desc {

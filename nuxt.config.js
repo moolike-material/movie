@@ -48,7 +48,8 @@ export default {
     ['@nuxtjs/google-adsense', {
       id: 'ca-pub-9897424319453576',
       pageLevelAds: true,
-    }]
+    }],
+    '@nuxtjs/axios',
   ],
   'google-gtag': {
     id: 'UA-204449124-1',
