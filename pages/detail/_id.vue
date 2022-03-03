@@ -23,7 +23,8 @@
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
-            <span style="font-size:0.8rem; margin-bottom:2rem" class="p-attention_id">※mp4データでは背景を透過させるために、グリーンバックで用意しています。</span>
+            <span style="font-size:0.8rem; margin-bottom:2rem"
+              class="p-attention_id">※mp4データでは背景を透過させるために、グリーンバックで用意しています。</span>
           </div>
           <div class="p-material_detail__desc">
             <h2 class="p-material_detail__ttl">{{name}}</h2>
@@ -71,6 +72,16 @@
             </div>
           </div>
         </div>
+        <div class="p-material_wrap2 u-mT2">
+          <h2 class="page__subttl u-blk u-txtC">動画素材の使用について</h2>
+          <ol class="page__orderlist">
+            <li class="page__item">個人利用・商用利用どちらにおいても使用いただけます。</li>
+            <li class="page__item">利用に関して許可、報告、クレジットの表記は必要ありません。</li>
+            <li class="page__item">素材に関しては自由に編集し使用してください。</li>
+            <li class="page__item">著作権は放棄しておりません。動画そのものを素材として再配布することは禁止します。</li>
+            <li class="page__item">質問等ございましたら<NuxtLink to="/contact/">お問い合せフォーム</NuxtLink>よりご連絡をお願いします。</li>
+          </ol>
+        </div>
         <!--div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-content_section__ttl">人気のタグ特集</h2>
               <div class="p-bnr__register">
@@ -93,7 +104,7 @@
               </div>
         </div-->
         <div class="p-material_wrap p-material_wrap--detail">
-            <h2 class="p-content_section__ttl">最近人気の素材</h2>
+          <h2 class="p-content_section__ttl">最近人気の素材</h2>
           <topMaterialRank />
         </div>
       </div>
@@ -158,18 +169,18 @@
       this.$store.dispatch('movies/init');
       this.$store.dispatch('movies/getDetail', this.query).then(querySnapshot => {
         querySnapshot.forEach(doc => {
-        let data = doc.data();
-        self.name = data.name
-        self.desc = data.desc
-        self.yt_id = data.yt_id
-        self.mv_id = data.mv_id
-        self.length = data.length
-        self.category = data.category
-        self.tag1 = data.tag1
-        self.tag2 = data.tag2
-        self.tag3 = data.tag3
-        self.id = doc.id
-        self.count = data.dl_count
+          let data = doc.data();
+          self.name = data.name
+          self.desc = data.desc
+          self.yt_id = data.yt_id
+          self.mv_id = data.mv_id
+          self.length = data.length
+          self.category = data.category
+          self.tag1 = data.tag1
+          self.tag2 = data.tag2
+          self.tag3 = data.tag3
+          self.id = doc.id
+          self.count = data.dl_count
         })
       })
     },
@@ -209,7 +220,7 @@
         this.$store.dispatch('movies/dlcount', mvarr)
         let movlef = this.mv_id + '.mov';
         console.log(movlef)
-        this.$store.dispatch('movies/downloadMov',movlef).then(url => {
+        this.$store.dispatch('movies/downloadMov', movlef).then(url => {
           let xhr = new XMLHttpRequest();
           xhr.responseType = 'blob';
           xhr.onload = event => {
@@ -257,7 +268,7 @@
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    border:2px solid #ccc;
+    border: 2px solid #ccc;
   }
 
   .youtube iframe {
@@ -267,40 +278,46 @@
     width: 100%;
     height: 100%;
   }
-  
-  .p-material_wrap--detail{
-      margin-top: 5rem;
-  }
-  .p-material_wrap--detaol__ttl{
-      margin-top: 8rem;
+
+  .p-material_wrap--detail {
+    margin-top: 5rem;
   }
 
-  .p-content_main{
-    margin-left:auto ;
-    margin-right:auto;
+  .p-material_wrap--detaol__ttl {
+    margin-top: 8rem;
+  }
+
+  .p-content_main {
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
   }
 
-  .p-bnr__register{
+  .p-bnr__register {
     display: flex;
     justify-content: space-around;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
   }
 
-  .p-bnr__register .p-bnr_item{
+  .p-bnr__register .p-bnr_item {
     margin: .5rem;
     width: 45%;
     height: 130px;
-    min-width: 45%!important;
+    min-width: 45% !important;
   }
 
-  .p-bnr__register .p-bnr_copy{
-  top: 50%;
+  .p-bnr__register .p-bnr_copy {
+    top: 50%;
+  }
+
+  .p-attention_id {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .page__orderlist{
+    margin-top: 2rem;
 }
 
-.p-attention_id{
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
 </style>

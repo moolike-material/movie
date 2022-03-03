@@ -25,8 +25,7 @@
         }
 
         .st3 {
-            font-family: 'M PLUS Rounded 1c', sans-serif;
-            font-family: 'Zen Maru Gothic', sans-serif;
+          font-family: 'YikesMedium';
         }
 
         .st4 {

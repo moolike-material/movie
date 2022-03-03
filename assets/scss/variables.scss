@@ -76,6 +76,10 @@ $desc:.8rem;
   height: 25px;
 }
 
+.v-btn:not(.v-btn--round).v-size--default{
+  padding: 0 5px!important;
+}
+
 //トップスクロールボタン
 .button-enter-active,
 .button-leave-active {
@@ -113,3 +117,4 @@ $desc:.8rem;
 .v-text-field {
   padding-top: 0rem !important;
 }
+

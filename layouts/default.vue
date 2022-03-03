@@ -67,6 +67,9 @@
           <v-btn text rounded class="my-2 p-footer_btns__icon mb-6">
             <NuxtLink class="p-footer_btns__link" to="/guideline/">ガイドライン</NuxtLink>
           </v-btn>
+          <v-btn text rounded class="my-2 p-footer_btns__icon mb-6">
+            <NuxtLink class="p-footer_btns__link" to="/privacy/">プライバシーポリシー</NuxtLink>
+          </v-btn>
         </v-col>
         <v-col class="p-footer_copy" cols="12">
           copyright © moolike all right reserved

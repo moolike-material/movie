@@ -34,8 +34,10 @@
                     また、当サイトに掲載されたコンテンツによって生じた損害等については、一切の責任を負いかねますのでご了承ください。
                 </p>
             </div>
-            <div class="btn">
-                 <NuxtLink to="/" class="btn__link">トップに戻る</NuxtLink>
+             <div class="p-more_btn">
+            　<NuxtLink to="/" class="p-more_btn__link">
+              トップに戻る　
+            </NuxtLink>
             </div>
         </div>
     </div>
@@ -58,22 +60,5 @@
     line-height: 1.85;
     letter-spacing: .07em;
     padding-left: 1rem;
-}
-
-.btn{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.btn__link{
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    font-size: .8rem;
-    font-weight: bold;
-    border: 1px solid #333!important;
-    border-radius: .5rem;
 }
 </style>
