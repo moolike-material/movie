@@ -57,16 +57,6 @@
     </div>
   </div>
 </template>
-<template v-else>
-<div>
-  <p>お問い合わせ頂きありがとうございました。</p>
-  <div class="p-more_btn">
-    　<NuxtLink to="/" class="p-more_btn__link">
-      トップに戻る　
-    </NuxtLink>
-  </div>
-  </div>
-</template>
 <script>
   import axios from 'axios'
   export default {
