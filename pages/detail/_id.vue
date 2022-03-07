@@ -109,6 +109,11 @@
         </div>
       </div>
     </div>
+    <div class="p-more_btn u-mT2">
+      　<NuxtLink to="/" class="p-more_btn__link">
+        トップに戻る　
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -316,8 +321,8 @@
     margin-bottom: 2rem;
   }
 
-  .page__orderlist{
+  .page__orderlist {
     margin-top: 2rem;
-}
+  }
 
 </style>
