@@ -13,7 +13,7 @@
         <h1 class="p-content_subTtl">人気ランキング</h1>
         
         <transition-group appear tag="div" class="p-material">
-          <div v-for="(movie,index) in movies" :key="movie.mv_id" class="p-material_item">
+          <div v-for="(movie,index) in getMovies" :key="movie.mv_id" class="p-material_item">
             <v-card class="mx-auto my-12">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
@@ -142,7 +142,7 @@
       getMovies() {
         let current = this.current_page * this.parPage;
         let start = current - this.parPage;
-        return this.movies.slice(start, current)
+        return this.movies.slice(0, 18)
       },
       getPageCount() {
         return Math.ceil(this.movies.length / this.parPage)
