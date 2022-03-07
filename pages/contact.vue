@@ -17,20 +17,27 @@
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
             href="https://www.moolike-stock.com/privacy">プライバシーポリシー</a>を一読の上お進みください</p>
       </div>
-      <form name="contact" method="POST" data-netlify="true" class="form">
+      <form name="contact" method="POST" data-netlify="true" class="form" action="submit">
         <p class="form_item">
-          <label class="form__label">Your Name: <span class="form__attention">必須</span><input type="text" name="name" class="form_1coltext" /></label>
+          <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name"
+              class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">Your Email: <span class="form__attention">必須</span><input type="email" name="email" class="form_1coltext" /></label>
+          <label class="form__label">メールアドレス: <span class="form__attention">必須</span><input type="email" name="email"
+              class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">Message: <textarea name="message" class="form__textarea"></textarea></label>
+          <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea"></textarea></label>
         </p>
         <p>
-          <button type="submit" lass="submit">送信する</button>
+          <button type="submit" class="submit">送信する</button>
         </p>
       </form>
+    </div>
+    <div class="p-more_btn">
+      　<NuxtLink to="/" class="p-more_btn__link">
+        トップに戻る　
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -70,7 +77,7 @@
 
   .form {
     display: block;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 3rem 0rem;
     font-size: .8rem;
@@ -86,6 +93,7 @@
     padding: .8rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
+    margin:10px 0
 
   }
 
@@ -114,6 +122,7 @@
     padding-bottom: 1rem;
     border-radius: 1rem;
     transition: all .3s;
+    font-weight:bold;
   }
 
   .submit:hover {

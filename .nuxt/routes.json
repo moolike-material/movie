@@ -56,6 +56,13 @@
     "_name": "_84f2908e"
   },
   {
+    "name": "submit",
+    "path": "/submit",
+    "component": "/Users/mac/Desktop/moolike-nuxt/pages/submit.vue",
+    "chunkName": "pages/submit",
+    "_name": "_4ac9636b"
+  },
+  {
     "name": "register-movie",
     "path": "/register/movie",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/register/movie.vue",

@@ -12,6 +12,7 @@ const _7b40e604 = () => interopDefault(import('../pages/newmaterial.vue' /* webp
 const _676e2cc5 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
 const _7ff9ce73 = () => interopDefault(import('../pages/ranking.vue' /* webpackChunkName: "pages/ranking" */))
 const _84f2908e = () => interopDefault(import('../pages/register/index.vue' /* webpackChunkName: "pages/register/index" */))
+const _4ac9636b = () => interopDefault(import('../pages/submit.vue' /* webpackChunkName: "pages/submit" */))
 const _34716f17 = () => interopDefault(import('../pages/register/movie.vue' /* webpackChunkName: "pages/register/movie" */))
 const _56695942 = () => interopDefault(import('../pages/category/_category.vue' /* webpackChunkName: "pages/category/_category" */))
 const _d912da62 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
@@ -63,6 +64,10 @@ export const routerOptions = {
     path: "/register",
     component: _84f2908e,
     name: "register"
+  }, {
+    path: "/submit",
+    component: _4ac9636b,
+    name: "submit"
   }, {
     path: "/register/movie",
     component: _34716f17,
