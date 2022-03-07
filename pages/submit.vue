@@ -3,7 +3,7 @@
       <!-- パンクず -->
     <div class="p-pankuzu">
       <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-      <NuxtLink :to="`/contact`" class="p-pankuzu_inactive">お問い合わせ/contact</NuxtLink>
+      <NuxtLink :to="`/contact/`" class="p-pankuzu_inactive">お問い合わせ/contact</NuxtLink>
     </div>
     <!-- パンクず -->
     <h1 class="p-content_subTtl p-content_subTtl--underline u-txtC">送信成功</h1>
