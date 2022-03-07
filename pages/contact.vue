@@ -17,7 +17,7 @@
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
             href="https://www.moolike-stock.com/privacy">プライバシーポリシー</a>を一読の上お進みください</p>
       </div>
-      <form name="contact" method="POST" data-netlify="true" class="form" action="/submit/">
+      <form name="contact" method="POST" data-netlify="true" class="form">
         <p class="form_item">
           <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name"
               class="form_1coltext" /></label>
