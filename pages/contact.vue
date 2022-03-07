@@ -17,23 +17,8 @@
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
             href="https://www.moolike-stock.com/privacy">プライバシーポリシー</a>を一読の上お進みください</p>
       </div>
-      <!--form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdmpvI1aFgP803f2X3Z2SCB4MWPWMcoGWs5mSKPq3KOftKXOQ/formResponse" class="form">
-            <div class="form_item">
-                <label class="form__label" for="nameval">お名前<span class="form__attention">必須</span></label>
-                <input id="nameval" type="text" name="entry.1540414008" class="form_1coltext" required></div>
-            <div class="form_item">
-                <label class="form__label" for="mailval">メールアドレス<span class="form__attention">必須</span></label>
-                <input class="form_1coltext" type="email" name="entry.653351798" id="mailval" required />
-            </div>
-            <div class="form_item">
-                <label class="form__label" for="textval">お問い合わせ内容<span class="form__attention">必須</span></label>
-                <textarea class="form__textarea" name="entry.8665556" id="textval" cols="30" rows="10"
-                    placeholder="内容を入力してください" required></textarea>
-            </div>
-            <button class="submit" type="submit" name="button" value="送信する">送信する</button>
-        </form-->
-      <form name="contact" method="POST" netlify>
-        <input type="hidden" name="form-name" :value="contact" />
+      <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
