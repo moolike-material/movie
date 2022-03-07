@@ -17,21 +17,20 @@
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
             href="https://www.moolike-stock.com/privacy">プライバシーポリシー</a>を一読の上お進みください</p>
       </div>
-<form name="contact" netlify-honeypot="bot-field" action="thank-you"  data-netlify="true" method="post">
-  <input type="hidden" name="form-name" value="contact" />
-  <p class="hidden"  style="display: none;">
-    <label>Don’t fill this out: <input name="bot-field"></label>
-  </p>
-  <p>
-    <label>Email: <input type="text" name="name"></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type=”submit”>Send</button>
-  </p>
-</form>
+      <form name="contact" method="POST" data-netlify="true" class="form">
+        <p class="form_item">
+          <label class="form__label">Your Name: <span class="form__attention">必須</span><input type="text" name="name" class="form_1coltext" /></label>
+        </p>
+        <p class="form_item">
+          <label class="form__label">Your Email: <span class="form__attention">必須</span><input type="email" name="email" class="form_1coltext" /></label>
+        </p>
+        <p class="form_item">
+          <label class="form__label">Message: <textarea name="message" class="form__textarea"></textarea></label>
+        </p>
+        <p>
+          <button type="submit" lass="submit">送信する</button>
+        </p>
+      </form>
     </div>
   </div>
 </template>
