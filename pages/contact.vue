@@ -3,15 +3,18 @@
     <!-- パンクず -->
     <div class="p-pankuzu">
       <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-      <NuxtLink :to="`/contact`" class="p-pankuzu_inactive">お問い合わせ/contact</NuxtLink>
+      <NuxtLink :to="`/contact`" class="p-pankuzu_inactive">リクエスト・お問い合わせ/contact</NuxtLink>
     </div>
     <!-- パンクず -->
-    <h1 class="p-content_subTtl p-content_subTtl--underline">お問い合わせ/contact</h1>
+    <h1 class="p-content_subTtl p-content_subTtl--underline">リクエスト・お問い合わせ/contact</h1>
     <div class="p-sub_content">
-      <p class="p-page-copy p-page__desc">
-        当ウェブサイトをご利用頂き誠にありがとうございます。
-        制作依頼、ご意見、ご要望、気軽にお送りください。<br>
-        お問い合わせ内容をいただいた後数日のうちに返信させて頂きます。
+      <p class="page-copy page__desc">
+        当ウェブサイトをご利用頂き誠にありがとうございます。<br><br>
+        
+        「こんなポーズの素材が欲しい！！」「あのイラストのようなイラストが欲しい！」など素材のリクエストや<br>
+        「Youtubeの動画編集」「結婚式ムービー」の作成を依頼したい！ような動画編集の依頼など募集しています。<br><br>
+        またご利用に関して報告などいただけると大変励みになります！<br>
+        お問い合わせ内容をいただいた後数日のうちに返信させて頂きますが場合によっては返信できかねる場合がございます><;;
       </p>
       <div class="p-form__message">
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
@@ -61,6 +64,7 @@
   }
 
   .p-form__message__desc {
+    font-size:.8rem;
     text-align: center;
     color: #777;
   }

@@ -11,9 +11,36 @@
             <div class="page__block">
                 <h3 class="page__subttl">moolikeは商用利用OKのシンプルな動画素材サイトです。</h3>
                 <p class="page__desc">
-                    当ウェブサイトは、第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しており、<br>
-                    この広告配信事業者は、ユーザーの好みに応じて広告を表示するCookieを使用することがあります。<br>
-                    Cookieの設定やGoogleアドセンスに関する詳細は、こちらをご覧ください。
+                    moolike（以下「当サイト」）における個人情報の取り扱い、およびプライバシーポリシーは下記のとおりです。
+                </p>
+            </div>
+            <div class="page__block">
+                <h3 class="page__subttl">個人情報に関する取り扱いにつきまして</h3>
+                <p class="page__desc">
+                    個人情報とは、個人に関する情報であり、その情報に含まれる氏名、生年月日、Eメールアドレス、その他の記述、画像若しくは音声又は個人別に付与された番号、記号その他の符号によりその個人を識別できるものをいいます。<br><br>
+
+                    当サイトでは、お預かりした個人情報は適切に管理し、ご連絡時ならびにお問い合わせに対するご連絡でのみ利用します。<br>
+                    法令に基づいて開示が必要な場合を除いて、個人情報を第三者に開示することはありません。
+                </p>
+            </div>
+            <div class="page__block">
+                <h3 class="page__subttl">個人情報の収集</h3>
+                <p class="page__desc">
+                当サイトでは、サービスをご利用いただく際に、個人情報を収集させていただく場合があります。<br>
+                これらの情報は、すべて下記の収集目的に従って、適法かつ公正な手段により収集されます。<br>
+                人種、民族、家系、家柄、本籍地、宗教、政治的見解及び労働組合への加盟に関わる個人情報については、これを収集・利用いたしません。
+                </p>
+            </div>
+            <div class="page__block">
+                <h3 class="page__subttl">セキュリティについて</h3>
+                <p class="page__desc">
+                個人情報の登録が発生するWEBページではデータ送信の際に、業界で機密保持の標準規格として使用されているSSL(Secure Socket Layer)暗号化技術を使用しております。
+                </p>
+            </div>
+            <div class="page__block">
+                <h3 class="page__subttl">外部コンテンツとの連携につきまして</h3>
+                <p class="page__desc">
+                当サイトからリンクやバナー等によって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
                 </p>
             </div>
             <div class="page__block">
@@ -22,7 +49,7 @@
                     当サイトは、アクセス解析ツールである「Googleアナリティクス」を利用しています。<br>
                     これは、データ収集のためにCookieを使用しています。また、トラフィックデータが匿名で収集されていますが、<br>
                     個人を特定するものではありません。この機能を停止するには、ブラウザ設定にてCookieを無効にしてください。<br>
-                    詳細については、こちらをご覧ください。
+                    <a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener" class="u-txtDecUL">Googleアナリティクスについてこちら 》</a>
                 </p>
             </div>
             <div class="page__block">

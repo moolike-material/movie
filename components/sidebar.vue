@@ -35,7 +35,7 @@
             </li>
             <li class="p-sidebar_category__item">
             <NuxtLink to="/contact/">
-            お問い合せ
+            リクエスト/お問い合せ
             </NuxtLink>
             </li>
             <li class="p-sidebar_category__item">

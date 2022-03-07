@@ -45,6 +45,11 @@
       class="p-page"
       circle
     ></v-pagination>
+                     <div class="p-more_btn u-mT4">
+            　<NuxtLink to="/" class="p-more_btn__link">
+              トップに戻る　
+            </NuxtLink>
+            </div>
   </div>
       </div>
               <!-- サイドバー -->

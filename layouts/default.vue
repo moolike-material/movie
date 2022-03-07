@@ -62,7 +62,7 @@
         </v-col>
         <v-col class="p-footer_btns" width="100%">
           <v-btn text rounded class="my-2 p-footer_btns__icon mb-6">
-            <NuxtLink class="p-footer_btns__link" to="/contact/">お問い合せ</NuxtLink>
+            <NuxtLink class="p-footer_btns__link" to="/contact/">リクエスト・お問い合せ</NuxtLink>
           </v-btn>
           <v-btn text rounded class="my-2 p-footer_btns__icon mb-6">
             <NuxtLink class="p-footer_btns__link" to="/guideline/">ガイドライン</NuxtLink>
