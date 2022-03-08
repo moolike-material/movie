@@ -23,12 +23,10 @@
       <form name="contact" method="POST" data-netlify="true" class="form">
         <input type="hidden" name="form-name" :value="contact" />
         <p class="form_item">
-          <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name"
-              class="form_1coltext" /></label>
+          <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">メールアドレス: <span class="form__attention">必須</span><input type="email" name="email"
-              class="form_1coltext" /></label>
+          <label class="form__label">メールアドレス: <span class="form__attention">必須</span><input type="email" name="email" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
           <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea"></textarea></label>
