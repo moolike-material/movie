@@ -129,6 +129,10 @@
     &_main{
       width: 100%!important;
     }
+
+    &_subTtl{
+      font-size: 1.4rem;
+    }
   }
   
 
@@ -316,3 +320,44 @@
 //*******************************************************************
 //#region 個別ページ
 //*******************************************************************
+
+//*******************************************************************
+//#region 個別ページ
+//*******************************************************************
+
+
+.page{
+
+  &-copy{
+    margin-bottom:3rem;
+  }
+  
+  &__subttl{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+
+  &__desc{
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
+    font-size: 1rem;
+  }
+
+  &__block{
+    margin-bottom: 3rem;
+  }
+
+  &__orderlist{
+    margin-top: 3rem;
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+  
+  &__item{
+    margin-top: .8rem;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    padding-bottom: .5rem;
+    border-bottom: 1px dotted #ccc;
+  }
+
+}

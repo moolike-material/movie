@@ -29,7 +29,7 @@
           <label class="form__label">メールアドレス: <span class="form__attention">必須</span><input type="email" name="email" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea"></textarea></label>
+          <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea" rows="4"></textarea></label>
         </p>
         <p>
           <button type="submit" class="submit">送信する</button>

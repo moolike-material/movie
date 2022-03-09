@@ -91,6 +91,52 @@
             </li>
           </ul>
           </section>
+          <!-- 新着情報・ブログ -->
+          <!--section class="p-content_section">
+            <h2 class="p-content_section__ttl">新着情報・ブログ</h2>
+            <div class="p-content_section--column">
+            <ul class="p-column">
+              <li class="p-column__item">
+                <NuxtLink to="/column/page1/" class="p-column__item">
+                  <img src="/column/01/thumb.jpg" class="p-column__img">
+                  <div class="p-column__inner">
+                  <span class="u-inblk p-column__icon">新着情報</span>
+                    <h3 class="p-column__ttl">著作権フリーの素材</h3>
+                    <p class="p-column__desc">moolikeの素材は全て著作権フリーです!さらに商用利用OK!</p>
+                    <span class="u-inblk p-column__date">2022.1.2</span>
+                  </div>
+                </NuxtLink>
+              </li>
+               <li class="p-column__item">
+                <NuxtLink to="/column/page1/" class="p-column__item">
+                  <img src="/column/01/thumb.jpg" class="p-column__img">
+                  <div class="p-column__inner">
+                  <span class="u-inblk p-column__icon">新着情報</span>
+                    <h3 class="p-column__ttl">著作権フリーの素材</h3>
+                    <p class="p-column__desc">moolikeの素材は全て著作権フリーです!さらに商用利用OK!</p>
+                    <span class="u-inblk p-column__date">2022.1.2</span>
+                  </div>
+                </NuxtLink>
+              </li>
+              <li class="p-column__item">
+                <NuxtLink to="/column/page1/" class="p-column__item">
+                  <img src="/column/01/thumb.jpg" class="p-column__img">
+                  <div class="p-column__inner">
+                  <span class="u-inblk p-column__icon">新着情報</span>
+                    <h3 class="p-column__ttl">著作権フリーの素材</h3>
+                    <p class="p-column__desc">moolikeの素材は全て著作権フリーです!さらに商用利用OK!</p>
+                    <span class="u-inblk p-column__date">2022.1.2</span>
+                  </div>
+                </NuxtLink>
+              </li>
+            </ul>
+            <div class="p-more_btn u-mT4">
+            <NuxtLink to="column" class="p-more_btn__link">
+              もっとみる　　
+            </NuxtLink>
+            </div>
+            </div>
+          </section-->
           <section class="p-content_section">
             <h2 class="p-content_section__ttl">よくある質問
             </h2>
