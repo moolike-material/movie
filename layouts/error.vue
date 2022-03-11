@@ -7,9 +7,11 @@
       {{ otherError }}
     </h1>
     <p>お探しのページは見つかりませんでした。</p>
-    <NuxtLink to="/">
-      トップに戻る
+    <div class="p-more_btn u-mT4">
+    <NuxtLink to="/" class="p-more_btn__link">
+      トップに戻る　　
     </NuxtLink>
+    </div>
   </div>
 </template>
 
