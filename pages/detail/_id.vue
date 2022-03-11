@@ -23,8 +23,10 @@
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
-            <span style="font-size:0.8rem; margin-bottom:2rem"
-              class="p-attention_id">※mp4データでは背景を透過させるために、グリーンバックで用意しています。</span>
+            <span style="font-size:0.8rem; margin-bottom:2rem" class="p-attention_id">
+            ※mp4データでは背景を透過させるために、グリーンバックで用意しています。<br><br>
+            ※movデータはダウンロードに時間がかかる場合がございます。（ボタンクリック後最大30秒程度）<br>
+              </span>
           </div>
           <div class="p-material_detail__desc">
             <h2 class="p-material_detail__ttl">{{name}}</h2>
@@ -50,7 +52,7 @@
                   <v-icon left>
                     mdi-label
                   </v-icon>
-                  {{tag1}}
+                  {{tag1name}}
                 </NuxtLink>
               </v-chip>
               <v-chip class="ma-2" color="pink p-tag" label text-color="white">
@@ -58,7 +60,7 @@
                   <v-icon left>
                     mdi-label
                   </v-icon>
-                  {{tag2}}
+                  {{tag2name}}
                 </NuxtLink>
               </v-chip>
               <v-chip class="ma-2" color="pink p-tag" label text-color="white">
@@ -66,7 +68,7 @@
                   <v-icon left>
                     mdi-label
                   </v-icon>
-                  {{tag3}}
+                  {{tag3name}}
                 </NuxtLink>
               </v-chip>
             </div>
@@ -180,12 +182,68 @@
           self.yt_id = data.yt_id
           self.mv_id = data.mv_id
           self.length = data.length
-          self.category = data.category
           self.tag1 = data.tag1
           self.tag2 = data.tag2
           self.tag3 = data.tag3
           self.id = doc.id
           self.count = data.dl_count
+          self.category = data.category
+          if(data.category == "youtube"){
+            self.category == "youtube"
+          }else if(data.category == "wedding"){
+            self.category == "結婚式"
+          }else if(data.category == "smartphone"){
+            self.category == "スマホサイズ"
+          }else if(data.category == "business"){
+            self.category == "ビジネス"
+          }else{
+            self.category == "その他"
+          }
+          if(self.tag1 == "handfree"){
+            this.tag1name = "手書き風"
+          }else if(self.tag1 == "wedding"){
+            this.tag1name = "結婚式"
+          }else if(self.tag1 == "days"){
+            this.tag1name = "日常"
+          }else if(self.tag1 == "v-log"){
+            this.tag1name = "v-log"
+          }else if(self.tag1 == "surprise"){
+            this.tag1name = "サプライズ"
+          }else if(self.tag1 == "countdown"){
+            this.tag1name = "カウントダウン"
+          }else{
+            this.tag1name = "その他"
+          }
+          if(this.tag2 == "handfree"){
+            this.tag2name = "手書き風"
+          }else if(this.tag2 == "wedding"){
+            this.tag2name = "結婚式"
+          }else if(this.tag2 == "days"){
+            this.tag2name = "日常"
+          }else if(this.tag2 == "v-log"){
+            this.tag2name = "v-log"
+          }else if(this.tag2 == "surprise"){
+            this.tag2name = "サプライズ"
+          }else if(this.tag2 == "countdown"){
+            this.tag2name = "カウントダウン"
+          }else{
+            this.tag2name = "その他"
+          }
+          if(this.tag3 == "handfree"){
+            this.tag3name = "手書き風"
+          }else if(this.tag3 == "wedding"){
+            this.tag3name = "結婚式"
+          }else if(this.tag3 == "days"){
+            this.tag3name = "日常"
+          }else if(this.tag3 == "v-log"){
+            this.tag3name = "v-log"
+          }else if(this.tag3 == "surprise"){
+            this.tag3name = "サプライズ"
+          }else if(this.tag3 == "countdown"){
+            this.tag3name = "カウントダウン"
+          }else{
+            this.tag3name = "その他"
+          }
         })
       })
     },
@@ -200,7 +258,7 @@
         let mvcount = this.count + 1;
         let mvarr = [this.id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
-        let mp4 = this.mv_id + '.mp4';
+        let mp4 = this.mv_id + '_mp4.zip';
         this.$store.dispatch('movies/download', mp4).then(url => {
           const xhr = new XMLHttpRequest();
           xhr.responseType = 'blob';
@@ -211,7 +269,7 @@
             const aDL = document.createElement('a');
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
-            aDL.download = `${this.mv_id}.mp4`;
+            aDL.download = `${this.mv_id}_mp4.zip`;
             console.log(aDL);
             aDL.click();
           }
@@ -223,7 +281,7 @@
         let mvcount = this.count + 1;
         let mvarr = [this.id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
-        let movlef = this.mv_id + '.mov';
+        let movlef = this.mv_id + '_mov.zip';
         console.log(movlef)
         this.$store.dispatch('movies/downloadMov', movlef).then(url => {
           let xhr = new XMLHttpRequest();
@@ -235,7 +293,7 @@
             let aDL = document.createElement('a');
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
-            aDL.download = `${this.mv_id}.mov`;
+            aDL.download = `${this.mv_id}_mov.zip`;
             console.log(aDL);
             aDL.click();
           }
@@ -247,7 +305,7 @@
     computed: {
       movies() {
         return this.$store.state.movies.movies
-      }
+      },
     },
   }
 

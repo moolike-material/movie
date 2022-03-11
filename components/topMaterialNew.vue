@@ -67,14 +67,14 @@
             this.$store.dispatch('movies/dlcount',mvarr)
             const link = document.createElement('a')
             link.download = `${url}.mp4`
-            link.href = `/dl/mp4/${url}.mp4`
+            link.href = `/dl/mp4/${url}_mp4.zip`
             link.click()
         },
         download(mv_id, id, count) {
         let mvcount = count + 1;
         let mvarr = [id, mvcount]
         this.$store.dispatch('movies/dlcount', mvarr)
-        let mp4 = mv_id + '.mp4';
+        let mp4 = mv_id + '_mp4.zip';
         this.$store.dispatch('movies/download', mp4).then(url => {
           const xhr = new XMLHttpRequest();
           xhr.responseType = 'blob';
@@ -85,7 +85,7 @@
             const aDL = document.createElement('a');
             // ファイルデータに紐づくダウンロードリンクを設定します
             aDL.href = URL.createObjectURL(blob);
-            aDL.download = `${mv_id}.mp4`;
+            aDL.download = `${mv_id}_mp4.zip`;
             aDL.click();
           }
           xhr.open('GET', url);
