@@ -92,7 +92,7 @@
           </ul>
           </section>
           <!-- 新着情報・ブログ -->
-          <section class="p-content_section">
+          <!--section class="p-content_section">
             <h2 class="p-content_section__ttl">新着情報・ブログ</h2>
             <div class="p-content_section--column">
             <ul class="p-column">
@@ -136,7 +136,7 @@
             </NuxtLink>
             </div>
             </div>
-          </section>
+          </section-->
           <section class="p-content_section">
             <h2 class="p-content_section__ttl">よくある質問
             </h2>
