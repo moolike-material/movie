@@ -383,9 +383,6 @@
     margin-top: 2rem;
   }
 
-</style>
-
-<styele scoped>
 .page__orderlist--id{
   padding-left:0;
 }
