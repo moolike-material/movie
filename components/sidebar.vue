@@ -60,8 +60,8 @@
             "name": "結婚式"
           },
           {
-            "id": "サプライズ",
-            "name": "surprise"
+            "id": "surprise",
+            "name": "サプライズ"
           },
           {
             "id": "business",
