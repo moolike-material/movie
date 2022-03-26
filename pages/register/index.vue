@@ -1,13 +1,13 @@
 <template>
   <div class="p-register_wrap">
     <div>
-      <h2 class="p-edit_ttl">登録素材一覧</h2>
+      <h2 class="p-content_subTtl p-content_subTtl--underline">登録素材一覧</h2>
       <v-btn depressed color="primary" class="c-primary_btn--new" link nuxt to="register/movie">
         新規登録
       </v-btn>
       <!-- 確認登録 -->
       <div>
-        <v-card max-width="1200" class="mx-auto">
+        <v-card class="mx-auto">
           <v-simple-table>
             <template v-slot:default>
               <thead class="thead-bg">
@@ -102,7 +102,7 @@
         tag3: '',
         dl_count: '',
         movie_data: [],
-        parPage: 5,
+        parPage: 10,
         current_page:1,
         input:''
       }
@@ -146,7 +146,7 @@
   .c-primary_btn {
     background-color: #1867c0 !important;
     text-align: right;
-    margin: 0!important;
+    margin:.7rem 0 0!important;
   }
 
   .c-primary_btn--new{
@@ -168,6 +168,8 @@
     background-color: #ff5252 !important;
     color: #fff !important;
     font-weight: bold;
+    margin-top:.2rem!important;
+    margin-bottom:.7rem!important;
   }
 
 .theme--light.v-pagination .v-pagination__item--active{

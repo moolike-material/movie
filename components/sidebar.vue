@@ -60,8 +60,8 @@
             "name": "結婚式"
           },
           {
-            "id": "smartphone",
-            "name": "スマホサイズ"
+            "id": "サプライズ",
+            "name": "surprise"
           },
           {
             "id": "business",
@@ -82,13 +82,28 @@
             tag: 'カウントダウン',param:'countdown'
           },
           {
-            tag: 'v-log',param:'v-log'
+            tag: 'エフェクト',param:'effect'
           },
           {
-            tag: 'サプライズ',param:'surprise'
+            tag: 'スタート素材',param:'start'
           },
           {
-            tag: '結婚式',param:'wedding'
+            tag: '背景',param:'background'
+          },
+          {
+            tag: '人物',param:'people'
+          },
+          {
+            tag: 'おもしろ',param:'interesting'
+          },
+          {
+            tag: 'パロディ',param:'parody'
+          },
+          {
+            tag: 'おもしろ',param:'music'
+          },
+          {
+            tag: 'その他',param:'other'
           },
         ],
       }

@@ -54,7 +54,7 @@ export const actions = {
         mv_id:data[3],
         length:data[4],
         category:data[5],
-        tag1:data[5],
+        tag1:data[6],
         tag2:data[7],
         tag3:data[8],
         dl_count:0,

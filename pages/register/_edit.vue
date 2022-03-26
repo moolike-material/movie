@@ -1,10 +1,11 @@
 <template>
 <div class="p-register_wrap">
 <div>
-    <h2>素材編集</h2>
+    <h2 class="p-content_subTtl p-content_subTtl--underline">素材編集</h2>
 </div>
   <v-form
    v-on:submit.prevent="add"
+   class="c-register_form"
   >
     <v-text-field
       v-model="name"
@@ -13,12 +14,12 @@
       required
     ></v-text-field>
 
-    <v-text-field
+    <v-textarea
       v-model="desc"
-      :counter="10"
       label="動画説明文"
+      rows="7"
       required
-    ></v-text-field>
+    ></v-textarea>
 
     <v-text-field
       v-model="yt_id"
@@ -41,33 +42,206 @@
       required
     ></v-text-field>
 
-    <v-text-field
+       <!-- #region カテゴリ登録処理 -->
+
+   <v-col>
+    <h5>カテゴリー</h5>
+    <v-radio-group
       v-model="category"
-      :counter="10"
-      label="カテゴリー"
-      required
-    ></v-text-field>
+      row
+    >
+      <v-radio
+        label="Youtube"
+        value="youtube"
+      ></v-radio>
+      <v-radio
+        label="結婚式"
+        value="wedding"
+      ></v-radio>
+      <v-radio
+        label="サプライズ"
+        value="surprise"
+      ></v-radio>
+      <v-radio
+        label="ビジネス"
+        value="business"
+      ></v-radio>
+    </v-radio-group>
+    </v-col>
+   <!-- #endregion カテゴリ登録処理 -->
 
-    <v-text-field
+        <!-- #region タグ登録処理 -->
+   <v-col>
+    <h5>タグ１</h5>
+    <v-radio-group
       v-model="tag1"
-      :counter="10"
-      label="タグ１"
-      required
-    ></v-text-field>
+      row
+    >
+      <v-radio
+        label="手書き風"
+        value="handfree"
+      ></v-radio>
+      <v-radio
+        label="カウントダウン"
+        value="countdown"
+      ></v-radio>
+      <v-radio
+        label="フィルター"
+        value="filter"
+      ></v-radio>
+      <v-radio
+        label="日常"
+        value="days"
+      ></v-radio>
+      <v-radio
+        label="エフェクト"
+        value="effect"
+      ></v-radio>
+      <v-radio
+        label="スタート素材"
+        value="start"
+      ></v-radio>
+      <v-radio
+        label="背景"
+        value="background"
+      ></v-radio>
+      <v-radio
+        label="人物"
+        value="people"
+      ></v-radio>
+      <v-radio
+        label="おもしろ"
+        value="interesting"
+      ></v-radio>
+            <v-radio
+        label="パロディ"
+        value="parody"
+      ></v-radio>
+      <v-radio
+        label="ミュージック"
+        value="music"
+      ></v-radio>
+            <v-radio
+        label="その他"
+        value="other"
+      ></v-radio>
+    </v-radio-group>
+    </v-col>
 
-    <v-text-field
+   <v-col>
+    <h5>タグ2</h5>
+    <v-radio-group
       v-model="tag2"
-      :counter="10"
-      label="タグ2"
-      required
-    ></v-text-field>
+      row
+    >
+      <v-radio
+        label="手書き風"
+        value="handfree"
+      ></v-radio>
+      <v-radio
+        label="カウントダウン"
+        value="countdown"
+      ></v-radio>
+      <v-radio
+        label="フィルター"
+        value="filter"
+      ></v-radio>
+      <v-radio
+        label="日常"
+        value="days"
+      ></v-radio>
+      <v-radio
+        label="エフェクト"
+        value="effect"
+      ></v-radio>
+      <v-radio
+        label="スタート素材"
+        value="start"
+      ></v-radio>
+      <v-radio
+        label="背景"
+        value="background"
+      ></v-radio>
+      <v-radio
+        label="人物"
+        value="people"
+      ></v-radio>
+      <v-radio
+        label="おもしろ"
+        value="interesting"
+      ></v-radio>
+            <v-radio
+        label="パロディ"
+        value="parody"
+      ></v-radio>
+      <v-radio
+        label="ミュージック"
+        value="music"
+      ></v-radio>
+            <v-radio
+        label="その他"
+        value="other"
+      ></v-radio>
+    </v-radio-group>
+    </v-col>
 
-    <v-text-field
+   <v-col>
+    <h5>タグ3</h5>
+    <v-radio-group
       v-model="tag3"
-      :counter="10"
-      label="タグ3"
-      required
-    ></v-text-field>
+      row
+    >
+      <v-radio
+        label="手書き風"
+        value="handfree"
+      ></v-radio>
+      <v-radio
+        label="カウントダウン"
+        value="countdown"
+      ></v-radio>
+      <v-radio
+        label="フィルター"
+        value="filter"
+      ></v-radio>
+      <v-radio
+        label="日常"
+        value="days"
+      ></v-radio>
+      <v-radio
+        label="エフェクト"
+        value="effect"
+      ></v-radio>
+      <v-radio
+        label="スタート素材"
+        value="start"
+      ></v-radio>
+      <v-radio
+        label="背景"
+        value="background"
+      ></v-radio>
+      <v-radio
+        label="人物"
+        value="people"
+      ></v-radio>
+      <v-radio
+        label="おもしろ"
+        value="interesting"
+      ></v-radio>
+            <v-radio
+        label="パロディ"
+        value="parody"
+      ></v-radio>
+      <v-radio
+        label="ミュージック"
+        value="music"
+      ></v-radio>
+            <v-radio
+        label="その他"
+        value="other"
+      ></v-radio>
+    </v-radio-group>
+    </v-col>
+ <!-- #endregion タグ登録処理 -->
 
     <v-btn
       color="success"

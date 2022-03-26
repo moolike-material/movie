@@ -30,7 +30,7 @@
           </div>
           <div class="p-material_detail__desc">
             <h2 class="p-material_detail__ttl">{{name}}</h2>
-            <p class="p-material_detail__copy">{{desc}}</p>
+            <p class="p-material_detail__copy" style="white-space: pre-wrap;" v-text="desc"></p>
             <div class="p-material_detail__desc_params">
               <div class="p-material_detail__desc_params__item">再生時間 : {{length}}</div>
               <div class="p-material_detail__desc_params__item">画面サイズ : 1920×1080</div>
@@ -192,58 +192,93 @@
             self.category == "youtube"
           }else if(data.category == "wedding"){
             self.category == "結婚式"
-          }else if(data.category == "smartphone"){
-            self.category == "スマホサイズ"
+          }else if(data.category == "surprise"){
+            self.category == "サプライズ"
           }else if(data.category == "business"){
             self.category == "ビジネス"
           }else{
             self.category == "その他"
           }
+          
           if(self.tag1 == "handfree"){
             this.tag1name = "手書き風"
-          }else if(self.tag1 == "wedding"){
-            this.tag1name = "結婚式"
+          }else if(self.tag1 == "filter"){
+            this.tag1name = "フィルター"
           }else if(self.tag1 == "days"){
             this.tag1name = "日常"
-          }else if(self.tag1 == "v-log"){
-            this.tag1name = "v-log"
-          }else if(self.tag1 == "surprise"){
-            this.tag1name = "サプライズ"
+          }else if(self.tag1 == "effect"){
+            this.tag1name = "エフェクト"
           }else if(self.tag1 == "countdown"){
             this.tag1name = "カウントダウン"
+          }else if(self.tag1 == "start"){
+            this.tag1name = "スタート素材"
+          }else if(self.tag1 == "background"){
+            this.tag1name = "背景"
+          }else if(self.tag1 == "people"){
+            this.tag1name = "人物"
+          }else if(self.tag1 == "interesting"){
+            this.tag1name = "おもしろ"
+          }else if(self.tag1 == "parody"){
+            this.tag1name = "パロディ"
+          }else if(self.tag1 == "music"){
+            this.tag1name = "音楽"
           }else{
             this.tag1name = "その他"
           }
-          if(this.tag2 == "handfree"){
+
+          if(self.tag2 == "handfree"){
             this.tag2name = "手書き風"
-          }else if(this.tag2 == "wedding"){
-            this.tag2name = "結婚式"
-          }else if(this.tag2 == "days"){
+          }else if(self.tag2 == "filter"){
+            this.tag2name = "フィルター"
+          }else if(self.tag2 == "days"){
             this.tag2name = "日常"
-          }else if(this.tag2 == "v-log"){
-            this.tag2name = "v-log"
-          }else if(this.tag2 == "surprise"){
-            this.tag2name = "サプライズ"
-          }else if(this.tag2 == "countdown"){
+          }else if(self.tag2 == "effect"){
+            this.tag2name = "エフェクト"
+          }else if(self.tag2 == "countdown"){
             this.tag2name = "カウントダウン"
+          }else if(self.tag2 == "start"){
+            this.tag2name = "スタート素材"
+          }else if(self.tag2 == "background"){
+            this.tag2name = "背景"
+          }else if(self.tag2 == "people"){
+            this.tag2name = "人物"
+          }else if(self.tag2 == "interesting"){
+            this.tag2name = "おもしろ"
+          }else if(self.tag2 == "parody"){
+            this.tag2name = "パロディ"
+          }else if(self.tag2 == "music"){
+            this.tag2name = "音楽"
           }else{
             this.tag2name = "その他"
           }
-          if(this.tag3 == "handfree"){
+
+          if(self.tag3 == "handfree"){
             this.tag3name = "手書き風"
-          }else if(this.tag3 == "wedding"){
-            this.tag3name = "結婚式"
-          }else if(this.tag3 == "days"){
+          }else if(self.tag3 == "filter"){
+            this.tag3name = "フィルター"
+          }else if(self.tag3 == "days"){
             this.tag3name = "日常"
-          }else if(this.tag3 == "v-log"){
-            this.tag3name = "v-log"
-          }else if(this.tag3 == "surprise"){
-            this.tag3name = "サプライズ"
-          }else if(this.tag3 == "countdown"){
+          }else if(self.tag3 == "effect"){
+            this.tag3name = "エフェクト"
+          }else if(self.tag3 == "countdown"){
             this.tag3name = "カウントダウン"
+          }else if(self.tag3 == "start"){
+            this.tag3name = "スタート素材"
+          }else if(self.tag3 == "background"){
+            this.tag3name = "背景"
+          }else if(self.tag3 == "people"){
+            this.tag3name = "人物"
+          }else if(self.tag3 == "interesting"){
+            this.tag3name = "おもしろ"
+          }else if(self.tag3 == "parody"){
+            this.tag3name = "パロディ"
+          }else if(self.tag3 == "music"){
+            this.tag3name = "音楽"
           }else{
             this.tag3name = "その他"
           }
+
+    
         })
       })
     },

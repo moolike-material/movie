@@ -6,7 +6,7 @@
       <v-card class="p-material_item p-material_item--new mx-auto my-12" max-width="230" min-width="150">
         <div class="p-material_inner p-material_inner--mv">
         <NuxtLink :to="`/detail/${movie.mv_id}/`" class="p-link">
-        <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000"> new</span>
+        <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 10*24*60*60*1000"> new</span>
         <img :src="`/thumb/${movie.mv_id}.webp`"
           class="p-material_thumb">
         </NuxtLink>
