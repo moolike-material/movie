@@ -45,7 +45,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/dotenv',
-    'nuxt-lazy-load',
+    ['nuxt-lazy-load',{
+      defaultImage: '/loading-spin.gif'
+    }],
     '@nuxtjs/google-gtag',
     ['@nuxtjs/google-adsense', {
       id: 'ca-pub-9897424319453576',

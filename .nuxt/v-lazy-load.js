@@ -1,7 +1,7 @@
 import Vue from 'vue';
 require('intersection-observer');
 
-let options = {"images":true,"videos":true,"audios":true,"iframes":true,"native":false,"directiveOnly":false,"loadingClass":"isLoading","loadedClass":"isLoaded","appendClass":"lazyLoad","observerConfig":{},"globalName":"nuxt"};
+let options = {"images":true,"videos":true,"audios":true,"iframes":true,"native":false,"directiveOnly":false,"loadingClass":"isLoading","loadedClass":"isLoaded","appendClass":"lazyLoad","observerConfig":{},"defaultImage":"\u002Floading-spin.gif","globalName":"nuxt"};
 let observer = null;
 let attributes = ['src', 'poster', 'srcset'];
 let elementsMap = {
