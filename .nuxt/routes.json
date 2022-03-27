@@ -3,112 +3,96 @@
     "name": "about",
     "path": "/about",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_63e9078a"
+    "chunkName": "pages/about"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_1042215d"
+    "chunkName": "pages/contact"
   },
   {
     "name": "guideline",
     "path": "/guideline",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/guideline.vue",
-    "chunkName": "pages/guideline",
-    "_name": "_3cb5e626"
+    "chunkName": "pages/guideline"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_c1c4f9d2"
+    "chunkName": "pages/inspire"
   },
   {
     "name": "newmaterial",
     "path": "/newmaterial",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/newmaterial.vue",
-    "chunkName": "pages/newmaterial",
-    "_name": "_7b40e604"
+    "chunkName": "pages/newmaterial"
   },
   {
     "name": "privacy",
     "path": "/privacy",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/privacy.vue",
-    "chunkName": "pages/privacy",
-    "_name": "_676e2cc5"
+    "chunkName": "pages/privacy"
   },
   {
     "name": "ranking",
     "path": "/ranking",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/ranking.vue",
-    "chunkName": "pages/ranking",
-    "_name": "_7ff9ce73"
+    "chunkName": "pages/ranking"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/register/index.vue",
-    "chunkName": "pages/register/index",
-    "_name": "_84f2908e"
+    "chunkName": "pages/register/index"
   },
   {
     "name": "submit",
     "path": "/submit",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/submit.vue",
-    "chunkName": "pages/submit",
-    "_name": "_4ac9636b"
+    "chunkName": "pages/submit"
   },
   {
     "name": "register-movie",
     "path": "/register/movie",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/register/movie.vue",
-    "chunkName": "pages/register/movie",
-    "_name": "_34716f17"
+    "chunkName": "pages/register/movie"
   },
   {
     "name": "category-category",
     "path": "/category/:category?",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/category/_category.vue",
-    "chunkName": "pages/category/_category",
-    "_name": "_56695942"
+    "chunkName": "pages/category/_category"
   },
   {
     "name": "detail-id",
     "path": "/detail/:id?",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/detail/_id.vue",
-    "chunkName": "pages/detail/_id",
-    "_name": "_d912da62"
+    "chunkName": "pages/detail/_id"
   },
   {
     "name": "register-edit",
     "path": "/register/:edit",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/register/_edit.vue",
-    "chunkName": "pages/register/_edit",
-    "_name": "_528ad250"
+    "chunkName": "pages/register/_edit"
   },
   {
     "name": "search-search",
     "path": "/search/:search?",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/search/_search.vue",
-    "chunkName": "pages/search/_search",
-    "_name": "_d5839c9a"
+    "chunkName": "pages/search/_search"
   },
   {
     "name": "tags-tag",
     "path": "/tags/:tag?",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/tags/_tag.vue",
-    "chunkName": "pages/tags/_tag",
-    "_name": "_2de2ba8e"
+    "chunkName": "pages/tags/_tag"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/mac/Desktop/moolike-nuxt/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_f8be3b62"
+    "chunkName": "pages/index"
   }
 ]

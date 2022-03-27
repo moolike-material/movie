@@ -46,7 +46,7 @@ export default {
   modules: [
     '@nuxtjs/dotenv',
     ['nuxt-lazy-load',{
-      defaultImage: '/loading-spin.gif'
+      defaultImage: '/loading.gif'
     }],
     '@nuxtjs/google-gtag',
     ['@nuxtjs/google-adsense', {
