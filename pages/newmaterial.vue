@@ -38,7 +38,7 @@
             </v-card>
           </div>
         </transition-group>
-             <div class="text-center">
+             <div class="text-center" @click="returnTop">
     <v-pagination
       v-model="current_page"
       :length="getPageCount"
@@ -115,7 +115,13 @@
           xhr.open('GET', url);
           xhr.send();
         });
-      }
+      },
+      returnTop(){
+        window.scrollTo({
+        top:0,
+        behavior:'smooth'
+        })
+      }, 
     },
     computed: {
       movies() {

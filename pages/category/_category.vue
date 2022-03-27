@@ -38,7 +38,7 @@
             </v-card>
           </div>
         </transition-group>
-        <div class="text-center">
+        <div class="text-center" @click="returnTop">
           <v-pagination v-model="current_page" :length="getPageCount" class="p-page" circle></v-pagination>
         </div>
       </div>
@@ -121,6 +121,12 @@
       this.setCategories();
     },
     methods: {
+      returnTop(){
+        window.scrollTo({
+        top:0,
+        behavior:'smooth'
+        })
+      },
       remove(id) {
         this.$store.dispatch('movies/remove', id)
       },
