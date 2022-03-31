@@ -60,6 +60,10 @@ export default {
     debug: true, // Enable to track in dev mode.
   },
 
+  sitemap: {
+    path: "/sitemap.xml",
+    hostname: "https://www.moolike-stock.com",
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
