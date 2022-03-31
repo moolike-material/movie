@@ -8,7 +8,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '',
-    title: 'moolike はシンプルで便利な無料動画素材サイト',
+    title: 'moolike | シンプルで使いやすい無料動画素材サイト',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,10 +17,23 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'moolikeはシンプルで使いやすさを追求した 商用利用OKのフリー動画素材サイトです。 動画編集、余興、サプライズ、結婚式など幅広い用途でご使用いただける素材を取り揃えています。' },
       { hid: 'keywords', name: 'keywords', content: '動画素材,著作権無料,著作権フリー,カウントダウン,誕生日,サプライズ,youtube,moolike手書き風' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: "og:site_name", property: "og:site_name", content: "moolike | 無料動画素材サイト" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://www.moolike-stock.com/" },
+      { hid: "og:title", property: "og:title", content: "moolike | 無料動画素材サイト" },
+      { hid: "og:description", property: "og:description", content: "moolikeはシンプルで使いやすさを追求した 商用利用OKのフリー動画素材サイトです。 動画編集、余興、サプライズ、結婚式など幅広い用途でご使用いただける素材を取り揃えています。" },
+      { hid: "og:image", property: "og:image", content: "/favicon.webp" },
+      { hid: "twitter:image", name: "twitter:image", content: "/favicon.webp" },
+      { name: "twitter:card", content: "summary" },
+      { hid: "twitter:site", name: "twitter:site", content: "" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' },
+      {
+        rel: "canonical",
+        href: `https://example.com${this.$route.path}`,
+      }
     ]
   },
 
@@ -63,6 +76,7 @@ export default {
   sitemap: {
     path: "/sitemap.xml",
     hostname: "https://www.moolike-stock.com",
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -90,3 +104,4 @@ export default {
   },
     loading: '~/components/Loading.vue',
 }
+
