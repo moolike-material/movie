@@ -30,10 +30,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' },
-      {
-        rel: "canonical",
-        href: `https://example.com${this.$route.path}`,
-      }
     ]
   },
 
