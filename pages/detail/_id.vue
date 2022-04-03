@@ -13,7 +13,7 @@
         <div class="p-material_detail">
           <div class="p-material_detail__youtube">
             <div class="youtube">
-              <iframe loading="lazy" width="560" height="315" :src="`https://www.youtube.com/embed/${yt_id}`" frameborder="0"
+              <iframe width="560" height="315" :src="`https://www.youtube.com/embed/${yt_id}`" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
