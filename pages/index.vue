@@ -31,7 +31,6 @@
         <img src="tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
       </NuxtLink>
     </div>
-    </メインバナー -->
     <!-- メインコンテンツ -->
     <div class="p-content">
       <div class="p-content_inner">

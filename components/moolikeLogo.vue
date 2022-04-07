@@ -25,7 +25,7 @@
         }
 
         .st3 {
-          font-family: 'YikesMedium';
+          font-family: 'Zen Maru Gothic', sans-serif;
         }
 
         .st4 {
