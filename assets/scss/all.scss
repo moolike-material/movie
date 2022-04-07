@@ -423,12 +423,12 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
   &_search{
     background-color: #fff;
-    width: 50%;
     margin: 0 auto;
     border-radius: 30px;
     
     &__searchInput{
       display: block;
+      margin-left: 1rem;
       border: 2px solid $col-green;
       border-radius: 25px!important;
       

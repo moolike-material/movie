@@ -20,7 +20,7 @@
                 <NuxtLink to="/ranking/" href="#" class="p-nav_link" @click="togglemenu">ランキング</NuxtLink>
               </li>
               <li class="p-nav_item">
-                <NuxtLink to="/about/" href="#" class="p-nav_link" @click="togglemenu">moolikeについて</NuxtLink>
+                <NuxtLink to="/contact/" href="#" class="p-nav_link" @click="togglemenu">リクエスト</NuxtLink>
               </li>
             </ul>
           </nav>

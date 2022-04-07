@@ -20,16 +20,6 @@
         </li>
       </ul>
     </div>
-    <div class="p-header_hum__category_contents">
-      <h3 class="p-header_hum__category_ttl">メニュー</h3>
-      <ul class="p-header_hum__category_category">
-        <li class="p-header_hum__category_category__item">
-          <NuxtLink to="/contact/">
-            リクエスト・お問い合せ
-          </NuxtLink>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 

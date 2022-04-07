@@ -6,14 +6,22 @@
   //*******************************************************************
   .p-header {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    max-height: 120px;
+
 
     &_inner {
-      padding: .5rem 1rem;
+      padding: 0.2rem 1rem .5rem;
+      display: block;
+      position: relative;
     }
 
     &_ttl {
-      width: 135px;
+      width: 150px;
       transform: translateY(5px);
+      margin: 0 auto .5rem;
     }
 
     &_search {
@@ -23,11 +31,18 @@
     }
 
     &_searchInput{
-        width: 140px;
+        width: 90%;
+        height: 35px;
+        margin: 0 auto;
         font-size: .3rem!important;
     }
 
     &_hum {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 10%;
+      right: 20%;
 
       &__category {
         margin: 0 calc(50% - 140vw);
@@ -43,7 +58,18 @@
 
     // グローバルナビ
     .p-nav {
-      display: none;
+      display: block;
+      width: 100%;
+      margin-top: .8rem;
+
+      &_list{
+        margin: 0;
+      }
+
+      &_link{
+        font-size: .8rem;
+      }
+
     }
 
     .theme--light.v-label {
@@ -99,6 +125,10 @@
   //*******************************************************************
 //#region 素材
 //*******************************************************************
+
+.main{
+  padding-top: 120px!important;
+}
 
 .p-material{
     &_item{
