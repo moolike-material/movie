@@ -261,14 +261,17 @@
 //*******************************************************************
 .p-material_detail{
     display: block;
+    margin-bottom: 5rem;
   
     &__dl{
-      margin-top: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
 
     }
   
     &__desc{
-      padding: 1rem 0;
+      margin-top: 2rem;
+      padding: 2rem 0;
       width: 100%;
       margin-left: 0;
       border-top: 2px solid $col-green;
@@ -276,14 +279,12 @@
   
   
       &_params{
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid $col-green;
-        border-bottom: 1px solid $col-green;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
         font-size: .8rem;
         letter-spacing: 0.08em;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        padding-bottom: 1.5rem;
       }
   
       &_tags{
@@ -299,8 +300,9 @@
     }
   
     &__copy{
-      font-size: .8rem;
-      letter-spacing: .05em;
+      font-size: .9rem;
+      letter-spacing: .06em;
+      line-height: 1.75;
     }
   
   }

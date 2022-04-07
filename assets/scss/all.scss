@@ -492,7 +492,6 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
       font-weight: bold;
       border: 2px solid #000;
       cursor: pointer;
-      box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
       transition: all .3s;
       
       &:hover{
@@ -505,8 +504,8 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         border-color: $col-green;
 
         &:hover{
-          color: #fff;
           background-color: $col-green;
+          color: #fff;
         }
       }
       &--mov{
@@ -528,14 +527,20 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 
     &_params{
-      margin-top: 1rem;
-      padding-top: 1rem;
-      border-top: 1px solid $col-green;
-      border-bottom: 1px solid $col-green;
+      background-color: $col-glay;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
       font-size: .9rem;
       letter-spacing: 0.08em;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      border-radius: 20px;
+      margin-bottom: 3rem;
+
+      &__item{
+        border-bottom: 1px solid rgb(214, 214, 214);
+        margin-bottom: 1rem;
+        padding-left: .5rem;
+      }
+
     }
 
     &_tags{
@@ -552,7 +557,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
   &__copy{
     font-size: .9rem;
-    letter-spacing: .05em;
+    letter-spacing: .07em;
 
   }
 

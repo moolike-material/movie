@@ -3,18 +3,16 @@
     <!-- パンクず -->
     <div class="p-pankuzu">
       <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-      <NuxtLink :to="`/contact`" class="p-pankuzu_inactive">リクエスト・お問い合わせ/contact</NuxtLink>
+      <NuxtLink :to="`/contact`" class="p-pankuzu_inactive">リクエスト/contact</NuxtLink>
     </div>
     <!-- パンクず -->
-    <h1 class="p-content_subTtl p-content_subTtl--underline">リクエスト・お問い合わせ/contact</h1>
+    <h1 class="p-content_subTtl p-content_subTtl--underline">リクエスト/contact</h1>
     <div class="p-sub_content">
-      <p class="page-copy page__desc">
+      <p class="p-page-copy p-page__desc">
         当ウェブサイトをご利用頂き誠にありがとうございます。<br><br>
         
         「こんなポーズの素材が欲しい！！」「あのイラストのようなイラストが欲しい！」など素材のリクエストや<br>
-        「Youtubeの動画編集」「結婚式ムービー」の作成を依頼したい！ような動画編集の依頼など募集しています。<br><br>
-        またご利用に関して報告などいただけると大変励みになります！<br>
-        お問い合わせ内容をいただいた後数日のうちに返信させて頂きますが場合によっては返信できかねる場合がございます><;;
+        「Youtubeの動画編集」「結婚式ムービー」の作成を依頼したい！ような動画編集の依頼など募集しています!<br><br>
       </p>
       <div class="p-form__message">
         <p class="p-form__message__desc">お手数ですが<a class="p-form__message__link"
@@ -26,7 +24,7 @@
           <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">メールアドレス: <span class="form__attention">必須</span><input type="email" name="email" class="form_1coltext" /></label>
+          <label class="form__label">メールアドレス: <input type="email" name="email" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
           <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea" rows="4"></textarea></label>
@@ -49,7 +47,7 @@
   }
 
   .p-page__desc {
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1.85;
     letter-spacing: 0.07em;
     padding-left: 1rem;
@@ -58,7 +56,7 @@
   .p-form__message {
     width: 100%;
     padding: 1rem;
-    margin: 5rem auto 2rem;
+    margin: 3rem auto 2rem;
     background-color: #f2f2f2
   }
 

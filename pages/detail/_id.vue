@@ -23,7 +23,7 @@
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
-            <span style="font-size:0.8rem; margin-bottom:2rem" class="p-attention_id">
+            <span style="font-size:0.7rem; margin-bottom:2rem; color:#555" class="p-attention_id">
             ※mp4データでは背景を透過させるために、グリーンバックで用意しています。<br><br>
             ※movデータはダウンロードに時間がかかる場合がございます。（ボタンクリック後最大30秒程度）<br>
               </span>
@@ -32,16 +32,14 @@
             <h2 class="p-material_detail__ttl">{{name}}</h2>
             <p class="p-material_detail__copy" style="white-space: pre-wrap;" v-text="desc"></p>
             <div class="p-material_detail__desc_params">
-              <div class="p-material_detail__desc_params__item">再生時間 : {{length}}</div>
-              <div class="p-material_detail__desc_params__item">画面サイズ : 1920×1080</div>
-              <div class="p-material_detail__desc_params__item">フレームレート : 29.97fps</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-clock-outline</v-icon>再生時間 : {{length}}</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-monitor-screenshot</v-icon>画面サイズ : 1920×1080</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-image-multiple</v-icon>フレームレート : 29.97fps</div>
             </div>
             <div class="p-material_detail__desc_tags">
               <v-chip class="ma-2" color="pink p-category" label text-color="white">
                 <NuxtLink :to="`/category/${category}/`">
-                  <v-icon left>
-                    mdi-folder-multiple-outline
-                  </v-icon>
+                  <v-icon left>mdi-folder-multiple-outline</v-icon>
                   {{category}}
                 </NuxtLink>
               </v-chip>
