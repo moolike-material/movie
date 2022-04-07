@@ -13,7 +13,7 @@
 
 
     &_inner {
-      padding: 0.2rem 1rem .5rem;
+      padding: 0.2rem 1rem .8rem;
       display: block;
       position: relative;
     }
@@ -34,7 +34,7 @@
         width: 90%;
         height: 35px;
         margin: 0 auto;
-        font-size: .3rem!important;
+        font-size: 1rem!important;
     }
 
     &_hum {
@@ -50,10 +50,8 @@
 
     }
 
-    //ヘッダーハンバーガーメニュー アクティブ
-    .is-p-header_hum_active .p-header_hum {
-      top: 20px;
-      right: 20px;
+    .v-label--active{
+      display: none!important;
     }
 
     // グローバルナビ
@@ -67,7 +65,7 @@
       }
 
       &_link{
-        font-size: .8rem;
+        font-size: .9rem;
       }
 
     }
