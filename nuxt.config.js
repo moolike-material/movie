@@ -95,7 +95,7 @@ export default {
     plugins:[
       new webpack.ProvidePlugin({
         '_':'lodash'
-      })
+      }),
     ]
   },
     loading: '~/components/Loading.vue',

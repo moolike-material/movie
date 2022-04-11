@@ -4,6 +4,7 @@ export { default as Loading } from '../../components/Loading.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
 export { default as Tutorial } from '../../components/Tutorial.vue'
 export { default as VuetifyLogo } from '../../components/VuetifyLogo.vue'
+export { default as Carousel } from '../../components/carousel.vue'
 export { default as Category } from '../../components/category.vue'
 export { default as Headingline } from '../../components/headingline.vue'
 export { default as MoolikeLogo } from '../../components/moolikeLogo.vue'
@@ -16,6 +17,7 @@ export const LazyLoading = import('../../components/Loading.vue' /* webpackChunk
 export const LazyNuxtLogo = import('../../components/NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorial = import('../../components/Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c))
 export const LazyVuetifyLogo = import('../../components/VuetifyLogo.vue' /* webpackChunkName: "components/vuetify-logo" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarousel = import('../../components/carousel.vue' /* webpackChunkName: "components/carousel" */).then(c => wrapFunctional(c.default || c))
 export const LazyCategory = import('../../components/category.vue' /* webpackChunkName: "components/category" */).then(c => wrapFunctional(c.default || c))
 export const LazyHeadingline = import('../../components/headingline.vue' /* webpackChunkName: "components/headingline" */).then(c => wrapFunctional(c.default || c))
 export const LazyMoolikeLogo = import('../../components/moolikeLogo.vue' /* webpackChunkName: "components/moolike-logo" */).then(c => wrapFunctional(c.default || c))

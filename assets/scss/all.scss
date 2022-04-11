@@ -4,6 +4,7 @@
 //*******************************************************************
 .p-header{
 box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+margin-bottom: .1rem;
 
   &_inner{
     padding: .5rem 4rem 1rem;
@@ -183,6 +184,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 
   &_link{
+    display: block;
     color: $col-green!important;
     font-weight: bold;
     border-bottom: 2px solid rgba(0,0,0,0);
@@ -237,7 +239,7 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   &_innerWrap{
     padding: 1rem 1rem;
     overflow: hidden;
-    height: calc(1.75*2rem);  
+    height: calc(1.75*2.5rem);  
     display: flex;
     align-items: center;  
   }
@@ -436,6 +438,23 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 }
 
+.p-slide{
+  padding: 2rem;
+  min-width: 1200px;
+  margin: 0 auto;
+
+  &_item{
+    margin: 1rem;
+    border-radius: 14px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 400px!important;
+  }
+  
+  &_img{
+    width: 400px;
+  }
+}
 
 //*******************************************************************
 //#region おすすめポイント
@@ -561,6 +580,31 @@ box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
   }
 
+}
+
+
+.p-bnr__register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.p-bnr__register .p-bnr_item {
+  margin: 1rem;
+  width: 45%;
+  min-width: 45% !important;
+}
+
+.p-bnr_img{
+  box-shadow:0 0 5px rgba(0,0,0,0.15);
+  border-radius:12px
+
+}
+
+.p-bnr__register .p-bnr_copy {
+  font-size:1rem;
+  font-weight:bold;
+  text-align: center;
 }
 
 

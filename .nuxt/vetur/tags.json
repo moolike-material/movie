@@ -11,6 +11,9 @@
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
   },
+  "Carousel": {
+    "description": "Auto imported from components/carousel.vue"
+  },
   "Category": {
     "description": "Auto imported from components/category.vue"
   },

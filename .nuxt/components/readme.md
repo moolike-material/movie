@@ -10,6 +10,7 @@ You can directly use them in pages and other components without the need to impo
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<VuetifyLogo>` | `<vuetify-logo>` (components/VuetifyLogo.vue)
+- `<Carousel>` | `<carousel>` (components/carousel.vue)
 - `<Category>` | `<category>` (components/category.vue)
 - `<Headingline>` | `<headingline>` (components/headingline.vue)
 - `<MoolikeLogo>` | `<moolike-logo>` (components/moolikeLogo.vue)

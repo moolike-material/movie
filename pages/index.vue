@@ -1,35 +1,8 @@
 <template>
   <div class="p-top">
     <!-- メインビジュアル -->
-    <div class="p-mainvisual">
-      <div class="p-mainvisual_box">
-        <p class="p-mainvisual__desc">商用利用可能のフリー動画素材サイトです。<br>”シンプルで使いやすい”を追求した幅広い素材を取り揃えています。</p>
-        <div class="p-mainvisual_inner">
-          <form @submit.prevent="searchSubmit" class="p-mainvisual_search">
-            <v-autocomplete :search-input.sync="search" hide-details label="動画をキーワードで探す" solo class="p-mainvisual_search__searchInput">
-            </v-autocomplete>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- メインバナー >
-    <div class="p-bnr">
-      <NuxtLink to="tags/countdown" class="p-bnr_item">
-        <p class="p-bnr_copy">カウントダウン</p>
-        <img src="tag_countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
-      </NuxtLink>
-      <NuxtLink to="tags/background" class="p-bnr_item">
-        <p class="p-bnr_copy">背景</p>
-        <img src="tag_background.webp" alt="おすすめタグ　背景" class="p-bnr_img">
-      </NuxtLink>
-      <NuxtLink to="tags/filter" class="p-bnr_item">
-        <p class="p-bnr_copy">フィルター</p>
-        <img src="tag_filter.webp" alt="おすすめタグ　フィルター" class="p-bnr_img">
-      </NuxtLink>
-      <NuxtLink to="tags/handfree" class="p-bnr_item">
-        <p class="p-bnr_copy">手書き風</p>
-        <img src="tag_handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
-      </NuxtLink>
+    <div class="p-mainvisual--2">
+              <carousel />
     </div>
     <!-- メインコンテンツ -->
     <div class="p-content">
@@ -164,13 +137,20 @@
   export default {
     data() {
       return {
-        items: [{
-            src: '/mv.jpg',
+    items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
           },
           {
-            src: '/mv3.jpg',
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
           },
-        ],
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+    ],
         tags: [{
             tag: '手書き風',
             param: 'handfree'

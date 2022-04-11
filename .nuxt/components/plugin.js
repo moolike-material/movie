@@ -6,6 +6,7 @@ const components = {
   NuxtLogo: () => import('../../components/NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c)),
   Tutorial: () => import('../../components/Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c)),
   VuetifyLogo: () => import('../../components/VuetifyLogo.vue' /* webpackChunkName: "components/vuetify-logo" */).then(c => wrapFunctional(c.default || c)),
+  Carousel: () => import('../../components/carousel.vue' /* webpackChunkName: "components/carousel" */).then(c => wrapFunctional(c.default || c)),
   Category: () => import('../../components/category.vue' /* webpackChunkName: "components/category" */).then(c => wrapFunctional(c.default || c)),
   Headingline: () => import('../../components/headingline.vue' /* webpackChunkName: "components/headingline" */).then(c => wrapFunctional(c.default || c)),
   MoolikeLogo: () => import('../../components/moolikeLogo.vue' /* webpackChunkName: "components/moolike-logo" */).then(c => wrapFunctional(c.default || c)),
