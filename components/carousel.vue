@@ -19,7 +19,7 @@
       return {
         settings: {
         "centerMode": true,
-         "dots": true,
+         "dots": false,
         "focusOnSelect": true,
         "infinite": true,
         "speed": 500,
