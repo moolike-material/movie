@@ -14,7 +14,7 @@ margin-bottom: .1rem;
   }
 
   &_ttl{
-    width: 200px;
+    width: 300px;
     transform: translateY(5px);
   }
 
@@ -22,7 +22,7 @@ margin-bottom: .1rem;
     width: 30%!important;
   }
   &_searchInput{
-    border: 2px solid $col-green;
+    background-color: #eee;
     border-radius: 30px;
     padding: 0.2rem 2rem;
     color: $col-glay;

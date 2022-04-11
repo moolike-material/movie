@@ -5,7 +5,7 @@
         <div class="p-header_inner">
           <NuxtLink to="/">
             <h1 class="p-header_ttl">
-              <moolikeLogo />
+              <img src="/ttl.png" alt="moolike シンプルな動画素材サイト">
             </h1>
           </NuxtLink>
           <form @submit.prevent="searchSubmit" class="p-header_search">
