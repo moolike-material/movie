@@ -70,22 +70,3 @@
     </div>
 </template>
 
-<style>
-.page__block {
-    margin-top: 3rem;
-}
-
-.page__subttl {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: .18em;
-}
-
-.page__desc{
-    margin-top: 1rem;
-    font-size: .8rem;
-    line-height: 1.85;
-    letter-spacing: .07em;
-    padding-left: 1rem;
-}
-</style>

@@ -21,7 +21,7 @@
     &_ttl {
       width: 200px;
       transform: translateY(5px);
-      margin: 0 1.5rem 1rem;
+      margin: 0 2rem 1.6rem;
     }
 
     &_search {
@@ -34,7 +34,7 @@
         width: 90%;
         height: 30px;
         margin: 0 auto;
-        font-size: 1rem!important;
+        font-size: 1.6rem!important;
     }
 
     &_hum {
@@ -58,7 +58,7 @@
     .p-nav {
       display: block;
       width: 100%;
-      margin-top: .8rem;
+      margin-top: 1rem;
       
       &_list{
         margin: 0;
@@ -66,7 +66,7 @@
       }
       
       &_link{
-        font-size: .9rem;
+        font-size: $product_namesp;
         padding-bottom: .3rem;
         color: #fff!important;
       }
@@ -89,7 +89,7 @@
         display: none;
   
       & h3{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #fff;
         margin-bottom: .5rem;
         opacity: 0;
@@ -100,16 +100,16 @@
         margin-top: 3rem;
       }
       & ul li{
-        font-size: .7rem;
+        font-size: 1rem;
         opacity: 0;
         -webkit-transform: scaleX(0) translateX(-260px);
         transform: scaleX(0) translateX(-260px);
         -webkit-transition: none;
         transition: none;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
   
         &:not(:last-child){
-          margin-bottom: .5rem;
+          margin-bottom: 1rem;
         }
   
         & a{
@@ -147,11 +147,11 @@
     }
 
     &_innerWrap{
-      height: calc(1.75*2rem);  
+      height: calc(1.75*2.5rem);  
     }
 
     &_ttl{  
-      font-size: 0.75rem;
+      font-size: 1.1rem;
       width: 100%;
     }
 
@@ -163,7 +163,7 @@
 
   .p-rank_icon{
     color: #fff;
-    font-size: .6rem;
+    font-size: 1rem;
     letter-spacing: .08em;
   }
 
@@ -185,14 +185,15 @@
     }
 
     &_subTtl{
-      font-size: 1.4rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
   }
   
 
 .p-content_section{
     &__ttl{
-        font-size: 1.2rem;
+        font-size: $ttl--sp;
         margin-bottom: 30px;
     }
   }
@@ -299,16 +300,16 @@
   
     &__ttl{
       display: inline-block;
-      font-size: 1rem;
+      font-size: $product_name;
       letter-spacing: .05em;
       color: $col-green;
       background:linear-gradient(transparent 60%, $col-yellow 0%);
     }
   
     &__desc{
-      font-size:.9rem;
+      font-size:$small--sp;
       width: 73%;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
     }
   }
 
@@ -317,7 +318,7 @@
 //*******************************************************************
 .p-content_subTtl--special{
   margin-bottom: .7rem;
-  font-size: 1.3rem!important;
+  font-size: $ttl--sp;
 }
 
 .p-special{
@@ -328,13 +329,13 @@
   } 
 
   &__materialWrap{
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   &__copy{
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     text-align: center;
-    font-size: .8rem;
+    font-size: $product_namesp;
     line-height: 1.75;
   }
 
@@ -351,6 +352,10 @@
       margin-top: 2rem;
       margin-bottom: 1.5rem;
 
+      &__item{
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+      }
     }
   
     &__desc{
@@ -365,7 +370,7 @@
       &_params{
         margin-top: 2rem;
         padding-top: 1.5rem;
-        font-size: .8rem;
+        font-size: 1.3rem;
         letter-spacing: 0.08em;
         margin-bottom: 3rem;
         padding-bottom: 1.5rem;
@@ -379,12 +384,12 @@
     }
   
     &__ttl{
-      font-size: 1.3rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
   
     &__copy{
-      font-size: .9rem;
+      font-size: 1.4rem;
       letter-spacing: .06em;
       line-height: 1.75;
     }
@@ -397,7 +402,7 @@
   
   .p-bnr__register .p-bnr_item {
     display: block;
-    margin: 0rem 0rem 3rem;
+    margin: 0rem 0rem 4rem;
     width: 100%;
     height: auto;
     min-width: 100% !important;
@@ -410,17 +415,17 @@
   }
 
   .p-bnr_ttl{
-    padding-left: .3rem;
-    font-size: 1rem;
+    padding-left: .5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 0.7rem 0 0.5rem;
   }
   
   .p-bnr__register .p-bnr_copy {
-    padding-left: .3rem;
+    padding-left: .5rem;
     text-align: left;
     top: 50%;
-    font-size:.8rem;
+    font-size:1.2rem;
     font-weight: normal;
   }
   
@@ -437,7 +442,7 @@
   //#region フッター
   //*******************************************************************
   .p-footer {
-    padding: 3rem 2rem !important; //デフォルトCSS削除
+    padding: 5rem 2rem !important; //デフォルトCSS削除
     background: url("/bg.jpg") no-repeat;
     background-size: cover;
 
@@ -459,7 +464,7 @@
 
       &__link {
         color: #fff;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0);
         transition: all .3s;
 
@@ -471,16 +476,16 @@
     }
 
     &_copy {
-      margin-top: .5rem;
+      margin-top: 1rem;
       color: #fff;
-      font-size: .8rem;
+      font-size: 1rem;
       text-align: center;
     }
 
   }
 
   
-}
+
 
 //*******************************************************************
 //#region 個別ページ
@@ -494,17 +499,18 @@
   }
   
   &__subttl{
-    font-size: 1.3rem;
-    margin-bottom: .5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   &__desc{
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.75;
   }
 
   &__block{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   &__orderlist{
@@ -515,7 +521,7 @@
   
   &__item{
     margin-top: .8rem;
-    font-size: .8rem;
+    font-size: 1.2rem;
     letter-spacing: .08em;
     padding-bottom: .5rem;
     border-bottom: 1px dotted #ccc;
@@ -551,4 +557,42 @@
 
   &__date{
   }
+}
+
+.p-page__desc{
+  font-size: 1.4rem;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  letter-spacing: 0.09em;
+
+}
+
+.form_1coltext,
+.form__select,
+.form__textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin:10px 0
+
+}
+
+.form__label {
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
+
+.submit {
+  margin: 3rem auto 0;
+}
+
 }

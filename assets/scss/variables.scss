@@ -4,9 +4,14 @@ body{
   font-size: 62.5%;
   box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-   font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
   transition: all .3s;
   letter-spacing: 0.05em;
+}
+
+html{
+  font-size: 10px!important;
+
 }
 
 .st3,.st9{
@@ -37,8 +42,15 @@ $pc: 1024px; // PC
 $tab: 680px; // タブレット
 $sp: 480px;  // スマホ
 
-$ttl:1.6rem;
-$desc:.8rem;
+$ttl--pc:2.2rem;
+$desc--pc :1.6rem;
+$product_name:1.4rem;
+$small--pc:1.2rem;
+
+$ttl--sp:2rem;
+$desc--sp :1.6rem;
+$product_namesp:1.4rem;
+$small--sp:1.2rem;
 
 //*********************************************** 
 //vuetify css 削除

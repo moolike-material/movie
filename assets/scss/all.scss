@@ -96,9 +96,9 @@ background-color:#a2ccd0;
       transition: all 2s;
 
     & h3{
-      font-size: 2rem;
+      font-size: $ttl--pc;
       color: #fff;
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
       opacity: 0;
       -webkit-transform: scaleX(0) translateX(-260px);
       transform: scaleX(0) translateX(-260px);
@@ -108,15 +108,15 @@ background-color:#a2ccd0;
       transition: all 2s;
     }
     & ul li{
-      font-size: 1rem;
+      font-size: $desc--pc;
       opacity: 0;
       -webkit-transform: scaleX(0) translateX(-260px);
       transform: scaleX(0) translateX(-260px);
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
       transition: all 2s;
 
       &:not(:last-child){
-        margin-bottom: .5rem;
+        margin-bottom:1rem;
       }
 
       & a{
@@ -173,7 +173,6 @@ background-color:#a2ccd0;
 // グローバルナビ
 .p-nav{
  width: 400px;
- font-size: 0.8rem;
  font-weight: bold;
  letter-spacing: 0.1em;
  
@@ -181,7 +180,7 @@ background-color:#a2ccd0;
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin-left: 2rem;
+   margin-left: 3rem;
   }
 
   &_link{
@@ -190,17 +189,17 @@ background-color:#a2ccd0;
     font-weight: bold;
     border-bottom: 2px solid rgba(0,0,0,0);
     transition: all .3s;
-    font-size: 1rem;
+    font-size: $desc--pc;
 
     &:hover{
-      border-color: $col-green;
+      border-color: #fff;
       opacity: .8;
     }
   }
 }
 
 .theme--light.v-label{
-  font-size: .8rem;
+  font-size: 1rem;
   top: 0px;
 }
 
@@ -221,7 +220,7 @@ background-color:#a2ccd0;
     color: #fff;
     font-weight: bold;
     padding: .1rem .3rem;
-    font-size: .8rem;
+    font-size: $small--pc;
     top:  0;
     right: 0;
   }
@@ -240,7 +239,7 @@ background-color:#a2ccd0;
   &_innerWrap{
     padding: 1rem 1rem;
     overflow: hidden;
-    height: calc(1.75*2.5rem);  
+    height: calc(1.75*3rem);  
     display: flex;
     align-items: center;  
   }
@@ -250,7 +249,7 @@ background-color:#a2ccd0;
     right: 1rem;
   }
   &_ttl{
-    font-size: 1rem;
+    font-size: $product_name;
     width: 80%;
     color: $col-green;
   }
@@ -264,7 +263,7 @@ background-color:#a2ccd0;
   top: 0;
   left: 0;
   background-color: $col-yellow;
-  padding: 0.1rem 0.5rem;
+  padding: 0 1rem 0.5rem;
   font-size: .5rem;
   font-weight: bold;
   border-radius: 0 0 10px 0;
@@ -272,24 +271,24 @@ background-color:#a2ccd0;
 
 .p-rank_icon{
   color: #fff;
-  font-size: 1rem;
+  font-size: $desc--pc;
   letter-spacing: .08em;
   display: flex;
 }
 
 .p-rank_icon--1 .p-rank_icon_icon::before{
   color: rgb(204, 153, 0)!important;
-  font-size: 1rem;
+  font-size: $desc--pc;
   display: inline-block;
 }
 .p-rank_icon--2 .p-rank_icon_icon::before{
   color: rgb(163, 163, 163)!important;
-  font-size: 1rem;
+  font-size: $desc--pc;
   display: inline-block;
 }
 .p-rank_icon--3 .p-rank_icon_icon::before{
   color: rgb(187, 129, 105)!important;
-  font-size: 1rem;
+  font-size: $desc--pc;
   display: inline-block;
 }
 
@@ -304,7 +303,7 @@ background-color:#a2ccd0;
 .p-content{
   max-width: 1280px!important;
   margin: 0 auto;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 
   &_inner{
     display: flex;
@@ -315,21 +314,21 @@ background-color:#a2ccd0;
   }
 
   &_subTtl{
-    font-size: 1.6rem;
+    font-size: $ttl--pc;
     color: $col-green;
-    margin-bottom: 40px;
+    margin-bottom: 6rem;
   }
 }
 
 .p-content_section{
-  padding-top: 6rem;
+  padding-top: 10rem;
 
 
   &__ttl{
       text-align: center;
-      font-size: 1.6rem;
+      font-size: $ttl--pc;
       color: $col-green;
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
   }
 }
 
@@ -340,9 +339,9 @@ background-color:#a2ccd0;
     position: relative;
     color: $col-green;
     border: 2px solid $col-green;
-    padding: .5rem 1rem;
+    padding:1rem 1.6rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: $desc--pc;
     border-radius: 30px;
 
     &:hover{
@@ -478,16 +477,16 @@ background-color:#a2ccd0;
 
   &__ttl{
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: $product_name;
     letter-spacing: .05em;
     color: $col-green;
     background:linear-gradient(transparent 60%, $col-yellow 0%);
   }
 
   &__desc{
-    font-size:.8rem;
+    font-size:$small--pc;
     width: 90%;
-    margin: 1rem auto;
+    margin: 1.6rem auto;
   }
 }
 
@@ -495,8 +494,8 @@ background-color:#a2ccd0;
 //#region 特集
 //*******************************************************************
 .p-content_subTtl--special{
-  margin-bottom: .7rem;
-  font-size: 1.3rem!important;
+  margin-bottom:1rem;
+  font-size:$ttl--pc;
 }
 
 .p-special{
@@ -506,13 +505,13 @@ background-color:#a2ccd0;
   } 
 
   &__materialWrap{
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   &__copy{
     margin-top: 2rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: $desc--pc;
     line-height: 1.75;
   }
 
@@ -525,16 +524,16 @@ background-color:#a2ccd0;
   display: flex;
 
   &__dl{
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 
     &__item{
       width: 48%;
       text-align: center;
-      padding: 1rem;
+      padding: 1.6rem;
       border-radius: 30px;
-      font-size: .7rem;
+      font-size: $product_name;
       font-weight: bold;
       border: 2px solid #000;
       cursor: pointer;
@@ -566,43 +565,42 @@ background-color:#a2ccd0;
   }
 
   &__desc{
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin-left: 2rem;
     border-top: 2px solid $col-green;
     width: 48%;
-    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 
     &_params{
       background-color: $col-glay;
       margin-top: 3rem;
       padding: 2rem 1rem;
-      font-size: .9rem;
+      font-size: $product_name;
       letter-spacing: 0.08em;
       border-radius: 20px;
       margin-bottom: 3rem;
 
       &__item{
         border-bottom: 1px solid rgb(214, 214, 214);
-        margin-bottom: 1rem;
-        padding-left: .5rem;
+        margin-bottom: 1.4rem;
+        padding-left: 1rem;
       }
 
     }
 
     &_tags{
       &:not(:last-child){
-      margin-bottom: 1rem;
+      margin-bottom: 1.6rem;
       }
     }
   }
 
   &__ttl{
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: $ttl--pc;
+    margin-bottom: 1.6rem;
   }
 
   &__copy{
-    font-size: .9rem;
+    font-size: $product_name;
     letter-spacing: .07em;
 
   }
@@ -617,7 +615,7 @@ background-color:#a2ccd0;
 }
 
 .p-bnr__register .p-bnr_item {
-  margin: 1rem;
+  margin: 2rem;
   width: 45%;
   min-width: 45% !important;
 }
@@ -656,18 +654,18 @@ background-color:#a2ccd0;
 //#region フッター
 //*******************************************************************
 .p-footer{
-  padding: 4rem!important;//デフォルトCSS削除
+  padding: 7rem!important;//デフォルトCSS削除
   background: url("/bg.jpg") no-repeat;
   background-size: cover;
 
   &_logo{
     width: 200px;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
 
   &_btns{
     width: 100%;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 
     &:not(:last-child){
       margin-right: 2rem;
@@ -676,7 +674,7 @@ background-color:#a2ccd0;
 
     &__link{
       color: #fff;
-      font-size: 0.8rem;
+      font-size: $product_name;
       border-bottom: 1px solid rgba(0,0,0,0);
       transition: all .3s;
 
@@ -688,22 +686,20 @@ background-color:#a2ccd0;
   }
 
 &_copy{
-  margin-top: .5rem;
+  margin-top: 1rem;
   color: #fff;
-  font-size: .8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 }
 
 .p-category{
-  margin-left: .5rem;
+  margin-left: 1rem;
 }
 
 .p-tag{
-  margin-left: .5rem;
-  margin-right: .5rem;
-  margin-bottom: .5rem;
+  margin: 0 1rem 1rem 1rem
 }
 
 
@@ -738,17 +734,18 @@ background-color:#a2ccd0;
   }
   
   &__subttl{
-    font-size: 1.3rem;
-    margin-bottom: .5rem;
+    font-size: $desc--pc;
+    margin-bottom:1rem;
   }
 
   &__desc{
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
-    font-size: 1rem;
+    letter-spacing: .03em;
+    font-size: $product_name;
   }
 
   &__block{
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   &__orderlist{
@@ -758,10 +755,10 @@ background-color:#a2ccd0;
   }
   
   &__item{
-    margin-top: .8rem;
-    font-size: .8rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
     letter-spacing: .08em;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px dotted #ccc;
   }
 
@@ -816,4 +813,98 @@ background-color:#a2ccd0;
     bottom: 10px;
     font-size: .8rem;
   }
+}
+
+
+//*******************************************************************
+//#region フォーム
+//*******************************************************************
+
+.p-form__message {
+  width: 100%;
+  padding: 1rem;
+  margin: 3rem auto 2rem;
+  background-color: #f2f2f2
+}
+
+.p-form__message__desc {
+  font-size:.8rem;
+  text-align: center;
+  color: #777;
+}
+
+.p-form__message__link {
+  border-bottom: 1px dotted #ccc;
+  background-color: #f7fac7;
+}
+
+.form__message__link:hover {
+  background: rgb(244, 241, 164);
+  border-bottom: 1px dotted rgb(244, 241, 164);
+}
+
+.form {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+  font-size: .8rem;
+  letter-spacing: 0.09em;
+
+}
+
+.form_1coltext,
+.form__select,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin:10px 0
+
+}
+
+.form_1coltext:focus,
+.form__select:focus,
+.form__textarea:focus {
+  box-shadow: 0 0 1px 1px #fabe00;
+  opacity: .7;
+  border-color: #fabe00;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
+
+.submit {
+  display: block;
+  width: 50%;
+  margin: 1rem auto 0;
+  text-align: center;
+  border: 1px solid #333;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  transition: all .3s;
+  font-weight:bold;
+}
+
+.submit:hover {
+  background-color: #fabe00;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.form__attention {
+  background-color: #E73357;
+  color: #fff;
+  font-size: .5rem;
+  padding: .3rem .5rem;
+  display: inline-block;
+  margin-left: 2rem;
+  transform: translateY(-2px);
 }

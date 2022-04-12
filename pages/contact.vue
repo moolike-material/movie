@@ -24,7 +24,7 @@
           <label class="form__label">お名前(ニックネーム可): <span class="form__attention">必須</span><input type="text" name="name" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
-          <label class="form__label">メールアドレス: <input type="email" name="email" class="form_1coltext" /></label>
+          <label class="form__label">メールアドレス(任意): <input type="email" name="email" class="form_1coltext" /></label>
         </p>
         <p class="form_item">
           <label class="form__label">お問合せ内容: <textarea name="message" class="form__textarea" rows="4"></textarea></label>
@@ -42,104 +42,6 @@
   </div>
 </template>
 <style>
-  .p-page__desc {
-    margin-top: 1.5rem;
-  }
 
-  .p-page__desc {
-    font-size: .8rem;
-    line-height: 1.85;
-    letter-spacing: 0.07em;
-    padding-left: 1rem;
-  }
-
-  .p-form__message {
-    width: 100%;
-    padding: 1rem;
-    margin: 3rem auto 2rem;
-    background-color: #f2f2f2
-  }
-
-  .p-form__message__desc {
-    font-size:.8rem;
-    text-align: center;
-    color: #777;
-  }
-
-  .p-form__message__link {
-    border-bottom: 1px dotted #ccc;
-    background-color: #f7fac7;
-  }
-
-  .form__message__link:hover {
-    background: rgb(244, 241, 164);
-    border-bottom: 1px dotted rgb(244, 241, 164);
-  }
-
-  .form {
-    display: block;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 3rem 0rem;
-    font-size: .8rem;
-    letter-spacing: 0.09em;
-
-  }
-
-  .form_1coltext,
-  .form__select,
-  .form__textarea {
-    display: block;
-    width: 100%;
-    padding: .8rem;
-    border: 1px solid #ccc;
-    border-radius: 1rem;
-    margin:10px 0
-
-  }
-
-  .form_1coltext:focus,
-  .form__select:focus,
-  .form__textarea:focus {
-    box-shadow: 0 0 1px 1px #fabe00;
-    opacity: .7;
-    border-color: #fabe00;
-  }
-
-  .form__label {
-    display: block;
-    margin-bottom: .5rem;
-    margin-top: 1.2rem;
-    font-weight: bold;
-  }
-
-  .submit {
-    display: block;
-    width: 50%;
-    margin: 1rem auto 0;
-    text-align: center;
-    border: 1px solid #333;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 1rem;
-    transition: all .3s;
-    font-weight:bold;
-  }
-
-  .submit:hover {
-    background-color: #fabe00;
-    color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0);
-  }
-
-  .form__attention {
-    background-color: #E73357;
-    color: #fff;
-    font-size: .5rem;
-    padding: .3rem .5rem;
-    display: inline-block;
-    margin-left: 2rem;
-    transform: translateY(-2px);
-  }
 
 </style>

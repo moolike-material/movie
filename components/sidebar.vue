@@ -114,15 +114,15 @@
 <style>
 .p-sidebar_ttl{
    font-weight: bold; 
-   font-size: 1rem;
-   margin-bottom: .8rem;
+   font-size: 1.6rem;
+   margin-bottom: 1rem;
 }
 
 
 .p-sidebar_category__item{
-  font-size: .8rem;
-  padding: .5rem;
-  padding-left: .8rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  padding-left: 1rem;
   margin: .3rem 0;
   position: relative;
     transition: all .3s;
@@ -153,9 +153,9 @@
 }
 
 .p-sidebar_contents{
-  margin-top: 2rem;
+  margin-top: 4rem;
   position: relative;
-  padding-top: 1rem;
+  padding-top: 4rem;
 }
 
 .p-sidebar_contents::before{
