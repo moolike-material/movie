@@ -502,18 +502,17 @@ background-color:#a2ccd0;
 .p-special{
 
   &__mv{
-    width: 100vw;
-    margin: 0 calc(50% - 50vw);
+    width: 100％;
   } 
 
   &__materialWrap{
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   &__copy{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.75;
   }
 
@@ -631,8 +630,16 @@ background-color:#a2ccd0;
 
 .p-bnr__register .p-bnr_copy {
   font-size:1rem;
-  font-weight:bold;
-  text-align: center;
+  font-weight:normal;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.p-bnr_ttl{
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
 }
 
 

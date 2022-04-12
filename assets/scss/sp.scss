@@ -311,6 +311,34 @@
       margin: 1rem auto;
     }
   }
+
+  //*******************************************************************
+//#region 特集
+//*******************************************************************
+.p-content_subTtl--special{
+  margin-bottom: .7rem;
+  font-size: 1.3rem!important;
+}
+
+.p-special{
+
+  &__mv{
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  } 
+
+  &__materialWrap{
+    margin-top: 4rem;
+  }
+
+  &__copy{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.75;
+  }
+
+}
   
 //*******************************************************************
 //#region 商品詳細
