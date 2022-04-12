@@ -23,8 +23,8 @@
               <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
                 MOV形式でダウンロード</div>
             </div>
-            <span style="font-size:0.7rem; margin-bottom:2rem; color:#555" class="p-attention_id">
-            ※mp4データでは背景を透過させるために、グリーンバックで用意しています。<br><br>
+            <span style="font-size:1rem; margin-bottom:2rem; color:#555" class="p-attention_id">
+            ※mp4データでは背景を透過させるために、グリーンバックで用意しています。<br>
             ※movデータはダウンロードに時間がかかる場合がございます。（ボタンクリック後最大30秒程度）<br>
               </span>
           </div>

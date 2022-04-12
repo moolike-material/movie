@@ -358,7 +358,7 @@
     }
   
     &__desc{
-      margin-top: 2rem;
+      margin-top: 4rem;
       padding: 2rem 0;
       width: 100%;
       margin-left: 0;
@@ -367,11 +367,11 @@
   
   
       &_params{
-        margin-top: 2rem;
+        margin-top: 4rem;
         padding-top: 1.5rem;
         font-size: 1.3rem;
         letter-spacing: 0.08em;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         padding-bottom: 1.5rem;
       }
   
@@ -384,7 +384,7 @@
   
     &__ttl{
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   
     &__copy{
@@ -427,7 +427,15 @@
     font-size:1.2rem;
     font-weight: normal;
   }
+
+  .p-material_wrap{
+    margin-top: 7rem!important;
+  }
   
+  .p-material_wrap2{
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   
 //*******************************************************************
 //#region サイドバー
