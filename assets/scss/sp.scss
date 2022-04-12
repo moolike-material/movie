@@ -135,18 +135,30 @@
 }
 
 .p-material{
+  justify-content: space-between;
     &_item{
-      width: 46.5%!important;
+      width: 48%!important;
       min-width: 120px;
-      margin-bottom: 15px;
-      
+      margin:0 0 30px;
+
       &:not(:nth-child(3n)){
-        margin-right: 0;
+        margin-right: 0px;
       }
     }
-    &_ttl{  
-      font-size: 0.8rem;
+
+    &_innerWrap{
+      height: calc(1.75*2rem);  
     }
+
+    &_ttl{  
+      font-size: 0.75rem;
+      width: 100%;
+    }
+
+    &_tag_icon{
+      display: none!important;
+    }
+
   }
 
   .p-rank_icon{
@@ -161,7 +173,11 @@
 .p-content{
 
   &_section{
-    padding-top: 4rem;
+    padding-top: 6rem;
+
+    &--top{
+      padding-top: 3rem;
+    }
   }
 
     &_main{
@@ -188,6 +204,10 @@
         font-size: 0.8rem;
     }
   
+  }
+
+  .p-page{
+    margin-top: 1rem;
   }
 
 //*******************************************************************
@@ -236,7 +256,7 @@
     margin: 0 calc(50% - 50vw);
   
     &_item{
-      margin: .5rem 0;
+      margin: .8rem 0 0;
       border-radius: 14px;
       box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
       overflow: hidden;
@@ -348,10 +368,11 @@
   }
   
   .p-bnr__register .p-bnr_item {
-    margin: .5rem;
-    width: 45%;
-    height: 130px;
-    min-width: 45% !important;
+    display: block;
+    margin: 0rem 0rem 3rem;
+    width: 100%;
+    height: auto;
+    min-width: 100% !important;
   }
   
   .p-bnr_img{
@@ -359,11 +380,20 @@
     border-radius:12px
   
   }
+
+  .p-bnr_ttl{
+    padding-left: .3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.7rem 0 0.5rem;
+  }
   
   .p-bnr__register .p-bnr_copy {
+    padding-left: .3rem;
+    text-align: left;
     top: 50%;
     font-size:.8rem;
-    font-weight:bold
+    font-weight: normal;
   }
   
   

@@ -7,25 +7,30 @@
         <!-- パンクず -->
         <div class="p-pankuzu">
           <NuxtLink to="/">moolike</NuxtLink><span> > </span>
-          <NuxtLink :to="`/tags/${query}`" class="p-pankuzu_inactive">{{tagttl}}</NuxtLink>
+          <NuxtLink :to="`/category/${query}/`" class="p-pankuzu_inactive">{{categoryttl}}</NuxtLink>
         </div>
         <!-- パンクず -->
-        <h1 class="p-content_subTtl">タグ検索: {{tagttl}}</h1>
+        <h1 class="p-content_subTtl p-content_subTtl--special">無料手書き風素材</h1>
+        <img src="/handfree.png" class="p-special__mv">
+        <p class="p-special__copy">
+        まるでイラストが描かれるかのように表示される<br>フリー素材を集めました♪ <br>温かさをプラスした動画演出に最適です！</p>
+        <section class="p-special__materialWrap">
+        <h2 class="p-content_section__ttl">カウントダウン素材一覧</h2>
         <transition-group appear tag="div" class="p-material">
-          <div v-for="movie in getMovies" :key="movie.mv_id" class="p-material_item">
+          <div v-for="movie in getMovies" :key="movie.mv_id" class="p-material p-material_item">
             <v-card class="mx-auto my-12">
               <div class="p-material_inner p-material_inner--mv">
-                <NuxtLink :to="`/detail/${movie.mv_id}`">
-                  <span class="p-material_new"
-                    v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
-                  <img :src="`/thumb/${movie.mv_id}.webp`"
-                    class="p-material_thumb" v-lazy-load>
-                </NuxtLink>
-              </div>
+              <NuxtLink :to="`/detail/${movie.mv_id}`">
+                         <span class="p-material_new"
+                      v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
+                <img :src="`/thumb/${movie.mv_id}.webp`"
+                  class="p-material_thumb" v-lazy-load>
+              </NuxtLink>
+                </div>
               <div class="p-material_inner">
                 <NuxtLink :to="`/detail/${movie.mv_id}`">
                   <div class="p-material_innerWrap">
-                    <h3 class="p-material_ttl">{{movie.name}}</h3>
+                    <h3 class="p-material_ttl">{{movie.name}}{{movie.if}}</h3>
                   </div>
                 </NuxtLink>
                 <div class="p-material_iconWrap">
@@ -41,6 +46,23 @@
         <div class="text-center" @click="returnTop">
           <v-pagination v-model="current_page" :length="getPageCount" class="p-page" circle></v-pagination>
         </div>
+        </section>
+
+        <section class="p-special__materialWrap">
+        <h2 class="p-content_section__ttl u-mB2">無料素材特集</h2>
+              <div class="p-bnr__register">
+                <NuxtLink to="/category/wedding" class="p-bnr_item">
+                  <img src="/wedding.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                  <p class="p-bnr_ttl">結婚式で使える動画素材</p>
+                  <p class="p-bnr_copy">プロフィールムービーやオープニングムービーで使いやすい素材を取り揃えました！</p>
+                </NuxtLink>
+                <NuxtLink to="/category/countdown" class="p-bnr_item">
+                  <img src="/countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                  <p class="p-bnr_ttl">カウントダウンの無料素材</p>
+                  <p class="p-bnr_copy">動画のスタートを個性豊かに演出できるカウントダウンのフリー素材です♪</p>
+                </NuxtLink>
+        </div>
+        </section>
       </div>
       <!-- サイドバー -->
       <aside class="p-sideber">
@@ -71,7 +93,7 @@
         week: 7 * 24 * 60 * 60 * 1000,
         current_page: 1,
         input: '',
-        parPage: 15,
+        parPage: 14,
         today: new Date(),
         tags: [{
             tag: '手書き風',
@@ -112,17 +134,17 @@
       let self = this
       this.setQuery()
       this.$store.dispatch('movies/init');
-      this.$store.dispatch('movies/getTags1', this.query).then(querySnapshot => {
+      this.$store.dispatch('movies/getTags1', "handfree").then(querySnapshot => {
         querySnapshot.forEach(doc => {
           self.movie_serach.push(doc.data());
         });
       })
-      this.$store.dispatch('movies/getTags2', this.query).then(querySnapshot => {
+      this.$store.dispatch('movies/getTags2', "handfree").then(querySnapshot => {
         querySnapshot.forEach(doc => {
           self.movie_serach.push(doc.data())
         });
       })
-      this.$store.dispatch('movies/getTags3', this.query).then(querySnapshot => {
+      this.$store.dispatch('movies/getTags3', "handfree").then(querySnapshot => {
         querySnapshot.forEach(doc => {
           self.movie_serach.push(doc.data())
         });
@@ -142,7 +164,7 @@
           if (tag.param == this.query) {
             this.tagttl = tag.tag
           }
-        })
+        }) 
       },
       returnTop(){
         window.scrollTo({
