@@ -19,7 +19,7 @@
               <NuxtLink :to="`/detail/${movie.mv_id}`">
                          <span class="p-material_new"
                       v-if="today - movie.created.toDate().getTime() <= 10*24*60*60*1000">new</span>
-                <img :src="`/thumb/${movie.mv_id}.webp`"
+                <img :data-src="`/thumb/${movie.mv_id}.webp`"
                   class="p-material_thumb" v-lazy-load>
                 <div class="p-rank_color" v-if="index == 0">
                   <div class="p-rank_icon p-rank_icon--1">
