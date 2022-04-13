@@ -9,15 +9,15 @@ margin-bottom: .1rem;
 background-color:#1C4D50;
 
   &_inner{
-    padding: .5rem 4rem 1rem;
+    padding: 1rem 4rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &_ttl{
-    width: 300px;
-    transform: translateY(5px);
+    width: 250px;
+    transform: translateY(0px);
   }
 
   &_search{
@@ -570,6 +570,7 @@ background-color:#1C4D50;
     margin-left: 2rem;
     border-top: 2px solid $col-green;
     width: 48%;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 
     &_params{
       background-color: $col-glay;

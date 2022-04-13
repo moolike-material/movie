@@ -32,9 +32,9 @@
             <h2 class="p-material_detail__ttl">{{name}}</h2>
             <p class="p-material_detail__copy" style="white-space: pre-wrap;" v-text="desc"></p>
             <div class="p-material_detail__desc_params">
-              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-clock-outline</v-icon>再生時間 : {{length}}</div>
-              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-monitor-screenshot</v-icon>画面サイズ : 1920×1080</div>
-              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:0.95rem" left>mdi-image-multiple</v-icon>フレームレート : 29.97fps</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:1.5rem;transform:translateY(-2px)" left>mdi-clock-outline</v-icon>再生時間 : {{length}}</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:1.5rem;transform:translateY(-2px)" left>mdi-monitor-screenshot</v-icon>画面サイズ : 1920×1080</div>
+              <div class="p-material_detail__desc_params__item"><v-icon style="font-size:1.5rem;transform:translateY(-2px)" left>mdi-image-multiple</v-icon>フレームレート : 29.97fps</div>
             </div>
             <div class="p-material_detail__desc_tags">
               <v-chip class="ma-2" color="pink p-category" label text-color="white">

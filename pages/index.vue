@@ -43,22 +43,22 @@
             <li class="p-reccomend__item">
               <img src="/point1.png" class="p-reccomend__img" v-lazy-load>
               <div class="p-reccomend__Inner">
-              <h3 class="p-reccomend__ttl">著作権フリーの素材</h3>
+              <h3 class="p-reccomend__ttl">著作権フリーの動画素材</h3>
               <p class="p-reccomend__desc">moolikeの素材は全て著作権フリーです!<br>さらに商用利用OK!</p>
               </div>
             </li>
             <li class="p-reccomend__item">
               <img src="/point2.png" class="p-reccomend__img" v-lazy-load>
               <div class="p-reccomend__Inner">
-              <h3 class="p-reccomend__ttl">DL後すぐに使える！</h3>
-              <p class="p-reccomend__desc">素材はDL後すぐに使えるように<br>MP4,MOV形式でご用意しています。</p>
+              <h3 class="p-reccomend__ttl">ダウンロードしてすぐに使える！</h3>
+              <p class="p-reccomend__desc">素材はすぐに使えるように<br>MP4,MOV形式でご用意しています。</p>
               </div>
             </li>
             <li class="p-reccomend__item">
               <img src="/point3.png" class="p-reccomend__img" v-lazy-load>
               <div class="p-reccomend__Inner">
               <h3 class="p-reccomend__ttl">個別制作依頼も対応！</h3>
-              <p class="p-reccomend__desc">結婚式ムービー、youtube編集などの<br>個別依頼も受け付けています</p>
+              <p class="p-reccomend__desc">結婚式ムービー、youtube編集などの<br>個別依頼も受け付けています！</p>
               </div>
             </li>
           </ul>
