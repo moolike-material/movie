@@ -5,8 +5,8 @@
 .p-header{
 box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 margin-bottom: .1rem;
-background-color:#a2ccd0;
-// background-color:#1C4D50;
+// background-color:#a2ccd0;
+background-color:#1C4D50;
 
   &_inner{
     padding: .5rem 4rem 1rem;
@@ -370,9 +370,9 @@ background-color:#a2ccd0;
 }
 
 .p-pankuzu{
-  font-size: .8rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 
   & a{
     &:hover{
@@ -383,6 +383,7 @@ background-color:#a2ccd0;
   &_inactive{
     color: $col-green;
     font-weight: bold;
+    text-decoration: underline;
   }
 }
 
@@ -441,8 +442,8 @@ background-color:#a2ccd0;
 
 .p-slide{
   padding: 2rem;
-  min-width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 
   &_item{
     margin: 1rem;
@@ -608,6 +609,10 @@ background-color:#a2ccd0;
 
 }
 
+.v-chip__content a{
+  font-size: 1.1rem;
+}
+
 .p-material_wrap2{
   margin-top: 8rem;
 }
@@ -623,9 +628,8 @@ background-color:#a2ccd0;
 }
 
 .p-bnr__register .p-bnr_item {
-  margin: 2rem;
-  width: 45%;
-  min-width: 45% !important;
+  margin: 0.5rem;
+  width: 32%;
 }
 
 .p-bnr_img{
@@ -703,13 +707,16 @@ background-color:#a2ccd0;
 }
 
 .p-category{
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 .p-tag{
-  margin: 0 1rem 1rem 1rem
+  margin-right: .5rem;
 }
 
+.v-icon--left{
+  margin-right: .5rem;
+}
 
 //*******************************************************************
 //#region トップに戻るボタン
@@ -739,6 +746,7 @@ background-color:#a2ccd0;
 
   &-copy{
     margin-bottom:3rem;
+    font-size: 1.4rem;
   }
   
   &__subttl{
@@ -768,6 +776,11 @@ background-color:#a2ccd0;
     letter-spacing: .08em;
     padding-bottom: 1rem;
     border-bottom: 1px dotted #ccc;
+  }
+
+  &__orderlist--id{
+    width: 75%;
+    margin: 0 auto;
   }
 
 }
@@ -832,11 +845,11 @@ background-color:#a2ccd0;
   width: 100%;
   padding: 1rem;
   margin: 3rem auto 2rem;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 .p-form__message__desc {
-  font-size:.8rem;
+  font-size:1.4rem;
   text-align: center;
   color: #777;
 }
@@ -853,7 +866,6 @@ background-color:#a2ccd0;
 
 .form {
   display: block;
-  max-width: 80%;
   margin: 0 auto;
   padding: 3rem 0rem;
   font-size: .8rem;
@@ -884,14 +896,14 @@ background-color:#a2ccd0;
 .form__label {
   display: block;
   margin-bottom: .5rem;
-  margin-top: 1.2rem;
+  margin-top: 3rem;
   font-weight: bold;
 }
 
 .submit {
   display: block;
   width: 50%;
-  margin: 1rem auto 0;
+  margin: 3rem auto 0;
   text-align: center;
   border: 1px solid #333;
   padding-top: 1rem;

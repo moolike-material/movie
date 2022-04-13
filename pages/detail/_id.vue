@@ -75,16 +75,21 @@
         <div class="p-material_wrap2">
           <h2 class="p-content_section__ttl u-blk u-txtC">動画素材の使用について</h2>
           <ol class="page__orderlist page__orderlist--id">
-            <li class="page__item">個人利用・商用利用どちらにおいても使用いただけます。</li>
-            <li class="page__item">利用に関して許可、報告、クレジットの表記は必要ありません。</li>
-            <li class="page__item">素材に関しては自由に編集し使用してください。</li>
-            <li class="page__item">著作権は放棄しておりません。動画そのものを素材として再配布することは禁止します。</li>
-            <li class="page__item">質問等ございましたら<NuxtLink to="/contact/">お問い合せフォーム</NuxtLink>よりご連絡をお願いします。</li>
+            <li class="page__item">　個人利用・商用利用どちらにおいても使用いただけます。</li>
+            <li class="page__item">　利用に関して許可、報告、クレジットの表記は必要ありません。</li>
+            <li class="page__item">　素材に関しては自由に編集し使用してください。</li>
+            <li class="page__item">　著作権は放棄しておりません。動画そのものを素材として再配布することは禁止します。</li>
+            <li class="page__item">　質問等ございましたら<NuxtLink to="/contact/">お問い合せフォーム</NuxtLink>よりご連絡をお願いします。</li>
           </ol>
         </div>
         <div class="p-material_wrap p-material_wrap--detail">
             <h2 class="p-content_section__ttl">人気のタグ特集</h2>
               <div class="p-bnr__register">
+              <NuxtLink to="/category/wedding" class="p-bnr_item">
+                  <img src="/wedding.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                  <p class="p-bnr_ttl">結婚式で使える動画素材</p>
+                  <p class="p-bnr_copy">プロフィールムービーやオープニングムービーで使いやすい素材を取り揃えました！</p>
+              </NuxtLink>
              <NuxtLink to="/category/countdown" class="p-bnr_item">
                   <img src="/countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
                   <p class="p-bnr_ttl">カウントダウンの無料素材</p>

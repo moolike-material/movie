@@ -253,8 +253,7 @@
   .p-slide{
     padding: 0rem 0rem 0;
     min-width: 100%;
-    width: 100vw;
-    margin: 0 calc(50% - 50vw);
+    
   
     &_item{
       margin: .8rem 0 0;
@@ -401,10 +400,9 @@
   
   .p-bnr__register .p-bnr_item {
     display: block;
-    margin: 0rem 0rem 4rem;
-    width: 100%;
+    margin: 0rem auto 4rem;
+    width: 95%;
     height: auto;
-    min-width: 100% !important;
   }
   
   .p-bnr_img{
@@ -414,14 +412,14 @@
   }
 
   .p-bnr_ttl{
-    padding-left: .5rem;
+    padding-left: 2rem;
     font-size: 1.4rem;
     font-weight: bold;
     margin: 0.7rem 0 0.5rem;
   }
   
   .p-bnr__register .p-bnr_copy {
-    padding-left: .5rem;
+    padding-left: 2rem;
     text-align: left;
     top: 50%;
     font-size:1.2rem;
@@ -505,6 +503,7 @@
 
   &-copy{
     margin-bottom:3rem;
+    font-size: 1.2rem;
   }
   
   &__subttl{
@@ -534,6 +533,11 @@
     letter-spacing: .08em;
     padding-bottom: .5rem;
     border-bottom: 1px dotted #ccc;
+  }
+
+  &__orderlist--id{
+    width: 100%;
+    margin: 0 auto;
   }
 
 }
@@ -604,4 +608,21 @@
   margin: 3rem auto 0;
 }
 
+}
+
+//*******************************************************************
+//#region フォーム
+//*******************************************************************
+
+.p-form__message {
+  width: 100%;
+  padding: 1rem;
+  margin: 3rem auto 2rem;
+  background-color: #f2f2f2;
+}
+
+.p-form__message__desc {
+  font-size:1rem;
+  text-align: center;
+  color: #777;
 }

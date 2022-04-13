@@ -8,7 +8,7 @@
     <!-- パンクず -->
     <h1 class="p-content_subTtl p-content_subTtl--underline">リクエスト/contact</h1>
     <div class="p-sub_content">
-      <p class="p-page-copy p-page__desc">
+      <p class="page-copy p-page__desc">
         当ウェブサイトをご利用頂き誠にありがとうございます。<br><br>
         
         「こんなポーズの素材が欲しい！！」「あのイラストのようなイラストが欲しい！」など素材のリクエストや<br>
