@@ -72,7 +72,7 @@
         current_page: 1,
         input: '',
         today : new Date(),
-        parPage: 15,
+        parPage: 18,
         tags: [{
             tag: '手書き風',
             param: 'handfree'

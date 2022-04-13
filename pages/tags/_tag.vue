@@ -71,7 +71,7 @@
         week: 7 * 24 * 60 * 60 * 1000,
         current_page: 1,
         input: '',
-        parPage: 15,
+        parPage: 18,
         today: new Date(),
         tags: [{
             tag: '手書き風',
