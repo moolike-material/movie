@@ -6,7 +6,7 @@
       <div class="p-content_main">
         <!-- パンクず -->
         <div class="p-pankuzu">
-          <NuxtLink to="/">moolike</NuxtLink><span>  > </span>
+          <NuxtLink to="/">moolike</NuxtLink><span> > </span>
           <NuxtLink to="/newmaterial" class="p-pankuzu_inactive">新着素材</NuxtLink>
         </div>
         <!-- パンクず -->
@@ -15,13 +15,12 @@
           <div v-for="movie in getMovies" :key="movie.mv_id" class="p-material_item">
             <v-card class="mx-auto my-12">
               <div class="p-material_inner p-material_inner--mv">
-              <NuxtLink :to="`/detail/${movie.mv_id}`">
-                         <span class="p-material_new"
-                      v-if="today - movie.created.toDate().getTime() <= 10*24*60*60*1000">new</span>
-                <img :data-src="`/thumb/${movie.mv_id}.webp`"
-                  class="p-material_thumb" v-lazy-load>
-              </NuxtLink>
-                </div>
+                <NuxtLink :to="`/detail/${movie.mv_id}`">
+                  <span class="p-material_new"
+                    v-if="today - movie.created.toDate().getTime() <= 10*24*60*60*1000">new</span>
+                  <img :data-src="`/thumb/${movie.mv_id}.webp`" class="p-material_thumb" v-lazy-load>
+                </NuxtLink>
+              </div>
               <div class="p-material_inner">
                 <NuxtLink :to="`/detail/${movie.mv_id}`">
                   <div class="p-material_innerWrap">
@@ -38,25 +37,23 @@
             </v-card>
           </div>
         </transition-group>
-             <div class="text-center" @click="returnTop">
-    <v-pagination
-      v-model="current_page"
-      :length="getPageCount"
-      class="p-page"
-      circle
-    ></v-pagination>
-                     <div class="p-more_btn u-mT4">
+        <div class="text-center" @click="returnTop">
+          <v-pagination v-model="current_page" :length="getPageCount" class="p-page" circle></v-pagination>
+          <div class="p-more_btn u-mT6">
             　<NuxtLink to="/" class="p-more_btn__link">
               トップに戻る　
             </NuxtLink>
-            </div>
-  </div>
+          </div>
+        </div>
       </div>
-              <!-- サイドバー -->
-        <aside class="p-sideber">
-          <sidebar />
-        </aside>
+      <!-- サイドバー -->
+      <aside class="p-sideber">
+        <sidebar />
+      </aside>
     </div>
+<div v-if="loading" class="loader-wrap">
+<div class="loader">Loading...</div>
+</div>
   </div>
 </template>
 <script>
@@ -82,6 +79,7 @@
         current_page: 1,
         input: '',
         parPage: 12,
+        loading: false,
       }
     },
     created: function () {
@@ -116,12 +114,17 @@
           xhr.send();
         });
       },
-      returnTop(){
+      returnTop() {
         window.scrollTo({
-        top:0,
-        behavior:'smooth'
+          top: 0,
+          behavior: 'smooth'
         })
-      }, 
+      this.loading = true;
+        setTimeout(() => {
+            this.loading = false;
+      }, 1500)
+      console.log("ヤッホー");
+      },
     },
     computed: {
       movies() {

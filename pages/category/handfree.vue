@@ -15,7 +15,7 @@
         <p class="p-special__copy">
         まるでイラストが描かれるかのように表示される<br>フリー素材を集めました♪ <br>温かさをプラスした動画演出に最適です！</p>
         <section class="p-special__materialWrap">
-        <h2 class="p-content_section__ttl">カウントダウン素材一覧</h2>
+        <h2 class="p-content_section__ttl">手書き風素材一覧</h2>
         <transition-group appear tag="div" class="p-material">
           <div v-for="movie in getMovies" :key="movie.mv_id" class="p-material p-material_item">
             <v-card class="mx-auto my-12">
@@ -51,18 +51,28 @@
         <section class="p-special__materialWrap">
         <h2 class="p-content_section__ttl u-mB2">無料素材特集</h2>
               <div class="p-bnr__register">
-                <NuxtLink to="/category/wedding" class="p-bnr_item">
-                  <img src="/wedding.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
-                  <p class="p-bnr_ttl">結婚式で使える動画素材</p>
-                  <p class="p-bnr_copy">プロフィールムービーやオープニングムービーで使いやすい素材を取り揃えました！</p>
+                   <NuxtLink to="/category/wedding" class="p-bnr_item">
+                    <img src="/wedding.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                    <p class="p-bnr_ttl">結婚式で使える動画素材</p>
+                    <p class="p-bnr_copy">プロフィールムービーやオープニングムービーで使いやすい素材を取り揃えました！</p>
                 </NuxtLink>
                 <NuxtLink to="/category/countdown" class="p-bnr_item">
-                  <img src="/countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
-                  <p class="p-bnr_ttl">カウントダウンの無料素材</p>
-                  <p class="p-bnr_copy">動画のスタートを個性豊かに演出できるカウントダウンのフリー素材です♪</p>
+                    <img src="/countdown.webp" alt="おすすめタグ　カウントダウン" class="p-bnr_img">
+                    <p class="p-bnr_ttl">カウントダウンの無料素材</p>
+                    <p class="p-bnr_copy">動画のスタートを個性豊かに演出できるカウントダウンのフリー素材です♪</p>
+                </NuxtLink>
+                <NuxtLink to="/category/handfree" class="p-bnr_item">
+                    <img src="/handfree.webp" alt="おすすめタグ　手書き風" class="p-bnr_img">
+                    <p class="p-bnr_ttl">手書き風の無料素材</p>
+                    <p class="p-bnr_copy">まるでイラストが描かれるかのように表示されるフリー素材を集めました♪ 温かさをプラスした動画演出に最適です！</p>
                 </NuxtLink>
         </div>
         </section>
+      <div class="p-more_btn u-mT6">
+      　<NuxtLink to="/" class="p-more_btn__link">
+      トップに戻る　
+      </NuxtLink>
+      </div>
       </div>
       <!-- サイドバー -->
       <aside class="p-sideber">
@@ -93,7 +103,7 @@
         week: 7 * 24 * 60 * 60 * 1000,
         current_page: 1,
         input: '',
-        parPage: 14,
+        parPage: 12,
         today: new Date(),
         tags: [{
             tag: '手書き風',

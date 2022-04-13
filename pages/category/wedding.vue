@@ -70,6 +70,11 @@
                 </NuxtLink>
             </div>
         </section>
+        <div class="p-more_btn u-mT6">
+        　<NuxtLink to="/" class="p-more_btn__link">
+        トップに戻る　
+        </NuxtLink>
+        </div>
       </div>
       <!-- サイドバー -->
       <aside class="p-sideber">
@@ -101,7 +106,7 @@
         current_page: 1,
         input: '',
         today : new Date(),
-        parPage: 14,
+        parPage: 12,
         tags: [{
             tag: '手書き風',
             param: 'handfree'
