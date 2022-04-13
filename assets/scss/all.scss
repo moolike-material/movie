@@ -524,7 +524,7 @@ background-color:#a2ccd0;
   display: flex;
 
   &__dl{
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
 
@@ -565,14 +565,14 @@ background-color:#a2ccd0;
   }
 
   &__desc{
-    padding: 2rem 0;
+    padding: 3rem 1rem;
     margin-left: 2rem;
     border-top: 2px solid $col-green;
     width: 48%;
 
     &_params{
       background-color: $col-glay;
-      margin-top: 3rem;
+      margin-top: 4rem;
       padding: 2rem 1rem;
       font-size: $product_name;
       letter-spacing: 0.08em;
@@ -596,17 +596,25 @@ background-color:#a2ccd0;
 
   &__ttl{
     font-size: $ttl--pc;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
   }
 
   &__copy{
     font-size: $product_name;
     letter-spacing: .07em;
+    line-height: 1.75;
 
   }
 
 }
 
+.p-material_wrap2{
+  margin-top: 8rem;
+}
+
+.p-material_wrap{
+  margin-top: 8rem;
+}
 
 .p-bnr__register {
   display: flex;
@@ -627,7 +635,7 @@ background-color:#a2ccd0;
 }
 
 .p-bnr__register .p-bnr_copy {
-  font-size:1rem;
+  font-size:1.4rem;
   font-weight:normal;
   padding-left: 1rem;
   text-align: left;
@@ -635,7 +643,7 @@ background-color:#a2ccd0;
 
 .p-bnr_ttl{
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin: 1rem 0;
 }
@@ -734,7 +742,7 @@ background-color:#a2ccd0;
   }
   
   &__subttl{
-    font-size: $desc--pc;
+    font-size: $ttl--pc;
     margin-bottom:1rem;
   }
 
@@ -756,7 +764,7 @@ background-color:#a2ccd0;
   
   &__item{
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: .08em;
     padding-bottom: 1rem;
     border-bottom: 1px dotted #ccc;

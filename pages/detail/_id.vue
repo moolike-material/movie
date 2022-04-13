@@ -72,8 +72,8 @@
             </div>
           </div>
         </div>
-        <div class="p-material_wrap2 u-mT2">
-          <h2 class="page__subttl u-blk u-txtC">動画素材の使用について</h2>
+        <div class="p-material_wrap2">
+          <h2 class="p-content_section__ttl u-blk u-txtC">動画素材の使用について</h2>
           <ol class="page__orderlist page__orderlist--id">
             <li class="page__item">個人利用・商用利用どちらにおいても使用いただけます。</li>
             <li class="page__item">利用に関して許可、報告、クレジットの表記は必要ありません。</li>
@@ -367,10 +367,6 @@
     right: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .p-material_wrap--detail {
-    margin-top: 5rem;
   }
 
   .p-material_wrap--detaol__ttl {
