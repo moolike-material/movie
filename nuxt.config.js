@@ -60,7 +60,7 @@ export default {
     }],
     '@nuxtjs/google-gtag',
     ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-9897424319453576',
+      id: 'ca-pub-4771976536765165',
       pageLevelAds: true,
     }],
     '@nuxtjs/axios',
