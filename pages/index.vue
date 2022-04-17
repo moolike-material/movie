@@ -10,7 +10,7 @@
         <!-- メインセクション -->
         <div class="p-content_main">
           <section class="p-content_section p-content_section--top">
-            <h2 class="p-content_section__ttl">最近人気の素材
+            <h2 class="p-content_section__ttl">最近人気の動画素材
             </h2>
             <!-- 素材一覧 -->
             <div class="p-material_wrap">
@@ -24,7 +24,7 @@
             </div>
           </section>
           <section class="p-content_section">
-            <h2 class="p-content_section__ttl">最近追加された素材</h2>
+            <h2 class="p-content_section__ttl">最近追加された動画素材</h2>
             <!-- 素材一覧 -->
             <div class="p-material_wrap">
               <topMaterialNew />
@@ -51,7 +51,7 @@
               <img src="/point2.png" class="p-reccomend__img" v-lazy-load>
               <div class="p-reccomend__Inner">
               <h3 class="p-reccomend__ttl">ダウンロードしてすぐに使える！</h3>
-              <p class="p-reccomend__desc">素材はすぐに使えるように<br>MP4,MOV形式でご用意しています。</p>
+              <p class="p-reccomend__desc">動画素材はすぐに使えるように<br>MP4,MOV形式でご用意しています。</p>
               </div>
             </li>
             <li class="p-reccomend__item">
@@ -173,17 +173,21 @@
           }
         ],
         faqs: [{
-            question: 'ダウンロード形式は何がありますか？',
-            answer: 'mp4,mov形式ファイルでご用意しています。それぞれお持ちの編集ソフトに適した形式でダウンロードしてください。'
+            question: '動画形式は何がありますか？',
+            answer: 'mp4,mov形式ファイルでご用意しています。それぞれお持ちの編集ソフトに適した動画形式でダウンロードしてください。'
           },
           {
             question: '商用利用は可能ですか？',
             answer: 'はい、可能です。しかし、当webサイトでダウンロードした動画素材をそのまま動画素材として配布することは禁止しています。'
           },
           {
-            question: '使用許可は入りますか？',
-            answer: '基本必要ありません。お気軽にダウンロードをしてください'
+            question: '使用許可・クレジット表記は必要ですか？',
+            answer: '基本必要ありません。お気軽にダウンロードをしてください。'
           },
+          {
+            question: 'youtubeなどSNSで使用しても良いですか？',
+            answer: '動画素材として配布する目的ではなく、動画コンテンツの一環として使用していただくのはOKです。'
+          }
         ],
         search: '',
         model: null

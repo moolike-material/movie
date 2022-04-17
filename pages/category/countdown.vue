@@ -18,8 +18,9 @@
         幅広いシーンで活躍してくれること間違いなし！</p>
         <section class="p-special__materialWrap">
         <h2 class="p-content_section__ttl">カウントダウン素材一覧</h2>
+
         <transition-group appear tag="div" class="p-material">
-          <div v-for="movie in getMovies" :key="movie.mv_id" class="p-material p-material_item">
+          <div v-for="movie in getMovies" :key="movie.created" class="p-material p-material_item">
             <v-card class="mx-auto my-12">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
@@ -88,6 +89,7 @@
   export default {
     data: function () {
       return {
+        btn:false,
         name: '',
         desc: '',
         yt_id: '',
@@ -202,6 +204,12 @@
           xhr.open('GET', url);
           xhr.send();
         });
+      },
+      tabSwitchNew(){
+        this.new=false;
+      },
+      tabSwitchRnak(){
+        this.new=true;
       }
     },
     computed: {

@@ -40,6 +40,19 @@
     <v-main class="main">
       <v-container>
         <Nuxt />
+        <section class="p-content_section p-content_section--tags">
+          <h2 class="p-content_section__ttl u-txtL u-pL2">キーワードから探す</h2>
+          <div class="p-keywords_category">
+            <NuxtLink :to="`/category/${category.id}`" class="p-keywords_category__link" v-for="category in categories" :key="category.id">
+              {{category.name}}
+            </NuxtLink>
+          </div>
+          <div class="p-keywords_tags u-mT3">
+            <NuxtLink :to="`/tags/${tag.param}`" class="p-keywords_tags__link" v-for="tag in tags" :key="tag.tag">
+              # {{tag.tag}}
+            </NuxtLink>
+          </div>
+        </section>
       </v-container>
     </v-main>
 
@@ -95,7 +108,72 @@
       search:'',
       model:null,
       buttonActive: false,
-      scroll: 0
+      scroll: 0,
+      categories: [{
+            "id": "youtube",
+            "name": "youtube",
+          },
+          {
+            "id": "wedding",
+            "name": "結婚式"
+          },
+          {
+            "id": "surprise",
+            "name": "サプライズ"
+          },
+          {
+            "id": "business",
+            "name": "ビジネス"
+          },
+        ],
+        tags: [{
+            tag: '手書き風',
+            param: 'handfree'
+          },
+          {
+            tag: 'フィルター',
+            param: 'filter'
+          },
+          {
+            tag: '日常',
+            param: 'days'
+          },
+          {
+            tag: 'カウントダウン',
+            param: 'countdown'
+          },
+          {
+            tag: 'エフェクト',
+            param: 'effect'
+          },
+          {
+            tag: 'スタート素材',
+            param: 'start'
+          },
+          {
+            tag: '背景',
+            param: 'background'
+          },
+          {
+            tag: '人物',
+            param: 'people'
+          },
+          {
+            tag: 'おもしろ',
+            param: 'interesting'
+          },
+          {
+            tag: 'パロディ',
+            param: 'parody'
+          },
+          {
+            tag: 'おもしろ',
+            param: 'music'
+          },
+          {
+            tag: 'その他',
+            param: 'other'
+          }]
     }),
     mounted(){
       window.addEventListener('scroll', this.scrollWindow)

@@ -323,6 +323,10 @@ background-color:#1C4D50;
 .p-content_section{
   padding-top: 10rem;
 
+  &--tags{
+    display: none;
+  }
+
 
   &__ttl{
       text-align: center;
@@ -386,7 +390,6 @@ background-color:#1C4D50;
     text-decoration: underline;
   }
 }
-
 //*******************************************************************
 //#region メインビジュアル   
 //*******************************************************************
