@@ -28,7 +28,7 @@
             <p class="page__desc">
               この度は当サイトに訪問いただきありがとうございます^^*<br>
               仕事の傍、動画編集の学習をしている<span class="p-form__message__link">pei.nagae</span>と申します。<br>
-              シンプルなものや可愛いもの、ナチュラルなものが好きなので、<br>そんな感じのテイストの素材をひっそりと制作しておりますー。<br>
+              シンプルなものや可愛いもの、ナチュラルなものが好きなので、<br>そんな感じのテイストの素材をひっそりと制作しております!<br>
               興味ある方はぜひダウンロードをお願いいたします。
             </p>
             <p class="page__desc">
@@ -58,24 +58,6 @@
     z-index: 3;
   }
 
-  /* 
-  .page__sub {
-    display: inline-block;
-    position: relative;
-  }
-
-  .page__sub::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 30%;
-    opacity: .9;
-    background: #f7e229;
-    bottom: 0;
-    left: 0;
-    transform:translateX(-2px);
-    z-index: 0;
-  } */
 
   .prof_wrap {
     display: flex;
