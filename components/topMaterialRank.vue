@@ -47,8 +47,11 @@
           </NuxtLink>
           <div class="p-material_iconWrap">
             <!-- ダウンロードリンク -->
-            <v-icon class="p-material_tag_icon" @click="download(movie.mv_id,movie.id,movie.dl_count)">
+            <!-- v-icon class="p-material_tag_icon" @click="download(movie.mv_id,movie.id,movie.dl_count)" -->
+            <a :href="`/mp4/${movie.mv_id}_mp4.zip`" download :onclick="`gtag('event', 'Click', {'event_category': 'download', 'event_label': '${movie.mv_id}', 'value': '0'});`">
+            <v-icon class="p-material_tag_icon">
               mdi-download</v-icon>
+              </a>
             <!-- /ダウンロードリンク -->
           </div>
         </div>
@@ -88,29 +91,29 @@
       remove(id) {
         this.$store.dispatch('movies/remove', id)
       },
-      download(mv_id, id, count) {
-        let mvcount = count + 1;
-        let mvarr = [id, mvcount]
-        this.$store.dispatch('movies/dlcount', mvarr)
-        let mp4 = mv_id + '_mp4.zip';
-        this.$store.dispatch('movies/download', mp4).then(url => {
-          const xhr = new XMLHttpRequest();
-          xhr.responseType = 'blob';
-          xhr.onload = event => {
-            // blobがファイルのデータです
-            const blob = xhr.response;
-            // aタグをつくります※この辺は自由にアプリに合わせてください
-            const aDL = document.createElement('a');
-            // ファイルデータに紐づくダウンロードリンクを設定します
-            aDL.href = URL.createObjectURL(blob);
-            aDL.download = `${mv_id}_mp4.zip`;
-            console.log(aDL);
-            aDL.click();
-          }
-          xhr.open('GET', url);
-          xhr.send();
-        });
-      }
+      // download(mv_id, id, count) {
+      //   let mvcount = count + 1;
+      //   let mvarr = [id, mvcount]
+      //   this.$store.dispatch('movies/dlcount', mvarr)
+      //   let mp4 = mv_id + '_mp4.zip';
+      //   this.$store.dispatch('movies/download', mp4).then(url => {
+      //     const xhr = new XMLHttpRequest();
+      //     xhr.responseType = 'blob';
+      //     xhr.onload = event => {
+      //       // blobがファイルのデータです
+      //       const blob = xhr.response;
+      //       // aタグをつくります※この辺は自由にアプリに合わせてください
+      //       const aDL = document.createElement('a');
+      //       // ファイルデータに紐づくダウンロードリンクを設定します
+      //       aDL.href = URL.createObjectURL(blob);
+      //       aDL.download = `${mv_id}_mp4.zip`;
+      //       console.log(aDL);
+      //       aDL.click();
+      //     }
+      //     xhr.open('GET', url);
+      //     xhr.send();
+      //   });
+      // }
     },
     computed: {
       movies() {

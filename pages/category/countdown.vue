@@ -38,8 +38,10 @@
                 </NuxtLink>
                 <div class="p-material_iconWrap">
                   <!-- ダウンロードリンク -->
-                  <v-icon class="p-material_tag_icon" @click="download(movie.mv_id,movie.id,movie.dl_count)">
+                  <a :href="`/mp4/${movie.mv_id}_mp4.zip`" download :onclick="`gtag('event', 'Click', {'event_category': 'download', 'event_label': '${movie.mv_id}', 'value': '0'});`">
+                  <v-icon class="p-material_tag_icon">
                     mdi-download</v-icon>
+                  </a>
                   <!-- /ダウンロードリンク -->
                 </div>
               </div>

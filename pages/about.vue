@@ -44,10 +44,10 @@
       </div>
     </div>
     <div class="p-more_btn">
-  　<NuxtLink to="/" class="p-more_btn__link">
-    トップに戻る　
-  </NuxtLink>
-  </div>
+      　<NuxtLink to="/" class="p-more_btn__link">
+        トップに戻る　
+      </NuxtLink>
+    </div>
   </div>
 </template>
 

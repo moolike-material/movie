@@ -18,10 +18,12 @@
                 allowfullscreen></iframe>
             </div>
             <div class="p-material_detail__dl">
-              <div class="p-material_detail__dl__item p-material_detail__dl__item--mp4" @click="downloadMp4()">
-                MP4形式でダウンロード</div>
-              <div class="p-material_detail__dl__item p-material_detail__dl__item--mov" @click="downloadMov()">
-                MOV形式でダウンロード</div>
+              <a :href="`/mp4/${this.mv_id}_mp4.zip`" download class="p-material_detail__dl__item p-material_detail__dl__item--mp4" :onclick="`gtag('event', 'Click', {'event_category': 'download', 'event_label': '${this.mv_id}', 'value': '0'});`">
+                MP4形式でダウンロード
+              </a>
+              <a :href="`/mov/${this.mv_id}_mov.zip`" download class="p-material_detail__dl__item p-material_detail__dl__item--mov" :onclick="`gtag('event', 'Click', {'event_category': 'download_mov', 'event_label': '${this.mv_id}', 'value': '0'});`">
+                MOV形式でダウンロード
+              </a>
             </div>
             <span style="font-size:1rem; margin-bottom:2rem; color:#555" class="p-attention_id">
             ※mp4データでは背景を透過させるために、グリーンバックで用意しています。<br>
