@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13856a9b4da296b164a94318fc229233ca6a9fece339f0b4a33d1f26c5cf009c
-size 485
+import firebase  from 'firebase'
+
+const config ={
+    projectId: process.env.FIREBASE_PROJECT_ID,  
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTHDOMAIN,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGE,
+    appId: process.env.FIREBASE_APP_ID,
+    measurementId: process.env.FIREBASE_MEASUREMEN_ID,
+    terminalDatabasesAfterGenerate:true
+}
+
+if(!firebase.apps.length){
+    firebase.initializeApp(config)
+}
+
+export default firebase
