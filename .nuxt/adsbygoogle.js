@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export default async (ctx) => {
   const runtimeConfig = ctx.$config && ctx.$config['google-adsense'] || {}
-  const moduleOptions = {"tag":"adsbygoogle","id":"ca-pub-4771976536765165","pageLevelAds":true,"includeQuery":false,"analyticsUacct":"","analyticsDomainName":"","overlayBottom":false,"test":false,"onPageLoad":false,"pauseOnLoad":false}
+  const moduleOptions = {"tag":"adsbygoogle","id":"ca-google","pageLevelAds":true,"includeQuery":false,"analyticsUacct":"","analyticsDomainName":"","overlayBottom":false,"test":true,"onPageLoad":false,"pauseOnLoad":false}
   const options = { ...moduleOptions, ...runtimeConfig }
 
   if (ctx.isDev && process.env.NODE_ENV !== 'production') {
