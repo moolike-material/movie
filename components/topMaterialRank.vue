@@ -52,7 +52,7 @@
           </a>
           </div>
         </div>
-      </v-card>
+      </v-card> 
     </div>
 </transition-group>
 </template>
