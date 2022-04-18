@@ -152,4 +152,4 @@ export default {
     ]
   },
   loading: '~/components/Loading.vue',
-}
+};
