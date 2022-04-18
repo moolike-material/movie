@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70b8713081c91d21b694567e2dc1fb580b6f1d6075f70dabaacc09aa9860552d
-size 316
+<template>
+  <img
+    class="VuetifyLogo"
+    alt="Vuetify Logo"
+    src="/vuetify-logo.svg"
+  >
+</template>
+
+<style>
+.VuetifyLogo {
+  height: 180px;
+  width: 180px;
+  transform: rotateY(560deg);
+  animation: turn 3.5s ease-out forwards 1s;
+}
+
+@keyframes turn {
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+</style>
