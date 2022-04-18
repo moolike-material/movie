@@ -1,5 +1,3 @@
-# AccessControl IP/HOST
-order deny,allow
-deny from all
-allow from 126.4.97.191
-allow from 192.168.121.114
+version https://git-lfs.github.com/spec/v1
+oid sha256:2488ba4ff70f2e97bc1857cf3e0ff70b64faafa558224d1d2744317262b843a7
+size 105
