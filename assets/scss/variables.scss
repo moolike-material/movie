@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+body{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  transition: all .3s;
+  letter-spacing: 0.05em;
+}
+
+html{
+  font-size: 62.5%!important;
+
+}
+
+.st3,.st9{
+  font-family: 'Hubballi', cursive!important;
+  font-weight: bold!important;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+// 変数
+$col-green : #1C4D50;
+$col-yellow : #FFE13F;
+$col-glay : #f5f5f5;
+
+$pc: 1024px; // PC
+$tab: 680px; // タブレット
+$sp: 480px;  // スマホ
+
+$ttl--pc:2.2rem;
+$desc--pc :1.6rem;
+$product_name:1.4rem;
+$small--pc:1.2rem;
+
+$ttl--sp:2rem;
+$desc--sp :1.6rem;
+$product_namesp:1.4rem;
+$small--sp:1.2rem;
+
+//*********************************************** 
+//vuetify css 削除
+//***********************************************
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {
+  box-shadow: none!important;
+}
+
+//検索
+.v-text-field__details{
+  display: none!important;
+}
+
+.v-input__slot{
+  margin-bottom: 0rem!important;
+}
+
+.v-text-field input{
+  line-height: 0!important;
+}
+
+.v-text-field > .v-input__control > .v-input__slot:before, .v-text-field > .v-input__control > .v-input__slot:after{
+  display: none!important;
+}
+
+.v-text-field{
+  padding-top: 0.5rem!important;
+}
+
+//フッター
+.col{
+  flex-grow: 0!important;
+}
+
+.v-btn:not(.v-btn--round).v-size--default{
+  height: 25px;
+}
+
+.v-btn:not(.v-btn--round).v-size--default{
+  padding: 0 5px!important;
+}
+
+//トップスクロールボタン
+.button-enter-active,
+.button-leave-active {
+  transition: opacity 0.5s;
+}
+.button-enter,
+.button-leave-to {
+  opacity: 0;
+}
+
+.mdi:before, .mdi-set{
+  color: $col-green;
+}
+.mdi:before:hover{
+  opacity: .7;
+}
+
+//素材一覧
+.v-sheet.v-card:not(.v-sheet--outlined){
+  box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.25)!important;
+}
+
+//目次
+.theme--light.v-pagination .v-pagination__item--active{
+  color: $col-green!important;
+  font-weight: bold;
+}
+
+//slick
+.mdi-chevron-right::before,
+.mdi-chevron-left::before{
+  font-size: 3rem!important;
+}
+
+.v-text-field {
+  padding-top: 0rem !important;
+}
+
+.v-expansion-panel-header{
+  font-size: 1.4rem!important;
+}
+
+.v-expansion-panel-content__wrap{
+  font-size: 1.3rem;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+}

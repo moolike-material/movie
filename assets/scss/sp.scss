@@ -1,0 +1,675 @@
+// スマホ用
+@media (max-width: (480px)) {
+
+  //*******************************************************************
+  //#region ヘッダー
+  //*******************************************************************
+  .p-header {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 999;
+    max-height: 120px;
+
+
+    &_inner {
+      padding: 0.3rem 1rem 0rem;
+      display: block;
+      position: relative;
+    }
+
+    &_ttl {
+      width: 200px;
+      transform: translateY(5px);
+      margin: 0 2rem 1.6rem;
+    }
+
+    &_search {
+      width: 100%!important;
+      padding: 0rem;
+      margin-right: 1rem;
+    }
+
+    &_searchInput{
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        font-size: 1.6rem!important;
+    }
+
+    &_hum {
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      top: 8%;
+      right: 10%;
+
+      &__category {
+        margin: 0 calc(50% - 140vw);
+      }
+
+    }
+
+    .v-label--active{
+      display: none!important;
+    }
+
+    // グローバルナビ
+    .p-nav {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      
+      &_list{
+        margin: 0;
+        color: #fff;
+      }
+      
+      &_link{
+        font-size: $product_namesp;
+        padding-bottom: .3rem;
+        color: #fff!important;
+      }
+      
+      &_item{
+      }
+
+    }
+
+    .theme--light.v-label {
+      font-size: 1.1rem;
+      top: 4px;
+    }
+
+    &_hum__category {
+        position: fixed;
+        width: 100vw;
+        margin: 0 calc(50% - 140vw);
+        text-align: center;
+        display: none;
+  
+      & h3{
+        font-size: 1.4rem;
+        color: #fff;
+        margin-bottom: .5rem;
+        opacity: 0;
+        -webkit-transform: scaleX(0) translateX(-260px);
+        transform: scaleX(0) translateX(-260px);
+        -webkit-transition: none;
+        transition: none;
+        margin-top: 3rem;
+      }
+      & ul li{
+        font-size: 1rem;
+        opacity: 0;
+        -webkit-transform: scaleX(0) translateX(-260px);
+        transform: scaleX(0) translateX(-260px);
+        -webkit-transition: none;
+        transition: none;
+        margin-bottom: 1rem;
+  
+        &:not(:last-child){
+          margin-bottom: 1rem;
+        }
+  
+        & a{
+          color: #fff;
+          border-bottom: 1px solid rgba(0,0,0,0);
+          transition: all .3s;
+  
+          &:hover{
+            border-color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  //*******************************************************************
+//#region 素材
+//*******************************************************************
+
+.main{
+  padding-top: 120px!important;
+}
+
+.p-material{
+  justify-content: space-between;
+    &_item{
+      width: 48%!important;
+      min-width: 120px;
+      margin:0 0 30px;
+
+      &:not(:nth-child(3n)){
+        margin-right: 0px;
+      }
+    }
+
+    &_innerWrap{
+      height: calc(1.75*3rem);  
+    }
+
+    &_ttl{  
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    &_tag_icon{
+      display: none!important;
+    }
+
+  }
+
+  .p-rank_icon{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .08em;
+  }
+
+//*******************************************************************
+//#region ページ共通
+//*******************************************************************
+.p-content{
+
+  &_section{
+    padding-top: 6rem;
+
+    &--tags{
+      display: block;
+      border-top:5px solid $col-glay ;
+      background: linear-gradient($col-glay,#fff);
+      width: 100vw;
+      margin: 0 calc(50% - 50vw);
+      padding-bottom: 6rem;
+    }
+
+    &--top{
+      padding-top: 3rem;
+    }
+  }
+
+    &_main{
+      width: 100%!important;
+    }
+
+    &_subTtl{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+
+.p-content_section{
+    &__ttl{
+        font-size: $ttl--sp;
+        margin-bottom: 0px;
+        padding-bottom: 3rem;
+    }
+  }
+  
+  .p-more_btn{
+      margin-top: 2rem;
+    text-align: center;
+    &__link{
+        font-size: 1.2rem;
+    }
+  
+  }
+
+  .p-page{
+    margin-top: 1rem;
+  }
+
+  .p-keywords{
+    &_category{
+      display: flex;
+      justify-content: space-around;
+
+      &__link{
+        display: block;
+        padding: 0.5rem 1.2rem;
+        font-size: 1.5rem;
+        border: 1px solid $col-green;
+        border-radius: 20px;
+      }
+    }
+
+    &_tags{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 1rem;
+      
+      &__link{
+        font-size: 1.3rem;
+        display: block;
+        margin-right: 1.5rem;
+        margin-bottom: .5rem;
+      }
+    }
+
+  }
+
+
+//*******************************************************************
+//#region メインビジュアル
+//*******************************************************************
+.p-mainvisual{
+    height: 300px;  
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      background: url("/bg_sp.png")no-repeat;
+      background-size:contain ;
+      width: 100%;
+      height: 100%;
+
+    }
+
+
+    &_box{
+      width: 100%;
+    }
+  
+    &__desc{
+      text-align: center;
+      font-size: .8rem;
+      width: 80%;
+      margin: 0 auto 20px;
+    }
+  
+    &_search{
+      width: 80%;
+      margin-bottom: 10px;
+
+      &__searchInput{
+        padding: .2rem;
+      }
+    }
+  }
+  
+  .p-slide{
+    padding: 0rem 0rem 0;
+    min-width: 100%;
+    
+  
+    &_item{
+      margin: .8rem 0 0;
+      border-radius: 14px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+      overflow: hidden;
+      width: 250px!important;
+    }
+    
+    &_img{
+      width: 250px;
+    }
+  }
+
+  .slick-arrow{
+    display: none!important;
+  }
+
+  .slick-list{
+    padding: 0!important;
+  }
+
+//*******************************************************************
+//#region おすすめポイント
+//*******************************************************************
+.p-reccomend{
+    display: block;
+  
+    &__item{
+      width: 100%;
+      text-align: center;
+
+      &:not(:last-child){
+          margin-bottom: 60px;
+      }
+    }
+  
+    &__img{
+      margin: auto;
+      width: 60%;
+      margin-bottom: 1rem;
+    }
+  
+    &__ttl{
+      display: inline-block;
+      font-size: $product_name;
+      letter-spacing: .05em;
+      color: $col-green;
+      background:linear-gradient(transparent 60%, $col-yellow 0%);
+    }
+  
+    &__desc{
+      font-size:$small--sp;
+      width: 73%;
+      margin: 1.5rem auto;
+    }
+  }
+
+  //*******************************************************************
+//#region 特集
+//*******************************************************************
+.p-content_subTtl--special{
+  margin-bottom: .7rem;
+  font-size: $ttl--sp;
+}
+
+.p-special{
+
+  &__mv{
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  } 
+
+  &__materialWrap{
+    margin-top: 6rem;
+  }
+
+  &__copy{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: $product_namesp;
+    line-height: 1.75;
+  }
+
+}
+  
+//*******************************************************************
+//#region 商品詳細
+//*******************************************************************
+.p-material_detail{
+    display: block;
+    margin-bottom: 5rem;
+  
+    &__dl{
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+
+      &__item{
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+      }
+    }
+  
+    &__desc{
+      margin-top: 4rem;
+      padding: 4rem 0;
+      width: 100%;
+      margin-left: 0;
+      border-top: 2px solid $col-green;
+  
+  
+      &_params{
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 4rem;
+        padding-bottom: 1.5rem;
+      }
+  
+      &_tags{
+        &:not(:last-child){
+        margin-bottom: 1rem;
+        }
+      }
+    }
+  
+    &__ttl{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    &__copy{
+      font-size: 1.4rem;
+      letter-spacing: .06em;
+      line-height: 1.75;
+    }
+  
+  }
+
+  .p-bnr__register {
+    display: block;
+  }
+  
+  .p-bnr__register .p-bnr_item {
+    display: block;
+    margin: 0rem auto 4rem;
+    width: 95%;
+    height: auto;
+  }
+  
+  .p-bnr_img{
+    box-shadow:0 0 5px rgba(0,0,0,0.15);
+    border-radius:12px
+  
+  }
+
+  .p-bnr_ttl{
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0.7rem 0 0.5rem;
+  }
+  
+  .p-bnr__register .p-bnr_copy {
+    padding-left: 2rem;
+    text-align: left;
+    top: 50%;
+    font-size:1.2rem;
+    font-weight: normal;
+  }
+
+  .p-material_wrap{
+    margin-top: 0rem;
+  }
+  
+  .p-material_wrap2{
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  
+//*******************************************************************
+//#region サイドバー
+//*******************************************************************
+.p-sideber{
+    display: none;
+  }
+
+  
+  //*******************************************************************
+  //#region フッター
+  //*******************************************************************
+
+  .p-footer {
+    padding: 5rem 2rem !important; //デフォルトCSS削除
+    background-color: $col-glay;
+    background-image: url("/bg.jpg") no-repeat;
+    background-size: cover;
+
+    &_logo {
+      width: 150px;
+      margin-bottom: .5rem;
+    }
+
+    &_btns {
+      width: 100%;
+      padding-left: .5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+
+      &__link {
+        color: #fff;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: all .3s;
+
+        &:hover {
+          border-color: #fff;
+        }
+      }
+
+    }
+
+    &_copy {
+      margin-top: 1rem;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+  }
+
+  
+
+
+//*******************************************************************
+//#region 個別ページ
+//*******************************************************************
+
+
+.page{
+
+  &-copy{
+    margin-bottom:3rem;
+    font-size: 1.2rem;
+  }
+  
+  &__subttl{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__desc{
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif!important;
+    font-size: 1.4rem;
+    line-height: 1.75;
+  }
+
+  &__block{
+    margin-bottom: 4rem;
+  }
+
+  &__orderlist{
+    margin-top: 3rem;
+    list-style: decimal;
+    padding-left: 1.5rem;
+  }
+  
+  &__item{
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    letter-spacing: .08em;
+    padding-bottom: .5rem;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  &__orderlist--id{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+//*******************************************************************
+//#region 記事
+//*******************************************************************
+.p-column{
+  display:block;
+  justify-content: space-between;
+
+
+    &__item{
+      width: 80%;
+      margin: 2rem auto;
+  }
+  
+  &__inner{
+  }
+
+  &__icon{
+
+  }
+
+  &__ttl{
+  }
+
+  &__desc{
+  }
+
+  &__date{
+  }
+}
+
+.p-page__desc{
+  font-size: 1.4rem;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  letter-spacing: 0.09em;
+
+}
+
+.form_1coltext,
+.form__select,
+.form__textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin:10px 0
+
+}
+
+.form__label {
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
+
+.submit {
+  margin: 3rem auto 0;
+}
+
+
+//*******************************************************************
+//#region フォーム
+//*******************************************************************
+
+.form{
+  width: 100%;
+  min-width: 100%;
+}
+
+.p-form__message {
+  width: 100%;
+  padding: 1rem;
+  margin: 3rem auto 2rem;
+  background-color: #f2f2f2;
+}
+
+.p-form__message__desc {
+  font-size:1rem;
+  text-align: center;
+  color: #777;
+}
+
+}

@@ -1,0 +1,197 @@
+// スマホ用
+@media (max-width: (820px)) {
+
+    //*******************************************************************
+    //#region ヘッダー
+    //*******************************************************************
+    .p-header {
+        width: 100%;
+        overflow: hidden;
+      &_inner {
+        padding: .5rem 2rem;
+      }
+  
+      &_ttl {
+        width: 150px;
+        transform: translateY(5px);
+      }
+  
+      &_search {
+        width: 60%!important;
+        padding: 0.1rem 1rem;
+      }
+  
+      &_hum {
+  
+        &__category {
+          margin: 0 calc(50% - 140vw);
+  
+        }
+  
+      }
+  
+      //ヘッダーハンバーガーメニュー アクティブ
+      .is-p-header_hum_active .p-header_hum {
+        top: 20px;
+        right: 20px;
+      }
+  
+      // グローバルナビ
+      .p-nav {
+        display: none;
+      }
+  
+      .theme--light.v-label {
+        font-size: .5rem;
+        top: 4px;
+      }
+  
+      &_hum__category {
+          margin: 0 calc(50% - 140vw);
+    
+        & h3{
+          font-size: 1.5rem;
+        }
+        & ul li{
+          font-size: 1rem;
+    
+          &:not(:last-child){
+            margin-bottom: .5rem;
+          }
+    
+          & a{
+            color: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0);
+            transition: all .3s;
+    
+            &:hover{
+              border-color: #fff;
+            }
+          }
+        }
+      }
+  
+    }
+
+  //*******************************************************************
+//#region 素材
+//*******************************************************************
+
+.p-material{
+    justify-content: space-around;
+    &_item{
+
+      &:not(:nth-child(3n)){
+        margin-right: 0;
+      }
+    }
+
+  }
+
+
+//*******************************************************************
+//#region ページ共通
+//*******************************************************************
+
+.p-content{
+
+    &_main{
+      width: 100%!important;
+    }
+  }
+  
+
+
+//*******************************************************************
+//#region おすすめポイント
+//*******************************************************************
+.p-reccomend{
+  
+    &__item{
+      width: 100%;
+      text-align: center;
+
+      &:not(:last-child){
+          margin-bottom: 60px;
+      }
+    }
+  
+    &__img{
+      margin: auto;
+      width: 60%;
+      margin-bottom: 1rem;
+    }
+  
+    &__ttl{
+      display: inline-block;
+      font-size: 1rem;
+      letter-spacing: .05em;
+      color: $col-green;
+      background:linear-gradient(transparent 60%, $col-yellow 0%);
+    }
+  
+    &__desc{
+      font-size:.9rem;
+      width: 73%;
+      margin: 1rem auto;
+    }
+  }
+
+  //*******************************************************************
+//#region 商品詳細
+//*******************************************************************
+.p-material_detail{
+    display: block;
+  
+    &__dl{
+      margin-top: 1rem;
+
+    }
+  
+    &__desc{
+      padding: 1rem 0;
+      width: 100%;
+      margin-left: 0;
+      border-top: 2px solid $col-green;
+      font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  
+  
+      &_params{
+        margin-top: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+  
+      &_tags{
+        &:not(:last-child){
+        margin-bottom: 1rem;
+        }
+      }
+    }
+  
+    &__ttl{
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+  
+    &__copy{
+      font-size: .9rem;
+      letter-spacing: .05em;
+    }
+  
+  }
+  
+  
+
+//*******************************************************************
+//#region サイドバー
+//*******************************************************************
+.p-sideber{
+    display: none;
+  }
+
+
+}
