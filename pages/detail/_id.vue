@@ -72,6 +72,9 @@
             </div>
           </div>
         </div>
+        <div class="ad tst">
+        <adsbygoogle :ad-slot="'6025646828'" :ad-style="{ display: 'block' }" :ad-format="'rectangle'" />
+        </div>
         <div class="p-material_wrap2">
           <h2 class="p-content_section__ttl u-blk u-txtC">動画素材の使用について</h2>
           <ol class="page__orderlist page__orderlist--id">
