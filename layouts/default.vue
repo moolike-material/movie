@@ -56,7 +56,10 @@
       </v-container>
     </v-main>
 
-    <!-- #region ヘッダー -->
+    <!-- #region フッター -->
+    <div class="ad">
+    <adsbygoogle :ad-slot="'6025646828'" :ad-style="{ display: 'block' }" :ad-format="'rectangle'" />
+    </div>
     <v-footer color="primary lighten-1" class="p-footer">
       <h2 class="p-footer_logo">
         <moolikeLogowhite />
