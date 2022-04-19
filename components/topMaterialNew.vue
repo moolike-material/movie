@@ -1,5 +1,5 @@
 <template>
-  <!-- <transition-group appear tag="div" class="p-material"> -->
+  <!-- <transition-group appear tag="div" class="p-material">  -->
     <div class="p-material p-material--new">
       <v-slide-group show-arrows>
     <v-slide-item v-for="movie in limitCount" :key="movie.mv_id">
