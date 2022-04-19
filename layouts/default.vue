@@ -57,7 +57,7 @@
     </v-main>
 
     <!-- #region フッター -->
-    <div class="ad">
+    <div class="ad tst">
     <adsbygoogle :ad-slot="'6025646828'" :ad-style="{ display: 'block' }" :ad-format="'rectangle'" />
     </div>
     <v-footer color="primary lighten-1" class="p-footer">

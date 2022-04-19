@@ -5,7 +5,7 @@ export default {
   generate: {
     fallback: true,
   },
-  // Global page headers: https://go.nuxtjs.dev/config-headテスト
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '',
     title: 'moolike | シンプルで使いやすい無料動画素材サイト',
