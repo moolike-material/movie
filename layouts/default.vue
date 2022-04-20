@@ -58,7 +58,7 @@
 
     <!-- #region フッター -->
     <div class="ad tst">
-    <adsbygoogle ad-slot="6025646828" />
+    <adsbygoogle ad-slot="6025646828" style="margin:auto;height:90px" />
     </div>
     <v-footer color="primary lighten-1" class="p-footer">
       <h2 class="p-footer_logo">
