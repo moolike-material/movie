@@ -114,6 +114,7 @@ export default {
       id: 'ca-pub-4771976536765165',
       pageLevelAds: true,
       crossorigin: "anonymous",
+      overlayBottom:"true"
     }],
     '@nuxtjs/axios',
   ],
