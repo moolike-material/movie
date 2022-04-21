@@ -214,8 +214,21 @@ background-color:#1C4D50;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
+  
+  &_inner--mv{
+    overflow: hidden;
+  }
+  
+  &_thumb{
+    transition: all .5s;
+    
+    &:hover{
+      transform: scale(1.1,1.1);
+    }
+  }
 
   &_new{
+    display: block;
     position: absolute;
     background-color: rgb(223, 69, 69);
     color: #fff;
@@ -505,7 +518,8 @@ background-color:#1C4D50;
 .p-special{
 
   &__mv{
-    width: 100％;
+    width: 80%;
+    margin: auto;
   } 
 
   &__materialWrap{

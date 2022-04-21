@@ -44,6 +44,7 @@
             </NuxtLink>
             </li>
         </ul>
+            <adsbygoogle ad-slot="6025646828" style="margin:3rem auto;"/>
     </div>
   </div>
 </template>

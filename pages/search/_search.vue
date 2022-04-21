@@ -16,10 +16,9 @@
             <v-card class="mx-auto my-12" v-if="movie.desc.includes(searchttl)">
               <div class="p-material_inner p-material_inner--mv">
               <NuxtLink :to="`/detail/${movie.mv_id}`">
-                         <span class="p-material_new"
-                      v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
                 <img :data-src="`/thumb/${movie.mv_id}.webp`"
                   class="p-material_thumb" v-lazy-load>
+                         <span class="p-material_new" v-if="today - movie.created.toDate().getTime() <= 24*24*60*60*1000">new</span>
               </NuxtLink>
                 </div>
               <div class="p-material_inner">

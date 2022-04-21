@@ -117,7 +117,7 @@
         return this.$store.getters['movies/rankMovies']
       },
       limitCount() {
-        return this.movies.slice(0, 6)
+        return this.movies.slice(0, 12)
       }
     }
   }
