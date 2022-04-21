@@ -241,12 +241,12 @@ background-color:#1C4D50;
   
   &_item{
     position: relative;
-    width: 30%!important;
+    width: 31.5%!important;
     min-width: 100px;
     margin-bottom: 60px;
     
     &:not(:nth-child(3n)){
-      margin-right: 30px;
+      margin-right: 10px;
     }
   }
   
