@@ -114,14 +114,17 @@ export default {
       id: 'ca-pub-4771976536765165',
       pageLevelAds: true,
       crossorigin: "anonymous",
-      overlayBottom:"true"
+      overlayBottom
     }],
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'UA-204449124-1', //あなたのGoogleアナリティクスのプロパティID
+        debug: true //本番環境以外でもGAを有効にしたい場合はtrueに。
+      }
+    ]
   ],
-  'google-gtag': {
-    id: 'UA-204449124-1',
-    debug: true, // Enable to track in dev mode.
-  },
 
   sitemap: {
     path: "/sitemap.xml",
