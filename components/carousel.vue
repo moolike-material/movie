@@ -1,9 +1,9 @@
 <template>
   <div>
     <VueSlickCarousel v-bind="settings" class="p-slide">
+      <div class="p-slide_item"><NuxtLink to="/category/handfree"><img class="p-slide_img" src="/handfree.webp"></NuxtLink></div>
       <div class="p-slide_item"><NuxtLink to="/category/wedding"><img class="p-slide_img" src="/wedding.webp"></NuxtLink></div>
       <div class="p-slide_item"><NuxtLink to="/category/countdown"><img class="p-slide_img" src="/countdown.webp"></NuxtLink></div>
-      <div class="p-slide_item"><NuxtLink to="/category/handfree"><img class="p-slide_img" src="/handfree.webp"></NuxtLink></div>
     </VueSlickCarousel>
   </div>
 </template>
