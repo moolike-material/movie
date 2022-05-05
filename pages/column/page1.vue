@@ -32,7 +32,7 @@
       <section class="page__block">
         <h2 class="page__subttl">MP4とMOVの特徴を理解！</h2>
         <img src="/column/01/01.webp" alt="mp4とmovって何？動画素材を使うために知っておきたい事！">
-        <p class="page__desc">
+        <p class="page__desc u-mT2">
           前述した通り、mp4とmovにはそれぞれ特徴があります。<br>
           違いを詳しく見ていきましょう♪
         </p>
@@ -48,7 +48,7 @@
           <dd class="page_list__item">
             mp4形式とは2022年現在、最も一般的に使用されている動画形式と言われています。<br>
             movデータをよりパワーアップさせた形式で、基本的にどのプレイヤーでも再生できるのが特徴です。<br>
-            万能すぎますね！ただし、mov形式とは違い背景透過には対応していないため、moolikeではクロマキー合成を前提としてグリーンバックで用意しています。
+            ただし、mov形式とは違い背景透過には対応していません。そのためmoolikeではクロマキー合成を前提としてグリーンバックで用意しています。
           </dd>
         </table>
       </section>

@@ -968,13 +968,26 @@ background-color:#1C4D50;
   
   & .page__subttl{
     letter-spacing: 0.05em;
-  ;
+    position: relative;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+    display: block;
 
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      bottom: 0;
+      left: 0;
+    }
   }
   
   & .page_list__ttl{
     font-size: 1.8rem;
     margin-top: 2rem;
+
 
   }
 
