@@ -675,3 +675,32 @@
 }
 
 }
+
+//*******************************************************************
+//#region 記事ページ
+//*******************************************************************
+
+.p-column_item{
+  width: 100%;
+  margin: 0 auto;
+
+  & .page__desc{
+    font-size: 1.6rem;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+  }  
+  
+  & .page_list__ttl{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+  }
+
+  & .page_list__item{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+  }
+
+}

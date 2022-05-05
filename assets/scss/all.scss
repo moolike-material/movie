@@ -825,32 +825,32 @@ background-color:#1C4D50;
   &__inner{
     position: relative;
     background-color: #fff;
-    padding: .2rem .8rem 2rem;
+    padding: .2rem .8rem 4rem;
   }
 
   &__icon{
     border: 1px solid $col-green;
-    font-size: .6rem;
-    margin-top: .5rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
     padding: .2rem .5rem;
     margin-bottom: .5rem;
 
   }
 
   &__ttl{
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: .3rem;
   }
 
   &__desc{
-    font-size: .9rem;
+    font-size: 1.4rem;
   }
 
   &__date{
     position: absolute;
     right:10px;
     bottom: 10px;
-    font-size: .8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -947,4 +947,44 @@ background-color:#1C4D50;
   display: inline-block;
   margin-left: 2rem;
   transform: translateY(-2px);
+}
+
+//*******************************************************************
+//#region 記事ページ
+//*******************************************************************
+
+
+.p-column_item{
+  width: 960px;
+  margin: 0 auto;
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  padding-bottom: 6rem;
+  
+  & .page__desc{
+    font-size: 1.6rem;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+  }  
+  
+  & .page__subttl{
+    letter-spacing: 0.05em;
+  ;
+
+  }
+  
+  & .page_list__ttl{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+  }
+
+  & .page_list__item{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.03em;
+
+  }
+
 }

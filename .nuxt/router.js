@@ -16,6 +16,7 @@ const _4ac9636b = () => interopDefault(import('../pages/submit.vue' /* webpackCh
 const _539cb133 = () => interopDefault(import('../pages/category/countdown.vue' /* webpackChunkName: "pages/category/countdown" */))
 const _1bb0b36e = () => interopDefault(import('../pages/category/handfree.vue' /* webpackChunkName: "pages/category/handfree" */))
 const _ee44fd54 = () => interopDefault(import('../pages/category/wedding.vue' /* webpackChunkName: "pages/category/wedding" */))
+const _c1c30bc8 = () => interopDefault(import('../pages/column/page1.vue' /* webpackChunkName: "pages/column/page1" */))
 const _34716f17 = () => interopDefault(import('../pages/register/movie.vue' /* webpackChunkName: "pages/register/movie" */))
 const _56695942 = () => interopDefault(import('../pages/category/_category.vue' /* webpackChunkName: "pages/category/_category" */))
 const _d912da62 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
@@ -83,6 +84,10 @@ export const routerOptions = {
     path: "/category/wedding",
     component: _ee44fd54,
     name: "category-wedding"
+  }, {
+    path: "/column/page1",
+    component: _c1c30bc8,
+    name: "column-page1"
   }, {
     path: "/register/movie",
     component: _34716f17,
