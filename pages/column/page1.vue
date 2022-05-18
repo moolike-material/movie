@@ -53,7 +53,7 @@
         </table>
       </section>
       <section class="page__block">
-        <h2 class="page__subttl">MP4とMOVの特徴を理解！</h2>
+        <h2 class="page__subttl">まとめ</h2>
         <p class="page__desc">
         いかがでしたか？<br>
         今回mp4形式とmov形式の違いをご紹介しました。<br>

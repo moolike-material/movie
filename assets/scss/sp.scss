@@ -1,6 +1,10 @@
 // スマホ用
 @media (max-width: (480px)) {
 
+  .v-sheet.v-card {
+    border-radius: 5px!important;
+  }
+  
   //*******************************************************************
   //#region ヘッダー
   //*******************************************************************
@@ -158,6 +162,11 @@
       display: none!important;
     }
 
+  }
+
+  .p-rank_color{
+    padding: 0.5rem 1rem;
+    border-radius: 5px 0 10px 0;
   }
 
   .p-rank_icon{
@@ -387,6 +396,10 @@
 .p-material_detail{
     display: block;
     margin-bottom: 5rem;
+
+    &__youtube{
+      width: 100%;
+    }
   
     &__dl{
       margin-top: 2rem;

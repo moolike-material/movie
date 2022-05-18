@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nuxt_wrap">
     <!-- #region ヘッダー -->
     <header class="p-header">
         <div class="p-header_inner">

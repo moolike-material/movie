@@ -20,7 +20,7 @@ export default Vue.extend({
     finish() {  
         setTimeout(() => {
             this.loading = false;
-      }, 1500)
+      }, 1000)
     }
   }
 });

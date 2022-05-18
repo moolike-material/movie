@@ -7,6 +7,8 @@ body{
   font-family: 'Zen Maru Gothic', sans-serif;
   transition: all .3s!important;
   letter-spacing: 0.05em;
+  // background-color: #fdf9ee;
+  color: #293355;
 }
 
 html{
@@ -34,17 +36,20 @@ a{
 }
 
 // 変数
-$col-green : #1C4D50;
-$col-yellow : #FFE13F;
+$col-deepBlue : #293355;
+// $col-green : #1C4D50;
+$col-green : #293355;
+// $col-yellow : #FFE13F;
+$col-yellow : #f0cc00;
 $col-glay : #f5f5f5;
 
 $pc: 1024px; // PC
 $tab: 680px; // タブレット
 $sp: 480px;  // スマホ
 
-$ttl--pc:2.2rem;
+$ttl--pc:2.4rem;
 $desc--pc :1.6rem;
-$product_name:1.4rem;
+$product_name:1.5rem;
 $small--pc:1.2rem;
 
 $ttl--sp:2rem;
@@ -52,9 +57,17 @@ $desc--sp :1.6rem;
 $product_namesp:1.4rem;
 $small--sp:1.2rem;
 
+.v-sheet.v-card {
+  border-radius: 14px!important;
+}
+
 //*********************************************** 
 //vuetify css 削除
 //***********************************************
+.v-slide-group__content{
+  padding: 1rem;
+}
+
 .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {
   box-shadow: none!important;
 }

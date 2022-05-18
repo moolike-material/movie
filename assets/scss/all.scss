@@ -3,20 +3,20 @@
 //#region ヘッダー
 //*******************************************************************
 .p-header{
-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-margin-bottom: .1rem;
-// background-color:#a2ccd0;
-background-color:#1C4D50;
-
+  margin-bottom: .1rem;
+  // background-color:#a2ccd0;
+  background-color:#5CB5BA;
+  
   &_inner{
-    padding: 1rem 4rem 1.5rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    padding: 2rem 9rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &_ttl{
-    width: 250px;
+    width: 300px;
     transform: translateY(0px);
   }
 
@@ -241,7 +241,7 @@ background-color:#1C4D50;
   
   &_item{
     position: relative;
-    width: 31.5%!important;
+    width: 31%!important;
     min-width: 100px;
     margin-bottom: 60px;
     
@@ -251,9 +251,9 @@ background-color:#1C4D50;
   }
   
   &_innerWrap{
-    padding: 1rem 1rem;
+    padding: 1rem 1.75rem;
     overflow: hidden;
-    height: calc(1.75*3rem);  
+    height: calc(1.75*4rem);  
     display: flex;
     align-items: center;  
   }
@@ -265,6 +265,7 @@ background-color:#1C4D50;
   &_ttl{
     font-size: $product_name;
     width: 80%;
+    line-height: 1.75;
     color: $col-green;
   }
 
@@ -277,10 +278,10 @@ background-color:#1C4D50;
   top: 0;
   left: 0;
   background-color: $col-yellow;
-  padding: 0 1rem 0.5rem;
-  font-size: .5rem;
+  padding: 0 1.2rem 0.8rem;
+  font-size: .7rem;
   font-weight: bold;
-  border-radius: 0 0 10px 0;
+  border-radius: 10px 0 10px 0;
 }
 
 .p-rank_icon{
@@ -310,10 +311,16 @@ background-color:#1C4D50;
 //*******************************************************************
 //#region ページ共通
 //*******************************************************************
+.main{
+
+  // background-color: #fdf9ee;
+  background-color: #fff;
+}
 .container{
   padding-top: 0px!important;
 }
 .p-content{
+  // background-color: #fdf9ee;
   max-width: 1280px!important;
   margin: 0 auto;
   padding-bottom: 8rem;
@@ -328,13 +335,14 @@ background-color:#1C4D50;
 
   &_subTtl{
     font-size: $ttl--pc;
-    color: $col-green;
+    color: $col-deepBlue;
     margin-bottom: 6rem;
   }
 }
 
 .p-content_section{
   padding-top: 10rem;
+  padding-bottom: 6rem;
 
   &--tags{
     display: none;
@@ -344,25 +352,26 @@ background-color:#1C4D50;
   &__ttl{
       text-align: center;
       font-size: $ttl--pc;
-      color: $col-green;
+      color: $col-deepBlue;
       margin-bottom: 4rem;
   }
 }
 
 .p-more_btn{
   text-align: center;
+  margin-top: 4rem;
 
   &__link{
     position: relative;
-    color: $col-green;
-    border: 2px solid $col-green;
+    color: $col-deepBlue;
+    border: 2px solid $col-deepBlue;
     padding:1rem 1.6rem;
     font-weight: bold;
     font-size: $desc--pc;
     border-radius: 30px;
 
     &:hover{
-      background-color: $col-green;
+      background-color: $col-deepBlue;
       color: #fff;
       transition: all .3s;
       &::after{
@@ -388,8 +397,8 @@ background-color:#1C4D50;
 
 .p-pankuzu{
   font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   & a{
     &:hover{
@@ -494,14 +503,14 @@ background-color:#1C4D50;
 
   &__ttl{
     display: inline-block;
-    font-size: $product_name;
+    font-size: $desc--pc ;
     letter-spacing: .05em;
     color: $col-green;
     background:linear-gradient(transparent 60%, $col-yellow 0%);
   }
 
   &__desc{
-    font-size:$small--pc;
+    font-size:1.4rem;
     width: 90%;
     margin: 1.6rem auto;
   }
@@ -540,6 +549,11 @@ background-color:#1C4D50;
 //*******************************************************************
 .p-material_detail{
   display: flex;
+  justify-content: space-between;
+
+  &__youtube{
+    width: 60%;
+  }
 
   &__dl{
     margin-top: 3rem;
@@ -553,7 +567,6 @@ background-color:#1C4D50;
       border-radius: 30px;
       font-size: $product_name;
       font-weight: bold;
-      border: 2px solid #000;
       cursor: pointer;
       transition: all .3s;
       
@@ -563,20 +576,18 @@ background-color:#1C4D50;
       }
 
       &--mp4{
-        color: $col-green;
-        border-color: $col-green;
+        background-color: $col-green;
+        color: #fff;
 
         &:hover{
-          background-color: $col-green;
-          color: #fff;
+          opacity: 0.7;
         }
       }
       &--mov{
-        color: $col-yellow;
-        border-color: $col-yellow;
+        color: #fff;
+        background-color: $col-yellow;
         &:hover{
-          color: #fff;
-          background-color: $col-yellow;
+          opacity: 0.7;
         }
       }
     }
@@ -647,7 +658,7 @@ background-color:#1C4D50;
 
 .p-bnr__register .p-bnr_item {
   margin: 0.5rem;
-  width: 32%;
+  width: 30%;
 }
 
 .p-bnr_img{
@@ -684,7 +695,7 @@ background-color:#1C4D50;
 //#region フッター
 //*******************************************************************
 .p-footer{
-  padding: 7rem!important;//デフォルトCSS削除
+  padding: 10rem 5rem 5rem!important;//デフォルトCSS削除
   background: url("/bg.jpg") no-repeat;
   background-size: cover;
 
@@ -816,6 +827,8 @@ background-color:#1C4D50;
     color: $col-green;
     transition: all .3s;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
 
     &:hover{
       opacity: .7;
@@ -825,7 +838,7 @@ background-color:#1C4D50;
   &__inner{
     position: relative;
     background-color: #fff;
-    padding: .2rem .8rem 4rem;
+    padding: .2rem 2rem 4rem;
   }
 
   &__icon{
