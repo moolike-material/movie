@@ -104,6 +104,10 @@
             tag: '背景',
             param: 'background'
           },
+          {
+            tag: 'エフェクト',
+            param: 'effect'
+          },
         ],
       }
     },

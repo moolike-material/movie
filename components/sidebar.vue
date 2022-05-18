@@ -68,6 +68,10 @@
             "id": "business",
             "name": "ビジネス"
           },
+          {
+            "id": "handfree",
+            "name": "手書き風"
+          },
         ],    
         tags: [
           {

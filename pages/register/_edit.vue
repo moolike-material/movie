@@ -66,6 +66,10 @@
         label="ビジネス"
         value="business"
       ></v-radio>
+      <v-radio
+        label="手書き風"
+        value="handfree"
+      ></v-radio>
     </v-radio-group>
     </v-col>
    <!-- #endregion カテゴリ登録処理 -->

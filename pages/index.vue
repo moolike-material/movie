@@ -9,6 +9,28 @@
       <div class="p-content_inner">
         <!-- メインセクション -->
         <div class="p-content_main">
+          <div class="p-content_icon">
+            <div class="p-content_icon__item">
+              <NuxtLink to="/tags/effect" class="">
+                <img src="/icon_effect.png" alt="エフェクト">
+              </NuxtLink>
+            </div>
+            <div class="p-content_icon__item">
+              <NuxtLink to="/category/wedding" class="">
+                <img src="/icon_wedding.png" alt="結婚式">
+              </NuxtLink>
+            </div>
+            <div class="p-content_icon__item">
+              <NuxtLink to="/tags/filter" class="">
+                <img src="/icon_filter.png" alt="フィルター">
+              </NuxtLink>
+            </div>
+            <div class="p-content_icon__item">
+              <NuxtLink to="/category/handfree" class="">
+                <img src="/icon_handfree.png" alt="手書き風">
+              </NuxtLink>
+            </div>
+          </div>
           <section class="p-content_section p-content_section--top">
             <h2 class="p-content_section__ttl">最近人気の動画素材
             </h2>
